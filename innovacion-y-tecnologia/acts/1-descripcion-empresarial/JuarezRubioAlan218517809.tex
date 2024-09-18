@@ -1,0 +1,137 @@
+\input{config.tex}
+
+\begin{document}
+    \setstretch{1} % Interlineado
+
+    \begin{titlepage}
+        \newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+        \centering
+        %\vspace*{-2cm}
+        {\huge\textbf{\universidad}}\par
+        \vspace{0.6cm}
+        {\LARGE{\cede}}
+        \vfill
+
+        \begin{figure}[h]
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+            \end{minipage}
+        \end{figure}
+        \vfill
+
+        \Large{ \division\vfill \textbf{\carrera}\vfill \textbf{\materia}\par\vspace{3pt} \seccion\ - \clave\ - \nrc\ - \generation \vfill }
+
+        \begin{figure}[h]
+            \centering
+            \begin{minipage}[t]{0.75\textwidth}
+                {\Large \textbf{Profesor}: \profesor\nl \textbf{Alumno}: \theAuthor\nl \textbf{Código}: \theAuthorCode\nl \textbf{Correo}: \theAuthorMail }
+            \end{minipage}
+        \end{figure}
+        \vfill
+
+        {\LARGE{\textbf{\theTitle}}}
+        \vfill
+
+        \begin{tcolorbox}
+            [colback=red!5!white, colframe=red!75!black]
+            \centering
+            Este documento contiene información sensible.\\ No debería ser impreso o
+            compartido con terceras entidades.
+        \end{tcolorbox}
+        \vfill
+        {\large \startDate}\par
+    \end{titlepage}
+
+    \restoregeometry % end changed margin
+
+    %% Indexes
+    \clearpage
+    \tableofcontents
+
+    %\clearpage
+    %\listoffigures
+
+    %\clearpage
+    %\listoftables
+
+    %\clearpage
+    %\lstlistoflistings
+
+    %% Main Title
+    \clearpage
+    \vspace*{6pt}
+    \centerline{\textbf{\huge \theTitle}}
+    \vspace*{8pt}
+
+    %% Content
+
+    \section{Qué es Agiotech}
+
+    Agiotech es una empresa creada en Enero de 2012, por un grupo de profesionales
+    expertos en modelos eficientes de servicio "Post-Venta" orientado al mercado de
+    electrónicos de consumo en la región de Latinoamérica, contando con más de 15 años de experiencia
+    en el soporte a compañías consideradas dentro de las Top 25 OEM's en la Industria Electrónica.
+
+    Agiotech es una empresa dedicada principalmente a la reparación de dispositivos y accesorios
+    móviles. Manejan reparaciones de dispositivos de diversas marcas, tales como Huawei,
+    Motorola y su principal fuerte, Samsung. Las reparaciones provenien de garantías de
+    empresas como Elektra, Telcel y el mismo Samsung.
+
+    Actualmente plantea ser el principal fuente de reparaciones de la empresa de Samsung en
+    México, ofreciendo la mayor cantidad de reparaciones, en el menor tiempo cumpliendo los
+    estándares de calidad.
+
+    Si bien, hoy en día son una de las principales fuentes de reparación de Samsung, considero
+    que hay mucho trabajo por delante y muchos puntos de mejora para poder cumplir con las
+    expectativas de Samsung.
+
+    \section{Áreas de Agiotech}
+
+    La empresa de Agiotech se divide en varias áreas o departamentos de trabajo:
+
+    \begin{itemize}
+        \item \textbf{Ingreso}: Área en donde los capturistas ingresan la información de los
+            dispositivos entrantes en los sistemas, asegurándose que haya concordancia con
+            la información respecto a los dispositivos
+
+        \item \textbf{Sistemas}: Área enfocada en el desarrollo y mantenimiento del sistema
+            principal de la empresa. Este sistema es el encargado de llevar el registro de
+            cada una de las operaciones dentro de la empresa, tales como la llegada de dispositivos,
+            piezas, inventariado, uso, estatus, registro de procedimiento, embarcamiento,
+            etc. Adicionalmente, esta área se encarga de resolver cualquier problema que
+            se llegase a presentar dentro del sistema.
+
+        \item \textbf{Recursos Humanos}: Recursos Humanos es el departamento encargado de conseguir
+            personal nuevo y llevar a cabo el proceso de la entrevista. Adicionalmente
+            manejan el control administrativo sobre los empleados.
+
+        \item \textbf{Reparacines}: Esta área se del diagnóstico de los dispositivos de reparación,
+            determinación de si un dispositivo entra en garantía, si es reparable o no. Si
+            el dispositivo entra en garantía o reparación pagada, este es reparado cumpliendo
+            con cada uno de los requisitos y acuerdos con el cliente o empresa.
+
+        \item \textbf{Administración}: Este departamento a grandes ragos se encarga del manejo
+            de recursos de la empresa, tanto de la salida como la entrada de dinero, es decir,
+            el cómo se manejan las finanzas.
+
+        \item \textbf{Almacen}: Área encagada de la recepción y entrega de paquetes,
+            paquetes que contienen tanto dispositivos como piezas. En general, tienen la
+            tarea principal del movimiento del inventario, registrando y entregando las piezas
+            solicitadas a los técnicos correspondientes.
+    \end{itemize}
+
+    Si bien existen diversas áreas y departamentos y tienen un sistema muy completo para llevar
+    a cabo garantías y reparaciones, cosidero que esta empresa tiene muchos aspectos que
+    mejorar, aspectos como la búsqueda de personal calificado, mejores capacitaciones, uso
+    de tecnologías más.
+
+    Por otra parte, considero que esta empresa tiene muchísimas oportunidades de
+    crecimiento y expansión. La creación de nuevas cedes, el manejo de más marcas, la reparación
+    y venta de otros dispositivos, tales como dispositivos de cómputo, entre otros muchos aspectos.
+\end{document}
