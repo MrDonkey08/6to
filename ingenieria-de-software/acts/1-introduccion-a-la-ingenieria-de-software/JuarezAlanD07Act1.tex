@@ -1,0 +1,489 @@
+\documentclass[11pt, a4paper]{article} % Formato
+
+% Language and font encodings
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\fontfamily{georgia}\selectfont
+
+%% Sets page size and margins
+\usepackage[margin=2.5cm, includefoot]{geometry}
+%\setlength{\columnsep}{0.17in} % page columns separation
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{array} % <-- add this line for m{} column type
+\usepackage[hidelinks]{hyperref} % hyperlinks support
+\usepackage{graphicx} % images support
+%\usepackage{listings} % codeblock support
+%\usepackage{smartdiagram} % diagrams support
+\usepackage[most]{tcolorbox} % callouts support
+%\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[dvipsnames, table, xcdraw]{xcolor} % Tables support
+%\usepackage{zed-csp} % cchemas support
+
+%% Formating
+\usepackage{authblk} % to add authors in maketitle
+%\usepackage{blindtext} % to gen filler text
+\usepackage[figurename=Fig.]{caption} % to change prefix of the image caption
+
+\usepackage{apacite}
+\usepackage{cite} % useful to compress multiple quotations into a single entry
+\usepackage{enumitem}
+\usepackage{fancyhdr} % to set page style
+\usepackage{indentfirst}
+%\usepackage{natbib}
+\usepackage{parskip} % remove first line tabulation
+\usepackage{setspace}
+%\usepackage{titlesec}
+%\usepackage{titling} % to config maketitle
+
+%% Variables
+% Main images
+\newcommand{\logoUdg}{logo-udg.jpg}
+\newcommand{\logoCucei}{logo-cucei.jpg}
+
+% School data
+\newcommand{\universidad}{Universidad de Guadalajara}
+\newcommand{\cede}{Centro Universitario de Ciencias Exactas e Ingenierías}
+
+% Subject data
+\newcommand{\materia}{Ingeniería de Software}
+\newcommand{\carrera}{Ingeniería en Computación}
+\newcommand{\division}{División de Tecnologías para la Integración CiberHumana}
+\newcommand{\theTitle}{Introducción a la Ingeniería de Software}
+\newcommand{\profesor}{Thelma Isabel Morales Ramírez}
+\newcommand{\seccion}{D07}
+\newcommand{\nrc}{210896}
+\newcommand{\clave}{CB224}
+\newcommand{\startDate}{17 de agosto de 2024}
+
+% Author data
+\newcommand{\theAuthor}{Alan Yahir Juárez Rubio}
+\newcommand{\theAuthorCode}{218517809}
+\newcommand{\theAuthorMail}{alan.juarez5178@alumnos.udg.mx}
+
+%% Declaration
+\date{}
+\graphicspath{ {../../../img/} }
+\addto\captionsspanish{\renewcommand{\contentsname}{Índice}}
+\renewcommand{\lstlistingname}{Código} % to change prefix of the code caption
+\renewcommand{\lstlistlistingname}{Índice de códigos} % to change listings index title
+
+%% Styles
+
+% Color declaration
+\definecolor{greenPortada}{HTML}{69A84F}
+\definecolor{LightGray}{gray}{0.9}
+\definecolor{codegreen}{rgb}{0, 0.6, 0}
+\definecolor{codegray}{rgb}{0.5, 0.5, 0.5}
+\definecolor{codepurple}{rgb}{0.58, 0, 0.82}
+\definecolor{backcolour}{rgb}{0.95, 0.95, 0.92}
+
+% Hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=greenPortada,
+    urlcolor=greenPortada,
+    pdfpagemode=FullScreen,
+}
+
+\urlstyle{same}
+
+% Codeblocks
+\lstdefinestyle{mystyle}{ backgroundcolor=
+\color{backcolour}
+, commentstyle=
+\color{codegreen}
+, keywordstyle=
+\color{magenta}
+, numberstyle=\tiny
+\color{codegray}
+, stringstyle=
+\color{codepurple}
+, basicstyle=\ttfamily\footnotesize, breakatwhitespace=false, breaklines=true, captionpos=b,
+keepspaces=true, numbers=left, numbersep=5pt, showspaces=false, showstringspaces=false, showtabs=false,
+tabsize=2 }
+
+% Tables
+\let\oldtabular\tabular
+\renewcommand{\tabular}{\small\oldtabular}
+\renewcommand{\arraystretch}{1.2} % <-- Adjust vertical spacing
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+
+\lstset{style=mystyle}
+
+%% Spacing
+\newcommand{\nl}{\par
+\vspace{0.4cm}}
+\renewcommand{\baselinestretch}{1.5} % Espaciado de línea anterior
+\setlength{\parskip}{6pt} % Espaciado de línea anterior
+\setlength{\parindent}{0pt} % Sangría
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{3pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{greenPortada}\leaders\hrule height \headrulewidth\hfill}}
+\setlength{\headheight}{50pt} % Ajuste necesario para evitar warnings
+
+% Header
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ \begin{minipage}[c][2cm][c]{1.3cm}\begin{flushleft}\includegraphics[width=5cm, height=1.4cm, keepaspectratio]{\logoUdg}\end{flushleft}\end{minipage} \begin{minipage}[c][2cm][c]{0.5\textwidth} % Adjust the height as needed
+\begin{flushleft}{\materia}\end{flushleft}\end{minipage} }
+\rhead{ \begin{minipage}[c][2cm][c]{0.4\textwidth} % Adjust the height as needed
+\begin{flushright}{\theTitle}\end{flushright}\end{minipage} \begin{minipage}[c][2cm][c]{1.3cm}\begin{flushright}\includegraphics[width=5cm, height=1.4cm, keepaspectratio]{\logoCucei}\end{flushright}\end{minipage} }
+
+% Footer
+\fancyfoot{}
+\lfoot{\small\materia}
+\cfoot{\thepage} % Paginación
+\rfoot{\small Curso impartido por \profesor}
+
+\title{\fontsize{24}{28.8}\selectfont \theTitle}
+\author{\theAuthor}
+
+\affil{}
+
+\begin{document}
+    \setstretch{1} % Interlineado
+
+    \begin{titlepage}
+        \newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+        \centering
+        %\vspace*{-2cm}
+        {\huge\textbf{\universidad}}\par
+        \vspace{0.6cm}
+        {\LARGE{\cede}}
+        \vfill
+
+        \begin{figure}[h]
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+            \end{minipage}
+        \end{figure}
+        \vfill
+
+        \Large{ \division\vfill \textbf{\carrera}\vfill \textbf{\materia}\par\vspace{3pt} \seccion\ - \clave\ - \nrc\vfill }
+
+        \begin{figure}[h]
+            \centering
+            \begin{minipage}[t]{0.75\textwidth}
+                {\Large \textbf{Profesor}: \profesor\nl \textbf{Alumno}: \theAuthor\nl \textbf{Código}: \theAuthorCode\nl \textbf{Correo}: \theAuthorMail }
+            \end{minipage}
+        \end{figure}
+        \vfill
+
+        {\LARGE{\textbf{\theTitle}}}
+        \vfill
+
+        \begin{tcolorbox}
+            [colback=red!5!white, colframe=red!75!black]
+            \centering
+            Este documento contiene información sensible.\\ No debería ser impreso o
+            compartido con terceras entidades.
+        \end{tcolorbox}
+        \vfill
+        {\large \startDate}\par
+    \end{titlepage}
+
+    \restoregeometry % end changed margin
+
+    %% Indexes
+    \clearpage
+    \tableofcontents
+
+    %\clearpage
+    %\listoffigures
+
+    \clearpage
+    \listoftables
+
+    %\clearpage
+    %\lstlistoflistings
+
+    %% Main Title
+    \clearpage
+    \vspace*{6pt}
+    \centerline{\huge \theTitle}
+    \vspace*{8pt}
+
+    %% Content
+
+    \section{Qué es un Software}
+
+    Si bien, el término programa y software se utilizan indistintamente, en Ingeniería de software
+    se hace la distinción entre estos dos.
+
+    Para entender qué es un software primero debemos entender qué es un programa. Un
+    \textbf{programa} es una secuencia de instrucciones dadas a un dispositivo de cómputo para
+    que realice una tarea en específico.
+
+    Por otra parte, un \textbf{software} no solo se refiere a los programas en sí, sino
+    también a la documentación asociada, a los datos de configuración y los datos de configuración
+    requeridos para hacer que estos programas operen correctamente.
+
+    \section{Uso del Sofware en Nuestra Sociedad}
+
+    En la actualidad, el software hace parte de nuestras vidas diarias, facilitándonos y
+    haciendo posible muchísimas cosas que sin él no sería posible, desde la comunicación a
+    larga distancia hasta la adquisición y venta de productos y servicios sin contacto directo
+    y a distacncias enormes. Sin embargo, el uso innadecuado del software puede traer consigo
+    consecuencias desfavorables. A continuación una tabla con algunos de los \textit{benificios
+    y perjuicios} del uso del software:
+
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|p{0.15 \textwidth}|p{0.325 \textwidth}|p{0.325 \textwidth}|}
+            \hline
+            Aspecto       & Beneficios                                                                       & Perjucios                                                                      \\
+            \hline
+            Comunicación  & Mejora de la comunicación global instantánea a través de diversas plataformas    & Pérdida de habilidades sociales y transmisión masiva de información incorrecta \\
+            \hline
+            Productividad & Automatización de tareas y procesos                                              & Dependencia excesiva de la tecnología                                          \\
+            \hline
+            Privacidad    & Mejora en la seguridad de datos mediante la encriptación y la autenticación      & Riesgo de privacidad ocasionado por la recolección de datos                    \\
+            \hline
+            Seguridad     & Protección de datos sensibles mediante herramientas avanzadas de cirberseguridad & Aumento de ataques ciberneticos, tal como hackeos y fraudes en línea           \\
+            \hline
+            Innovación    & Facilitación de innovación en multiples sectores, desde ciencias hasta artes     & Rápido desfase de tecnologías y software                                       \\
+            \hline
+        \end{tabular}
+        \caption{Beneficios y perjuicios del uso del software en la sociedad}
+    \end{table}
+
+    \clearpage
+    \section{Qué es la Ingeniería de Software}
+
+    La \textbf{ingeniería de software} es una disciplina de la ingeniería que se interesa
+    por todos los aspectos de la producción del software, desde las primeras etapas de la especificación
+    del sistema hasta el mantenimiento del sistema después de que se pone en operación.
+
+    \subsection{Propósito de la Ingeniería de Software}
+
+    La ingeniería de software principalmente busca conseguir el desarrollo de software de
+    calidad dentro de una determinada fecha. Para conseguirlo, la ingenería de software
+    busca seleccionar el método más adecuado para el desarrollo de software, desde métodos
+    con un enfoque sistemático y organizado, hasta métodos con un desarrollo más creativo
+    e informal.
+
+    \subsection{¿Por Qué se Estimuló la Ingeniería de Software?}
+
+    \begin{enumerate}
+        \item \textbf{Gestión de la complejidad}: A medida que los sistemas de software se
+            volvieron más grandes y complejos, surgió la necesidad de metodologías
+            estructuradas para gestionar su desarrollo, mantenimiento y escalabilidad. La
+            Ingeniería del software proporciona las herramientas y técnicas necesarias
+            para manejar esta complejidad de manera efectiva.
+
+        \item \textbf{Calidad y fiabilidad}: La demanda de software seguro, confiable y de
+            alta calidad impulsó la creación de prácticas estandarizadas en la Ingeniería
+            del software. Estas prácticas ayudan a minimizar errores, mejorar el
+            rendimiento y asegurar que los sistemas cumplan con los requisitos funcionales
+            y no funcionales.
+
+        \item \textbf{Eficiencia en el desarrollo}: La necesidad de desarrollar software de
+            manera más rápida y eficiente, sin sacrificar la calidad, motivó la creación de
+            procesos y metodologías que optimizan cada fase del ciclo de vida del software.
+            Esto incluye el uso de herramientas de automatización, técnicas de gestión deproyectos
+            y enfoques ágiles que permiten adaptarse a cambios de requisitos durante el desarrollo.
+    \end{enumerate}
+
+    \subsection{ Áreas del Conocimiento Según la ``Guía del cuerpo de conocimiento de la ingeniería
+    de software'' }
+
+    \begin{enumerate}
+        \item \textbf{Requisitos de software}: Se ocupa de la obtención, análisis, especificación
+            y validación de los requisitos así como la gestión de requerimientos durante la
+            vida entera del producto de software.
+
+        \item \textbf{Diseño de software}: Es definido como el proceso de definición de la
+            arquitectura, componentes, interfaces y otras características de un sistema o componente
+            y el resultado de ese proceso. Esta área también abarca la gestión de la
+            complejidad y la evolución del diseño.
+
+        \item \textbf{Construcción de software}: Se centra en el proceso de codificación,
+            pruebas unitarias y depuración del software. Abarca prácticas de programación,
+            estándares de codificación, y la aplicación de herramientas y técnicas para la
+            implementación eficiente de software.
+
+        \item \textbf{Pruebas de software}: Consiste en la verificación dinámica de que un
+            programa proporciona los comportamientos esperados de un conjuto de casos de prueba,
+            convenientemente de un dominio de ejecución, normalmente infinito.
+
+        \item \textbf{Mantenimiento de software}: Es una parte integral de ciclo de vida de
+            un software. Este es definido como el total de actividades requeridas para
+            proveer soporte costo-efectivo a un software.
+
+        \item \textbf{Gestión de la configuración de software}: La configuración de un sistema
+            son las características funcionales y físicas del hardware o software tal y como
+            en la documentación técnica. La gestión de la configuración, entonces, es la
+            disciplina de identificar la configuración de un sistema en distintos tiempos
+            con el propósito de controlar cambios sistemáticamente a la configuración y
+            mantener la integridad y trazabilidad de la configuración a lo largo del ciclo
+            de vida del sistema.
+
+        \item \textbf{Gestión de la ingeniería de software}: Puede ser definido como la aplicación
+            de la gestión de actividades-planificando, coordinando, midiendo, monitoreando,
+            controlando y reportando-para asegurarse de que los productos de software y servicios
+            de ingeniería de software son eficientemente, efectivamente, y al beneficio de
+            las partes interesadas.
+
+        \item \textbf{Proceso de ingeniería de software}: Consiste de un conjunto de actividades
+            interrelacionadas que traansofrman una o más entradas en salidas mientras se consumen
+            recursos para alcanzar la transformación.
+
+        \item \textbf{Modelos y métodos de ingeniería de software}: Imponen estructura en la
+            ingeniería de software con el objetivo de hacer esa actividad sistemática repetible,
+            y en última instancia más orientada al éxito
+
+        \item \textbf{Calidad de software}: Puede referirse a características deseadas de productos
+            de software, en la medida en el cual un producto de software en particular
+            posee dichas características, y los procesos, herramientas y técnicas usadas
+            para alzanzar esas características. Recientemente la calidad de software es definida
+            como la "capacidad de un producto" de software de producir para satisfacer necesidades
+            establecidas e implicadas bajo ciertas condiciones especificadas.
+
+        \item \textbf{Práctica profesional de ingeniería de software}: A esta área le preocupa
+            el conocimiento, habilidades, y actitudes que los ingenieros de software deben
+            poseer para practicaar ingeniería de software en un manera profesional,
+            responsable y ética.
+
+        \item \textbf{Ingenería de software económica}: Consiste en tomar decisiones relacionadas
+            a la ingeniería de software en un contexto de negocios. El éxito de un
+            servicio, y solucióon depende en buen gestión de negocios. Economics es el
+            estudio del valor, costos, recursos , y sus relaciones en un contexto dado o
+            situación. En la disciplina de ingeniería de software, las actividades tienen
+            costos, pero el mismo software resultante también tiene atributos económicos.
+
+        \item \textbf{Fundamentos informáticos}: El núcleo de la ingeniería de software es
+            entend la ciencia de la computación. Ingeniería de software le concierne la
+            aplicación de computadoras, informática fines prácticos. La mayoría de los
+            temas discutods en la Fundamentos de informática son discutods en cursos
+            básicos de ciencias de computación. Algunos cursos incluyen programación,
+            estructura de datos, algorimos, organización de computadoras, sistemas operativos,
+            bases de datos, redes, sistemas distribuidos y mucho más.
+
+        \item \textbf{Fundamentos matemáticos}: Esta área ayuda ingenieros de software a comprender
+            la lógica requerida para el desarrollo de un programa, la cual es traducida en
+            código de lenguaje de programación. La lógica y el razonamiento son la esencia
+            de las matemáticas que un ingeniero de sofware debe apuntar.
+
+        \item \textbf{Fundamentos de ingeniería}: IEEE define ingeniería como "la
+            aplicación de un enfoque sitemático, disciplinado, cuantificable" a estructuras,
+            máquinas, productos, sistemas o procesos". Esta área describe algunos de las
+            habilidades y técnicas básicas que son útiles pasa un ingeniero de software.
+    \end{enumerate}
+
+    \subsection{ Desafíos y Oportunidades que Enfrenta la Ingeniería de Software en el Siglo
+    XXI }
+
+    \subsubsection{Desafíos}
+    \begin{itemize}
+        \item \textbf{Ciberseguridad}: Asegurar el software contra ataques y vulnerabilidades
+            es cada vez más difícil con la creciente conectividad.
+
+        \item \textbf{Escalabilidad y Complejidad}: Los sistemas son más grandes y complejos,
+            lo que requiere mejores diseños y arquitecturas.
+
+        \item \textbf{Desarrollo Ágil y DevOps}: Mantener la calidad y consistencia en entornos
+            de desarrollo rápidos y distribuidos es un reto.
+
+        \item \textbf{Inteligencia Artificial y Machine Learning}: Integrar IA de manera ética
+            y transparente es crucial.
+
+        \item \textbf{Privacidad y Regulaciones}: Cumplir con leyes de privacidad mientras
+            se aprovechan los datos es un desafío constante.
+
+        \item \textbf{Sostenibilidad}: Desarrollar software que minimice el consumo de energía
+            es fundamental para reducir el impacto ambiental.
+    \end{itemize}
+
+    \subsubsection{Oportunidades}
+
+    \begin{itemize}
+        \item \textbf{Tecnologías Emergentes}: Liderar en áreas como IA, blockchain y
+            realidad aumentada puede transformar industrias.
+
+        \item \textbf{Automatización}: Herramientas avanzadas están mejorando la eficiencia
+            y calidad del desarrollo de software.
+
+        \item \textbf{Sostenibilidad}: Innovar en software ecológico y eficiente ofrece un
+            camino hacia un futuro más sostenible.
+
+        \item \textbf{Globalización y Trabajo Remoto}: La colaboración global permite acceder
+            a un talento diverso y especializado.
+
+        \item \textbf{Educación Continua}: Hay un gran potencial en desarrollar programas de
+            capacitación para preparar mejor a los profesionales.
+
+        \item \textbf{Inclusión y Diversidad}: Promover equipos diversos puede llevar a soluciones
+            más creativas y efectivas.
+    \end{itemize}
+
+    \section{Ingeniería}
+
+    \subsection{ Cómo Influye la Sostenabilidad en el Diseño y Desarrollo de Proyectos de Ingeniería
+    }
+
+    La sostenibilidad juega un papel cada vez más importante en el diseño y desarrollo de
+    proyectos de ingeniería. Su influencia se manifiesta en varios aspectos clave:
+
+    \begin{itemize}
+        \item \textbf{Selección de Materiales}: Se eligen materiales reciclables y de bajo
+            impacto ambiental.
+
+        \item \textbf{Eficiencia Energética}: Se diseñan sistemas que minimizan el consumo
+            de energía y se integran fuentes de energía renovable.
+
+        \item \textbf{Impacto Ambiental}: Se realizan análisis del ciclo de vida para reducir
+            el impacto ambiental y minimizar residuos.
+
+        \item \textbf{Desarrollo Sostenible}: Se promueve la durabilidad y la economía circular
+            en los proyectos.
+
+        \item \textbf{Responsabilidad Social}: Se considera el impacto en las comunidades y
+            se cumplen normativas de sostenibilidad.
+
+        \item \textbf{Innovación Tecnológica}: Se usan herramientas digitales y se invierte
+            en I+D para mejorar la sostenibilidad.
+
+        \item \textbf{Economía}: A pesar de los costos iniciales, los proyectos
+            sostenibles suelen ser más rentables a largo plazo y pueden recibir incentivos
+            financieros.
+    \end{itemize}
+
+    \subsection{Importancia de la Ética en la Ingeniería}
+
+    La ética en la ingeniería es crucial porque garantiza que los proyectos diseñados y construidos
+    sean seguros, responsables y justos. Los ingenieros tienen la responsabilidad de proteger
+    la seguridad pública, cumplir con normas y regulaciones, y tomar decisiones que beneficien
+    a la sociedad en su conjunto. La ética también impulsa el uso responsable de los
+    recursos y la protección del medio ambiente, promoviendo la sostenibilidad y asegurando
+    que los proyectos no perjudiquen a las futuras generaciones.
+
+    Además, la ética mantiene la integridad profesional, fomenta la transparencia y evita conflictos
+    de interés, lo que es esencial para mantener la confianza pública en la ingeniería. A través
+    de la ética, los ingenieros no solo aseguran la calidad técnica de sus trabajos, sino que
+    también actúan de manera que respalden la justicia social y el desarrollo sostenible,
+    asegurando que su trabajo tenga un impacto positivo y duradero en la sociedad y el
+    medio ambiente.
+
+    %% References
+
+    \nocite{*} % to include uncited references of .bib file
+
+    \clearpage
+    \bibliographystyle{apalike}
+
+    % Generated from .bib file
+    \bibliography{ref}
+\end{document}

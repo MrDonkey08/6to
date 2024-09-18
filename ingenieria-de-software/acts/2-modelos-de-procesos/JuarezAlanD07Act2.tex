@@ -1,0 +1,219 @@
+\input{config.tex}
+
+\begin{document}
+    \setstretch{1} % Interlineado
+
+    \begin{titlepage}
+        \newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+        \centering
+        %\vspace*{-2cm}
+        {\huge\textbf{\universidad}}\par
+        \vspace{0.6cm}
+        {\LARGE{\cede}}
+        \vfill
+
+        \begin{figure}[h]
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+            \end{minipage}
+        \end{figure}
+        \vfill
+
+        \Large{ \division\vfill \textbf{\carrera}\vfill \textbf{\materia}\par\vspace{3pt} \seccion\ - \clave\ - \nrc\vfill }
+
+        \begin{figure}[h]
+            \centering
+            \begin{minipage}[t]{0.75\textwidth}
+                {\Large \textbf{Profesor}: \profesor\nl \textbf{Alumno}: \theAuthor\nl \textbf{Código}: \theAuthorCode\nl \textbf{Correo}: \theAuthorMail }
+            \end{minipage}
+        \end{figure}
+        \vfill
+
+        {\LARGE{\textbf{\theTitle}}}
+        \vfill
+
+        \begin{tcolorbox}
+            [colback=red!5!white, colframe=red!75!black]
+            \centering
+            Este documento contiene información sensible.\\ No debería ser impreso o
+            compartido con terceras entidades.
+        \end{tcolorbox}
+        \vfill
+        {\large \startDate}\par
+    \end{titlepage}
+
+    \restoregeometry % end changed margin
+
+    %% Indexes
+    \clearpage
+    \tableofcontents
+
+    %\clearpage
+    %\listoffigures
+
+    \clearpage
+    %\listoftables
+
+    %\clearpage
+    %\lstlistoflistings
+
+    %% Main Title
+    \clearpage
+    \vspace*{6pt}
+    \centerline{\huge \theTitle}
+    \vspace*{8pt}
+
+    %% Content
+
+    \section{Cuestionario}
+    \begin{enumerate}
+        \item ¿Qué es el ciclo de vida del desarrollo de software seguro (S-SDLC) y cuales
+            son las caracteristicas que se presenta?
+
+            Es una extensión del Ciclo de vida del Desarrollo de Software(SDLC), el cual añade
+            pruebas de seguridad en cada una de sus etapas. Este tiene como objetivo
+            garantizar que el software sea seguro y resistente a vulnerabilidades.
+
+            Las características que presenta son:
+
+            \begin{itemize}
+                \item Integración temprana de la seguridad
+
+                \item Revisión continua de seguridad
+
+                \item Análisis de riesgos
+
+                \item Pruebas de seguridad
+
+                \item Cumplimiento normativo
+
+                \item Capacitación en seguridad
+
+                \item Gestión de parches y actualizaciones
+
+                \item Monitoreo y respuesta ante incidentes
+            \end{itemize}
+
+        \item ¿Qué debemos tener en cuenta al seleccionar una metodología?
+
+            Para seleccionar una metodología o mobelo de proceso es de vital imporancia tomar
+            en cuenta cuestiones como:
+
+            \begin{itemize}
+                \item \textbf{Requisitos del proyecto}: Si los requisitos no están claramente
+                    definidos desde el principio o si se anticipan cambios frecuentes, un
+                    enfoque más iterativo como el Modelo Ágil o Modelo Espiral podría ser
+                    más adecuado.
+
+                \item \textbf{Tiempo}: Ser conscientes de los plazos de tiempo requeridos e
+                    identificar si es necesario entregas rápidas.
+
+                \item \textbf{Personal}: La experiencia y la disponibilidad del equipo también
+                    influencian la elección. Equipos con experiencia en metodologías
+                    ágiles pueden optar por Scrum o Kanban.
+
+                \item \textbf{Gestión de Riesgos}: Proyectos con altos riesgos técnicos pueden
+                    beneficiarse del Modelo Espiral, que incorpora análisis de riesgos en
+                    cada iteración.
+
+                \item \textbf{Colaboración y comunicación}: Equipos que valoran la colaboración
+                    y la comunicación continua pueden beneficiarse del Modelo Ágil o Scrum.
+            \end{itemize}
+
+        \item Explicando las razones para su respuesta, y con base en el tipo de sistema a
+            desarrollar, sugiera el modelo de proceso de software genérico más adecuado que
+            se use como fundamento para administrar el desarrollo de los siguientes sistemas:
+
+            \begin{itemize}
+                \item Un sistema para controlar el antibloqueo de frenos en un automóvil
+
+                    Considero que el \textbf{modelo V} sería el más ideal para este caso.
+                    Este modelo cuenta con fases de control de calidad, las cuales me parecen
+                    esenciales para un sistema que se tiene que entregar sin fallos, para
+                    garantizar un correcto funcionamiento y, por ende, mitigar cualquier
+                    tipo de falla al momento de la entrega
+
+                \item Un sistema de realidad virtual para apoyar el mantenimiento de software
+
+                    Pienso que el modelo más adecuado sería el \textbf{modelo espiral} debido
+                    a que su enfoque interactivo permite la creación de prototipos lo cual
+                    permite validar conceptos y funcionalidades del sistema
+
+                \item Un sistema de contabilidad universitario que sustituya a uno existente
+
+                    Desde mi punto de vista, el \textbf{modelo incremental} es el más
+                    apropiado. Este permite desarrollar y desplegar el nuevo sistema en partes,
+                    lo que facilita la transición gradual. Al trabajar por partes es posible
+                    recibir retroalimentación de los usuarios, con el fin de resolver los
+                    problemas del antiguo sistema y mejorar y pulir el nuevo sistema.
+
+                \item Un sistema interactivo de programación de viajes que ayude a los usuarios
+                    a planear viajes con el menor impacto ambiental.
+
+                    Piendo que el \textbf{modelo ágil} es el más óptimo debido a que es
+                    muy probable que las necesidades del usuario y las consideraciones
+                    ambientales cambien de manera constante y rápida. Adicionalmente, este
+                    modelo permite tiempos de entrega cortos lo que es beneficioso para
+                    obtener un producto funcional rápido y mejorar con base en la
+                    retroalimentación de los usuarios
+            \end{itemize}
+
+        \item Explique por qué los sistemas desarrollados como prototipos por lo general no
+            deben usarse como sistemas de producción
+
+            Los prototipos están diseñados para ser herramientas de exploración y
+            validación de conceptos, no para ser productos finales. Usarlos como sistemas
+            de producción implica riesgos significativos en términos de calidad, seguridad,
+            escalabilidad, mantenibilidad y cumplimiento normativo. Por estas razones, es recomendable
+            que los prototipos se utilicen como una base para desarrollar un sistema de producción
+            más robusto y bien diseñado, que cumpla con los estándares necesarios para su
+            uso en entornos críticos y exigentes.
+
+        \item Realiza una tabla comparativa de las metodologias agiles actuales
+
+            \begin{table}[h!]
+                \centering
+                \begin{tabular}{|p{0.15 \textwidth}|p{0.2 \textwidth}|p{0.2 \textwidth}|p{0.2 \textwidth}|p{0.2 \textwidth}|}
+                    \hline
+                    \textbf{Metodología Ágil}         & \textbf{Descripción}                                                                                                                                                                                             & \textbf{Ventajas}                                                                                                        & \textbf{Desventajas}                                                                                                                                                & \textbf{Casos de Uso Comunes}                                                                                \\
+                    \hline
+                    \textbf{Scrum}                    & Un marco ágil que organiza el trabajo en sprints (ciclos de 1-4 semanas) con reuniones diarias (Daily Scrum), y roles específicos como Product Owner, Scrum Master, y equipo de desarrollo.                      & - Iteraciones cortas con entregas frecuentes. - Alta transparencia y colaboración continua. - Flexibilidad ante cambios. & - Requiere alta disciplina y compromiso. - Puede ser difícil de gestionar en equipos grandes. - Puede ser rígido en organizaciones muy jerárquicas.                 & - Desarrollo de software. - Proyectos con requisitos cambiantes. - Equipos pequeños a medianos.              \\
+                    \hline
+                    \textbf{Kanban}                   & Un método visual que gestiona el trabajo a medida que pasa por un proceso. Utiliza un tablero Kanban con columnas que representan etapas del flujo de trabajo y tarjetas que representan tareas.                 & - Visualización clara del flujo de trabajo. - Flexible y fácil de implementar. - Identificación de cuellos de botella.   & - No tiene iteraciones ni roles definidos. - Puede ser menos efectivo en la planificación a largo plazo. - Falta de estructura comparada con otros enfoques ágiles. & - Mantenimiento continuo de sistemas. - Soporte técnico. - Proyectos con flujo de trabajo constante.         \\
+                    \hline
+                    \textbf{Extreme Programming (XP)} & Un enfoque ágil centrado en mejorar la calidad del software y la capacidad de respuesta ante cambios mediante prácticas como desarrollo basado en pruebas (TDD), integración continua, y programación en pareja. & - Alta calidad de código. - Retroalimentación constante. - Enfoque en la satisfacción del cliente.                       & - Requiere alta disciplina en el equipo. - Puede ser costoso en términos de tiempo y recursos. - No siempre es adecuado para proyectos con baja incertidumbre.      & - Proyectos con alta incertidumbre y cambio frecuente. - Desarrollo de software crítico. - Equipos pequeños. \\
+                    \hline
+                \end{tabular}
+                \caption{Comparación de metodologías ágiles}
+            \end{table}
+
+        \item En el contexto de metodologías ágiles, ¿cómo se manejan los cambios en los
+            requisitos del cliente durante el desarrollo del proyecto?
+
+            En las metodologías ágiles, los cambios en los requisitos del cliente se gestionan
+            de manera flexible y adaptativa, permitiendo que el equipo los integre durante
+            el desarrollo mediante ciclos cortos e iterativos. A través de una retroalimentación
+            continua, reuniones de revisión y priorización dinámica del trabajo, el equipo
+            puede ajustar el enfoque en función de las necesidades cambiantes del cliente.
+            La colaboración cercana entre el equipo de desarrollo y el cliente, junto con la
+            flexibilidad en el alcance del proyecto, asegura que el producto final refleje
+            mejor las necesidades reales y emergentes del cliente, reduciendo así el riesgo
+            de malentendidos y entregas inadecuadas.
+    \end{enumerate}
+
+    %% References
+
+    \nocite{*} % to include uncited references of .bib file
+
+    \clearpage
+    \bibliographystyle{apalike}
+
+    % Generated from .bib file
+    \bibliography{ref}
+\end{document}

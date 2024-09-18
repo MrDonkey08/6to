@@ -1,0 +1,148 @@
+\documentclass[11pt, a4paper]{article} % Formato
+
+% Language and font encodings
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\fontfamily{georgia}\selectfont
+
+%% Sets page size and margins
+\usepackage[margin=2.5cm, includefoot]{geometry}
+%\setlength{\columnsep}{0.17in} % page columns separation
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{array} % <-- add this line for m{} column type
+\usepackage[hidelinks]{hyperref} % hyperlinks support
+\usepackage{graphicx} % images support
+%\usepackage{listings} % codeblock support
+%\usepackage{smartdiagram} % diagrams support
+\usepackage[most]{tcolorbox} % callouts support
+%\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[dvipsnames, table, xcdraw]{xcolor} % Tables support
+%\usepackage{zed-csp} % cchemas support
+
+%% Formating
+\usepackage{authblk} % to add authors in maketitle
+%\usepackage{blindtext} % to gen filler text
+\usepackage[figurename=Fig.]{caption} % to change prefix of the image caption
+
+\usepackage{apacite}
+\usepackage{cite} % useful to compress multiple quotations into a single entry
+\usepackage{enumitem}
+\usepackage{fancyhdr} % to set page style
+\usepackage{indentfirst}
+%\usepackage{natbib}
+\usepackage{parskip} % remove first line tabulation
+\usepackage{setspace}
+%\usepackage{titlesec}
+%\usepackage{titling} % to config maketitle
+
+%% Variables
+% Main images
+\newcommand{\logoUdg}{logo-udg.jpg}
+\newcommand{\logoCucei}{logo-cucei.jpg}
+
+% School data
+\newcommand{\universidad}{Universidad de Guadalajara}
+\newcommand{\cede}{Centro Universitario de Ciencias Exactas e Ingenierías}
+
+% Subject data
+\newcommand{\materia}{Ingeniería de Software}
+\newcommand{\carrera}{Ingeniería en Computación}
+\newcommand{\division}{División de Tecnologías para la Integración CiberHumana}
+\newcommand{\theTitle}{2. Modelos del Proceso}
+\newcommand{\profesor}{Thelma Morales Ramírez}
+\newcommand{\seccion}{D07}
+\newcommand{\nrc}{210896}
+\newcommand{\clave}{CB224}
+\newcommand{\startDate}{22 de agosto de 2024}
+
+% Author data
+\newcommand{\theAuthor}{Alan Yahir Juárez Rubio}
+\newcommand{\theAuthorCode}{218517809}
+\newcommand{\theAuthorMail}{alan.juarez5178@alumnos.udg.mx}
+
+%% Declaration
+\date{}
+\graphicspath{ {../../../img/} }
+\addto\captionsspanish{\renewcommand{\contentsname}{Índice}}
+\renewcommand{\lstlistingname}{Código} % to change prefix of the code caption
+\renewcommand{\lstlistlistingname}{Índice de códigos} % to change listings index title
+
+%% Styles
+
+% Color declaration
+\definecolor{greenPortada}{HTML}{69A84F}
+\definecolor{LightGray}{gray}{0.9}
+\definecolor{codegreen}{rgb}{0, 0.6, 0}
+\definecolor{codegray}{rgb}{0.5, 0.5, 0.5}
+\definecolor{codepurple}{rgb}{0.58, 0, 0.82}
+\definecolor{backcolour}{rgb}{0.95, 0.95, 0.92}
+
+% Hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=greenPortada,
+    urlcolor=greenPortada,
+    pdfpagemode=FullScreen,
+}
+
+\urlstyle{same}
+
+% Codeblocks
+\lstdefinestyle{mystyle}{ backgroundcolor=
+\color{backcolour}
+, commentstyle=
+\color{codegreen}
+, keywordstyle=
+\color{magenta}
+, numberstyle=\tiny
+\color{codegray}
+, stringstyle=
+\color{codepurple}
+, basicstyle=\ttfamily\footnotesize, breakatwhitespace=false, breaklines=true, captionpos=b,
+keepspaces=true, numbers=left, numbersep=5pt, showspaces=false, showstringspaces=false, showtabs=false,
+tabsize=2 }
+
+% Tables
+\let\oldtabular\tabular
+\renewcommand{\tabular}{\small\oldtabular}
+\renewcommand{\arraystretch}{1.2} % <-- Adjust vertical spacing
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+
+\lstset{style=mystyle}
+
+%% Spacing
+\newcommand{\nl}{\par
+\vspace{0.4cm}}
+\renewcommand{\baselinestretch}{1.5} % Espaciado de línea anterior
+\setlength{\parskip}{6pt} % Espaciado de línea anterior
+\setlength{\parindent}{0pt} % Sangría
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{3pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{greenPortada}\leaders\hrule height \headrulewidth\hfill}}
+\setlength{\headheight}{50pt} % Ajuste necesario para evitar warnings
+
+% Header
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ \begin{minipage}[c][2cm][c]{1.3cm}\begin{flushleft}\includegraphics[width=5cm, height=1.4cm, keepaspectratio]{\logoUdg}\end{flushleft}\end{minipage} \begin{minipage}[c][2cm][c]{0.5\textwidth} % Adjust the height as needed
+\begin{flushleft}{\materia}\end{flushleft}\end{minipage} }
+\rhead{ \begin{minipage}[c][2cm][c]{0.4\textwidth} % Adjust the height as needed
+\begin{flushright}{\theTitle}\end{flushright}\end{minipage} \begin{minipage}[c][2cm][c]{1.3cm}\begin{flushright}\includegraphics[width=5cm, height=1.4cm, keepaspectratio]{\logoCucei}\end{flushright}\end{minipage} }
+
+% Footer
+\fancyfoot{}
+\lfoot{\small\materia}
+\cfoot{\thepage} % Paginación
+\rfoot{\small Curso impartido por \profesor}
+
+\title{\fontsize{24}{28.8}\selectfont \theTitle}
+\author{\theAuthor}
+
+\affil{}
