@@ -1,0 +1,330 @@
+\input{config.tex}
+
+\begin{document}
+	\setstretch{1} % Interlineado
+
+	\begin{titlepage}
+		\newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+		\centering
+		%\vspace*{-2cm}
+		{\huge\textbf{\universidad}}\par
+		\vspace{0.6cm}
+		{\LARGE{\cede}}
+		\vfill
+
+		\begin{figure}[h]
+			\begin{minipage}[t]{0.45\textwidth}
+				\centering
+				\includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{0.45\textwidth}
+				\centering
+				\includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+		\Large{ \division\vfill \textbf{\carrera}\vfill \textbf{\materia}\par\vspace{3pt} \seccion\ - \clave\ - \nrc\vfill }
+
+		\begin{figure}[h]
+			\centering
+			\begin{minipage}[t]{0.75\textwidth}
+				{\Large \textbf{Profesor}: \profesor\nl \textbf{Alumno}: \theAuthor\nl \textbf{Código}: \theAuthorCode\nl \textbf{Correo}: \theAuthorMail }
+			\end{minipage}
+		\end{figure}
+		\vfill
+		{\LARGE{\textbf{\theTitle}}}
+		\vfill
+
+		\begin{tcolorbox}
+			[colback=red!5!white, colframe=red!75!black]
+			\centering
+			Este documento contiene información sensible.\\ No debería ser impreso o
+			compartido con terceras entidades.
+		\end{tcolorbox}
+		\vfill
+		{\large \startDate}\par
+	\end{titlepage}
+
+	\restoregeometry % end changed margin
+
+	%% Indexes
+	\clearpage
+	\tableofcontents
+
+	%\clearpage
+	%\listoffigures
+
+	%\clearpage
+	%\listoftables
+
+	%\clearpage
+	%\lstlistoflistings
+
+	%% Main Title
+	\clearpage
+	\vspace*{6pt}
+	\begin{center}
+		{\textbf{\huge \theTitle}}
+	\end{center}
+	\vspace*{8pt}
+
+	%% Content
+
+	El estudio de los microprocesadores Intel, desde el icónico 8086 hasta el avanzado
+	Pentium 4, revela la evolución impresionante de la arquitectura de los procesadores a lo
+	largo de las décadas. En el núcleo de cada microprocesador se encuentra el modelo de
+	programación, que define cómo interactúan los registros, las banderas y las
+	instrucciones para llevar a cabo tareas computacionales.
+
+	Comprender estos elementos es esencial para cualquier persona interesada en la
+	arquitectura de computadores y el desarrollo de software a bajo nivel. A lo largo de este
+	documento, se examinará cómo cada registro y bandera ha evolucionado y cómo su
+	funcionalidad ha impactado el rendimiento y la capacidad de los microprocesadores.
+
+	\clearpage
+	\section{Registros}
+
+	Los registros son pequeñas unidades de almacenamiento de datos dentro del microprocesador
+	que se utilizan para realizar operaciones rápidas y eficientes. A diferencia de la
+	memoria RAM, los registros son mucho más rápidos y están directamente integrados en la
+	CPU, lo que les permite acceder y manipular datos con una latencia mínima.
+
+	En los microprocesadores Intel, desde el 8086 hasta el Pentium 4, los registros juegan
+	un papel fundamental en la ejecución de instrucciones, la manipulación de datos y el control
+	del flujo de los programas. Existen varios tipos de registros, cada uno con funciones específicas
+
+	\subsection{Registros de Propósito General}
+
+	\begin{itemize}
+		\item \textbf{AX (Acumulador)}: Es utilizado para operaciones aritméticas.
+
+			En los microprocesadores 80386 y superiores, el registro EAX puede también
+			guardar la dirección de desplazamiento de una posición en el sistema de
+			memoria.
+
+		\item \textbf{BX (Índice Base)}: Guarda la dirección de desplazamiento de una posición
+			en el sistema de memoria.
+
+			En el 80386 y superiores, EBX también puede direccionar datos de la memoria.
+
+		\item \textbf{CX (Contador)}: Guarda la cuenta de varias instrucciones (e.g. bucles).
+			También cuenta los desplazamientos en operaciones de rotación y desplazamiento
+			de bits.
+
+			En el 80386 y superiores, el registro ECX también puede guardar la dirección
+			de desplazamiento de datos de la memoria.
+
+		\item \textbf{DX (Datos)}: Se usa en operaciones de entrada/salida y también en algunas
+			operaciones aritméticas, especialmente en multiplicaciones y divisiones donde
+			se almacena el resultado o los residuos.
+
+			En el 80386 y superiores, este registro también puede direccionar datos de la memoria.
+	\end{itemize}
+
+	\subsubsection{Apuntadores e Índices}
+
+	\begin{itemize}
+		\item \textbf{BP (Apuntador de la Base)}: Usado principalmente para acceder a los datos
+			en la pila durante la ejecución de una subrutina. Apunta a una posición de
+			memoria en todas las versiones del microprocesador para las transferencias de
+			datos de memoria.
+
+		\item \textbf{DI (Índice de Destino)}: Direcciona datos de destino de cadena para las
+			instrucciones de cadenas. También funciona como un registro de propósito
+			general de 32 y 16 bits.
+
+		\item \textbf{SI (Índice de Origen)}: Es utilizado para direccionar datos de cadena
+			de origen para las instrucciones de cadenas. Al igual que DI, también funciona
+			como un registro de propósito general de 32 y 16 bits.
+	\end{itemize}
+
+	\subsection{Registros de Propósito Especial}
+
+	\begin{itemize}
+		\item \textbf{IP (Apuntador de Instrucciones)}: Almacena la dirección de la siguiente
+			instrucción a ejecutar. Este puede ser modificado mediante un salto (jump) o
+			una llamada (call).
+
+			Este registro es IP cuando el microprocesador opera en modo real y 32 bits
+			cuando el 80386 y superiores operan en modo protegido.
+
+		\item \textbf{SP (Apuntador de Pila)}: Apunta a la cima de la pila. Se usa junto
+			con SS para la gestión de la pila.
+
+		\item \textbf{FLAGS (Banderas)}: Contienen banderas que indican el estado del procesador
+			y el resultado de las operaciones aritméticas.
+
+			Los microprocesadores 80386 y superiores contienen un registro EFLAG.
+	\end{itemize}
+
+	\subsection{Registros de Segmento}
+
+	\begin{itemize}
+		\item \textbf{CS (Código)}: Define la dirección base del segmento de memoria que contienen
+			el ejecutable.
+
+			El segmento de código está limitado a 64 KB de memoria en los microprocesadores
+			del 8088 al 80286, ya 4 GB en los 80386 y superiores cuando operan en modo
+			protegido.
+
+		\item \textbf{DS (Datos)}: Contiene la sección en memoria que contiene los datos utilizados
+			por un programa. Se accede a los datos en el segmento mediante una dirección
+			de desplazamiento o el contenido.
+
+		\item \textbf{ES (Extra)}: Segmento de datos adicional que puede ser tuilizado para
+			operaciones de cadena y otras operaciones que requieren un segmento extra de datos.
+
+		\item \textbf{FS y GS}: Estos son registros de segmento suplementario, disponibles
+			en los microprocesadores del 80386 al Pentium 4 para que los programas puedan
+			acceder a dos segmentos de memoria adicionales.
+
+		\item \textbf{SS (Pila)}: Contiene la dirección base del segmento de memoria que define
+			la pila, utilizada para almacenar direcciones de retorno, parámetros de subrutinas
+			y otros datos temporales.
+	\end{itemize}
+
+	\clearpage
+	\section{Bits de Registro de Bandera}
+
+	Las banderas sonn bits de un registro especial llamado registro de estado o registro de
+	banderas. Estos bits indican el estado o resultado de diversas operaciones aritméticas
+	y lógicas realizadas por la unidad central de procesamiento (CPU). Las banderas permiten
+	que el procesador tome decisiones basadas en esos resultados, controlando así el flujo
+	de un programa.
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\flags}
+		\caption{El conteo de los registros EFLAG y FLAG para la familia completa de
+		microprocesadores 80x86 y Pentium}
+	\end{figure}
+
+	\subsection{8086/8088/80186/80188 en adelante}
+
+	\begin{itemize}
+		\item \textbf{C (Acarreo)}: Este guarda el valor del acarreo después de la suma, o
+			la sustracción después de la resta. La bandera de acarreo también indica condiciones
+			de error, según lo indiquen algunos programas y procedimientos.
+
+		\item \textbf{P (Paridad)}: Indica si el número de bits de 1 en el resultado de la
+			última operación es par (PF = 1) o impar (PF = 0).
+
+		\item \textbf{A (Acarreo Auxiliar)}: Guarda el acarreo (medio acarreo) después de la
+			suma, o la sustracción después de la resta entre las posiciones de bit 3 y 4
+			del resultado. Este bit de bandera altamente especializado lo comprueban las instrucciones
+			DAA y DAS para ajustar el valor de AL después de una suma o resta BCD.
+
+		\item \textbf{Z (Cero)}: Indica que el resultado de una operación aritmética o lógica
+			es cero. Si Z = 1, el resultado es cero; si Z = 0, el resultado no es cero.
+
+		\item \textbf{S (Signo)}: Guarda el signo aritmético del resultado después de la ejecución
+			de una instrucción aritmética o lógica. Si S = 1, el bit de signo está activado
+			o es negativo; si S = 0, el bit de signo está desactivo o es positivo.
+
+		\item \textbf{T (Trampa)}: Habilita el atrapamiento a través de una característica
+			de depuración intregrada en el chip. Si la bandera T está habilitada (1), el microprocesador
+			interrumple el flujo del proggrama basándose en las condiciones indicadas por los
+			registros de depuración y los registros de control. Si la bandera T es un 0
+			lógico, se deshabilita la característica de atrapamiento (depuración).
+
+		\item \textbf{I (Interrupción)}: La bandera de interrupción controla la operación de
+			la terminal de entrada INTR (petición de interrupción). Si I = 1, se habilita la
+			terminal INTR; si I = 0, se deshabilita la terminal INTR. El estado del bit de
+			bandera I se controla mediante las instrucciones STI (establecer bandera I) y
+			CLI (borrar bandera I).
+
+		\item \textbf{D (Dirección)}: La bandera de dirección selecciona el modo de incremento
+			o de decremento para los registros DI y/o SI durante las instrucciones de cadena.
+			Si D = 1, los registros se decrementan automáticamente; si D = 0, los registros
+			se incrementan automáticamente. La bandera D se establece con la instrucción
+			STD (establecer dirección) y se borra con la instrucción CLD (borrar dirección).
+
+		\item \textbf{O (Desbordamiento)}: Un desbordamiento ocurre cuando se suman o restan
+			números con signo. Un desbordamiento indica que el resultado ha excedido la
+			capacidad de la máquina. En las operaciones sin signo se ignora esta bandera.
+	\end{itemize}
+
+	\subsection{80286 en adelante}
+
+	\begin{itemize}
+		\item \textbf{IOPL (Nivel de Privilegio de E/S)}: se utiliza en operación de modo protegido
+			para seleccionar el nivel de privilegio para los dispositivos de E/S. Si el
+			nivel de privilegio actual es mayor o de más confianza que el IOPL, la operación
+			de E/S se ejecuta sin impedimento. Si el IOPL es menor que el nivel de
+			privilegio actual se produce una interrupción, haciendo que se suspenda la ejecución.
+			Hay que tener en cuenta que un IOPL de 00 es el más alto o de mayor confianza,
+			y un IOPL de 11 es el más bajo o de menor confianza.
+
+		\item \textbf{NT (Tarea Anidada)}: indica que la tarea actual está anidada dentro de
+			otra tarea en operación de modo protegido. Esta bandera se establece cuando la
+			tarea se anida mediante software.
+	\end{itemize}
+
+	\subsection{80386/8986DX en adelante}
+
+	\begin{itemize}
+		\item \textbf{RF (Continuación)}: La bandera de continuación se utiliza con la depuración
+			para controlar la continuación de la ejecución después de la siguiente instrucción.
+
+		\item \textbf{VM (Modo Virtual)}: El bit de bandera VM selecciona la operación en modo
+			virtual en un sistema de modo protegido. Un sistema de modo virtual permite
+			que coexistan varias particiones de memoria de DOS de 1 Mbyte de longitud en
+			el sistema de memoria. En esencia, esto permite al programa del sistema
+			ejecutar varios programas de DOS. VM se utiliza para simular el DOS en el entorno
+			moderno Windows.
+	\end{itemize}
+
+	\subsection{80486X}
+
+	\begin{itemize}
+		\item \textbf{AC (Comprobación de Alineación)}: se activa si se direcciona una palabra
+			o doble palabra en un límite que no sea de palabra o de doble palabra. Sólo el
+			microprocesador 80486SX contiene el bit de comprobación de alineación que es
+			utilizado para sincronización principalmente por el coprocesador numérico
+			80487SX que lo acompaña.
+	\end{itemize}
+
+	\subsection{Pentium/Pentium 4 en adelante}
+
+	\begin{itemize}
+		\item \textbf{VIF (Interrupción Virtual)}: Es una copia del bit de bandera de interrupción
+			disponible para los microprocesadores del Pentium al Pentium 4.
+
+		\item \textbf{VIP (Interrupción Virtual Pendiente)}: Proporciona información sobre
+			una interrupción en modo virtual para los microprocesadores del Pentium al Pentium
+			4. Se utiliza en entornos multitarea para proporcionar banderas de interrupción
+			virtual al sistema operativo, además de información de interrupciones
+			pendientes.
+
+		\item \textbf{ID (Identificación)}: ndica que los microprocesadores del Pentium al
+			Pentium 4 soportan la instrucción CPUID. Esta instrucción proporciona
+			información al sistema sobre el microprocesador Pentium, como su número de versión
+			y el fabricante.
+	\end{itemize}
+
+	\clearpage
+
+	El recorrido a través de los registros y banderas de los microprocesadores Intel, desde
+	el 8086 hasta el Pentium 4, permite apreciar la complejidad y la sofisticación
+	alcanzadas en el diseño de la arquitectura x86. A lo largo de los años, Intel ha
+	refinado y ampliado las capacidades de sus procesadores, adaptando y mejorando el modelo
+	de programación para satisfacer las demandas crecientes de la industria de la computación.
+
+	La evolución de los registros y banderas no solo refleja avances tecnológicos, sino
+	también un compromiso constante con la compatibilidad y la optimización del
+	rendimiento. Comprender estos elementos fundamentales proporciona una base sólida para
+	explorar temas más avanzados en arquitectura de computadoras y programación a bajo nivel,
+	y es un testimonio del progreso continuo en el diseño de microprocesadores.
+
+	%% References
+
+	\nocite{*} % to include uncited references of .bib file
+
+	\clearpage
+	\bibliographystyle{ieeetr}
+
+	% Generated from .bib file
+	\bibliography{ref}
+\end{document}
