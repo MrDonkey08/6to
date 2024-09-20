@@ -1,0 +1,470 @@
+\input{config.tex}
+
+\begin{document}
+    \setstretch{1} % Interlineado
+
+    \begin{titlepage}
+        \newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+        \centering
+        %\vspace*{-2cm}
+        {\huge\textbf{\universidad}}\par
+        \vspace{0.6cm}
+        {\LARGE{\cede}}
+        \vfill
+
+        \begin{figure}[h]
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+            \end{minipage}
+        \end{figure}
+        \vfill
+
+        \Large{ \division\vfill \textbf{\carrera}\vfill \textbf{\materia}\par\vspace{3pt} \seccion\ - \clave\ - \nrc\vfill }
+
+        {\LARGE{\textbf{\theTitle}}}
+        \vfill
+
+	\begin{figure}[h]
+		\centering
+		\begin{minipage}[t]{0.75\textwidth}
+			{\Large
+				\textbf{Integrantes:}\par\vspace{8pt}
+				\begin{itemize}
+					\item \theAuthor\ - \theAuthorCode
+					\item \bAuthor\ - \bAuthorCode
+					\item \cAuthor\ - \cAuthorCode
+					\item \dAuthor\ - \dAuthorCode
+					\item \eAuthor\ - \eAuthorCode
+				\end{itemize}
+			}
+		\end{minipage}
+	\end{figure}\vfill
+
+
+        \begin{tcolorbox}
+            [colback=red!5!white, colframe=red!75!black]
+            \centering
+            Este documento contiene información sensible.\\
+			No debería ser impreso o compartido con terceras entidades.
+        \end{tcolorbox}
+        \vfill
+        {\large \startDate}\par
+    \end{titlepage}
+
+    \restoregeometry % end changed margin
+
+    %% Indexes
+    \clearpage
+    \tableofcontents
+
+    \clearpage
+    \listoffigures
+
+    \clearpage
+    %\listoftables
+
+    %\clearpage
+    %\lstlistoflistings
+
+    %% Main Title
+    %% Main Title
+    \clearpage
+    \vspace*{6pt}
+	\centerline{\textbf{\huge \theTitle}}
+    \vspace*{8pt}
+
+    %% Content
+
+	\section{Recolección de Datos}
+
+	\subsection{Entorno}
+
+	\begin{itemize}
+		\item ¿En qué Sistemas Operativos se piensa utilizar el programa?
+
+			El programa será desarrollado de tal manera que pueda ser utilizado en sistemas
+			operativos Windows, Linux y MacOs.
+
+		\item ¿En qué dispositivos se piensa utilizar el programa?
+
+			El programa se utilizará con cualquier dispositivo a través de un navegador web,
+			dispositivos tales como celulares, tablets y computadoras.
+
+		\item ¿Qué tipo de aplicación se desea desarrollar (e.g.~de escritorio, móvil,
+			web)?
+
+			El tipo de aplicación que se desarrollará será una aplicación web.
+	\end{itemize}
+
+	\subsection{Usuarios}
+
+	\begin{itemize}
+		\item ¿A quiénes va dirigido el programa?
+
+			Los usuarios a los que va dirigido el programa específicamente son para alumnos
+			de CUCEI que cuenten con la problemática de encontrar un proyecto modular,
+			llevar a cabo su proyecto modular y bucar integrantes de equipo.
+
+		\item ¿Cuáles son los tipos de usuario dentro del sistema y cuáles son sus principales
+			funciones dentro del sistema?
+
+			Los tipos de usuario que existirán dentro del sistema serán:
+
+			\begin{itemize}
+				\item Estudiantes
+
+					\begin{itemize}
+						\item Líderes de equipo: Creará el proyecto, reclutará a nuevos integrantes,
+							asignar tareas.
+
+						\item Integrantes del equipo: Unirse a un proyecto y gestionar cada
+							una de sus tareas.
+					\end{itemize}
+
+				\item Asesor: Visualizar el progreso del proyecto y convocar reuniones con
+					el equipo.
+			\end{itemize}
+
+		\item ¿Qué datos necesitará el usuario para registrarse en la plataforma?
+
+			\begin{itemize}
+				\item Nombre
+
+				\item Código de estudiante
+
+				\item Correo institucional: Validación
+
+				\item Contacto
+
+				\item Carrera
+
+				\item Foto
+
+				\item Clave
+			\end{itemize}
+
+		\item ¿Cuáles datos del usuario serán públicos y cuáles privados?
+
+			Todos los datos serán públicos, a excepción de los datos de inicio de sesión
+
+		\item ¿Cómo se relacionan cada uno de los tipos de usuario entre sí?
+
+			Se espera que el líder del proyecto pueda tener control de los usuarios partícipes
+			en su proyecto, que pueda visualizar las descripciones de cada usuario y
+			pueda admitir solicitudes de usuarios; por otro lado los usuarios podrán visualizar
+			los proyectos existentes en la plataforma, además de los integrantes, líder y
+			asesor que lo conforman; por último el asesor podrá visualizar los proyectos
+			(esto incluye participantes, líderes, descripción de proyecto, etc).
+
+		\item ¿Qué datos se mostrarán en la tarjeta de presentación del usuario?
+
+			\begin{itemize}
+				\item Nombre
+
+				\item Código de estudiante
+
+				\item Correo
+
+				\item Semestre
+
+				\item Habilidades técnicas y blandas
+
+				\item Promedio
+
+				\item Status (con equipo o sin equipo)
+			\end{itemize}
+	\end{itemize}
+
+	\subsection{Datos del Proyecto}
+
+	\begin{itemize}
+		\item ¿Qué datos se deben proporcionar obligatoria y opcionalmente acerca del proyecto?
+
+			Los datos de carácter obligatorio para el registro del proyecto serán:
+
+			\begin{itemize}
+				\item Nombre
+
+				\item Descripción del proyecto
+
+				\item Áreas de desarrollo
+
+				\item Cupos
+
+				\item Estado
+
+				\item Conocimientos requeridos
+
+				\item Nivel de innovación
+			\end{itemize}
+
+			Los datos de carácter opcional para el registro del proyecto serán:
+
+			\begin{itemize}
+				\item Asesor
+
+				\item Logo personalizado
+			\end{itemize}
+
+		\item ¿Cuáles datos de un proyecto deben ser públicos y cuáles privados?
+
+			Se espera que sea de carácter privado la parte de la documentación,
+			planteamiento o la descripción completa del proyecto, que se espera que esta
+			pueda ser visible una vez y el usuario forme parte del equipo.
+
+		\item ¿El usuario puede optar por cuáles datos de su proyecto serán públicos y
+			cuáles privados?
+
+			No, el sistema se encargará de mostrar los datos privados del proyecto
+			solamente a los integrantes del equipo.
+
+		\item ¿Para acceder a la plataforma será obligatorio acceder con una cuenta?
+
+			Sí, el usuario necesitará tener una cuenta para poder acceder, esto con la finalidad
+			de que pueda visualizar el estatus de cada proyecto en tiempo real y en todo
+			caso la información de los distintos proyectos existentes.
+
+		\item ¿Para crear un proyecto será necesario contar con asesor?
+
+			No, puesto que se espera que el equipo pueda subir su propuesta de ``proyecto
+			modular'' y este pueda tener la opción de que el asesor escoja participar en
+			el proyecto o incluso que el equipo pueda conseguir un asesor a lo largo del
+			desarrollo.
+	\end{itemize}
+
+	\subsection{Búsqueda}
+
+	\begin{itemize}
+		\item ¿Cómo se ordenarán los proyectos por defecto?
+
+			Los proyectos tendrán algunos filtros, ya que los que ya estén completos los
+			usuarios del equipo, se pasarán hasta abajo que ya no aparezca, se mostraran
+			los que tengan menos usuarios o por orden alfabético, basándonos en el nombre
+			del proyecto
+
+		\item ¿Qué datos se mostrarán en la tarjeta del proyecto?
+
+			Se mostrará el nombre del proyecto, junto con cuántos integrantes están ya
+			dentro del proyecto, innovación, que carreras lo pueden conformar y una
+			breve descripción del propio proyecto para que el usuario vea si le agrada
+			el proyecto.
+
+		\item ¿Qué filtros de búsqueda se podrán aplicar?
+
+			Algunos de los filtros que se podrían aplicar son: tecnologías, carreras a las
+			que aplica, cantidad de integrantes restantes, estado del proyecto
+
+		\item ¿Un líder de equipo tendrá la posibilidad de buscar dentro de la plataforma
+			a integrantes del equipo?
+
+			Es una función que se busca implementar, sin embargo, si este provoca que el
+			proyecto sufra un retraso, se optará por no implementarlo
+	\end{itemize}
+
+	\subsection{Inicio de Sesión}
+
+	\begin{itemize}
+		\item ¿Cómo se maneja la recuperación de la contraseña?
+
+			El proceso de recuperación será mediante el correo de la persona, al cual se
+			le hará llegar un correo con las instrucciones a seguir para la recuperación
+			de la cuenta
+
+		\item ¿La autenticación de 2 pasos será obligatoria?
+
+			La autenticación en dos pasos no será estrictamente obligatoria, puesto si
+			el usuario quiere reforzar su seguridad puede habilitar esta opción.
+	\end{itemize}
+
+	\clearpage
+	\section{Clasificación y Priorización de los Requerimientos del Sistema}
+
+	\subsection{Requerimientos Funcionales}
+
+	\subsubsection{Registro de Usuarios}
+
+	\begin{enumerate}
+		\item El sistema permitirá a los alumnos registrarse mediante un formulario en
+			el que les solicitará datos tales como nombre, código de estudiante, correo electrónico,
+			número de contacto, carrera, contraseña. Adicionalmente tendrán la opción de
+			añadir una foto de perfil
+
+		\item El sistema permitirá a los asesores registrarse mediante un formulario el
+			cual les solicitará datos como nombre, código de profesor, correo electrónico,
+			departamento y número de contacto. Adicionalmente tendrán la opción de añadir
+			una foto de perfil
+
+		\item El formulario de registro incluirá campos opcionales como área de especialización,
+			experiencia previa, y una breve biografía para hacer coincidir mejor las solicitudes
+			con las necesidades del proyecto.
+	\end{enumerate}
+
+	\subsubsection{Inicio de Sesión}
+
+	\begin{enumerate}
+		\item Los usuarios registrados podrán acceder a sus cuentas mediante un sistema
+			de inicio de sesión seguro.
+
+		\item Se incluirá una opción para la recuperación de contraseñas a través del correo
+			electrónico en caso de que el usuario olvide sus credenciales.
+
+		\item Los usuarios pueden optar por configurar su inicio de sesión con autenticación
+			de 2 pasos, esto con el fin de garantizar una mayor protección de la cuenta.
+	\end{enumerate}
+
+	\subsubsection{Búsqueda de Proyectos}
+
+	\begin{enumerate}
+		\item El sistema permitirá a los usuarios realizar búsquedas de proyectos modulares
+			disponibles utilizando filtros como palabras clave, categoría, áreas de interés
+			o habilidades requeridas.
+
+		\item Los resultados de la búsqueda mostrarán detalles como el nombre del proyecto,
+			una descripción general, requisitos técnicos o de experiencia, el número de
+			vacantes disponibles, y el estatus actual del proyecto (abierto o cerrado a
+			nuevas solicitudes).
+
+		\item Los proyectos destacados o recomendados según los intereses del usuario también
+			serán visibles en la interfaz de búsqueda.
+	\end{enumerate}
+
+	\subsubsection{Creación e Integración de Proyectos}
+
+	\begin{enumerate}
+		\item Un alumno solamente podrá pertenecer a un único proyecto a la vez.
+
+		\item Los alumnos tendrán la posibilidad de crear un proyecto y, por ende, obtendrán
+			el rol de líder dentro del proyecto, permitiéndoles administrar el proyecto
+			y los integrantes del equipo.
+
+		\item Los alumnos tendrán la posibilidad de integrarse a un equipo a través del
+			uso de las solicitudes de admisión y la bandeja de notificaciones.
+	\end{enumerate}
+
+	\subsubsection{Gestión de Actividades}
+
+	\begin{enumerate}
+		\item Los líderes de proyecto tendrán acceso a un panel de administración donde
+			podrán gestionar todas las actividades relacionadas con el proyecto.
+
+		\item Asignación de tareas específicas a los integrantes del equipo y el seguimiento
+			del progreso de dichas tareas.
+
+		\item Los integrantes del equipo tendrán la opción de gestionar cada una sus tareas
+			asignadas a través de un canvas, en el que les permitirá catalogarlas como
+			pendientes, en proceso y finalizadas.
+	\end{enumerate}
+
+	\subsubsection{Bandeja de Solicitudes}
+
+	\begin{enumerate}
+		\item Los líderes de proyecto podrán gestionar las solicitudes de los usuarios
+			interesados en unirse a sus proyectos.
+
+		\item Las solicitudes recibidas serán visualizadas en una bandeja dedicada,
+			donde el líder podrá revisar la información del solicitante (perfil,
+			experiencia, intereses) y aceptar o rechazar la solicitud.
+
+		\item Los líderes tendrán la opción de eliminar a un integrante del equipo y,
+			a su vez, el integrante del equipo tendrá la posibilidad de abandonar el equipo.
+
+		\item Se incluirá un historial de decisiones para un mejor seguimiento.
+
+			Adicionalmente, el líder tendrá la opción de proporcionar retroalimentación
+			al solicitante en caso de rechazo.
+	\end{enumerate}
+
+	\subsubsection{Agenda de Reuniones}
+
+	\begin{enumerate}
+		\item Los integrantes recibirán notificaciones automáticas sobre la creación,
+			cancelación o modificación de reuniones.
+
+		\item El asesor podrá programar reuniones, las cuales podrán ser aceptadas o, en
+			su defecto, rechazadas por los alumnos debido al no serles posible asistir a
+			dicha reunión. En caso de ser rechazada una solicitud el asesor podrá proponer
+			otra reunión en un horario diferente.
+	\end{enumerate}
+
+	\subsection{Requerimientos No Funcionales}
+
+	\subsubsection{Interfaz de Usuario (UI)}
+
+	\begin{enumerate}
+		\item La interfaz debe ser intuitiva y estéticamente agradable, facilitando la
+			navegación a los usuarios sin necesidad de conocimientos técnicos avanzados.
+
+		\item Se utilizarán estándares de diseño como Material Design, con el fin de
+			asegurar coherencia visual y usabilidad.
+
+		\item El diseño debe adaptarse a diferentes tamaños de pantalla, garantizando
+			una experiencia fluida tanto en dispositivos móviles como en ordenadores de
+			escritorio.
+	\end{enumerate}
+
+	\subsubsection{Temas y Colores}
+
+	\begin{enumerate}
+		\item Se busca que la paleta de colores sea mayormente colores neutros que ayudan
+			una mejor importancia a los debidos elementos además de un apoyo a la visualización
+			del usuario.
+	\end{enumerate}
+
+	\subsubsection{Íconos y Botones}
+
+	\begin{enumerate}
+		\item Se implementarán íconos fácilmente reconocibles para las funciones principales,
+			acompañados de botones claros y consistentes que ofrezcan retroalimentación
+			visual (como cambios de color o animaciones sutiles) para indicar la
+			interactividad.
+
+		\item Cada ícono y botón debe estar alineado con las convenciones de diseño,
+			reduciendo la curva de aprendizaje para los nuevos usuarios.
+	\end{enumerate}
+
+	\subsubsection{Privacidad y Seguridad de Datos}
+
+	\begin{enumerate}
+		\item Privacidad: El sistema debe cumplir con las regulaciones de privacidad
+			de datos, asegurando que la información personal de los usuarios y los proyectos
+			se almacene y procese de manera confidencial.
+
+		\item Seguridad: Todos los datos sensibles, como contraseñas y detalles personales,
+			se almacenarán en bases de datos encriptadas. Las transferencias de datos entre
+			el cliente y el servidor deben realizarse bajo protocolos seguros como HTTPS.
+	\end{enumerate}
+
+	\subsubsection{Rendimiento}
+
+	\begin{enumerate}
+		\item El sistema debe ser eficiente, respondiendo a las interacciones del
+			usuario de manera rápida.
+
+		\item Los tiempos de carga de las páginas y funciones críticas no deben superar
+			los 5 segundos bajo condiciones normales de operación.
+	\end{enumerate}
+
+	\subsubsection{Almacenamiento de Datos}
+
+	\begin{enumerate}
+		\item El sistema utilizará una base de datos relacional o no relacional, según las necesidades del proyecto, que ofrezca redundancia y respaldo automático de datos.
+
+		\item Se garantizará la integridad de los datos mediante la implementación de técnicas de rollback y copias de seguridad periódicas, para evitar la pérdida de información
+	\end{enumerate}
+
+	\clearpage
+	\section{Priorización de Requerimientos}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\moscow}
+		\caption{Matriz de Priorización de MoSCoW}
+	\end{figure}
+
+\end{document}
