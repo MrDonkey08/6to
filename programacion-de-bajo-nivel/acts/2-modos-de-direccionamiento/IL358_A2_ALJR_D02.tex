@@ -1,0 +1,127 @@
+\input{config.tex}
+
+\begin{document}
+    \setstretch{1} % Interlineado
+
+    \begin{titlepage}
+        \newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+        \centering
+        %\vspace*{-2cm}
+        {\huge\textbf{\universidad}}\par
+        \vspace{0.6cm}
+        {\LARGE{\cede}}
+        \vfill
+
+        \begin{figure}[h]
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+            \end{minipage}
+        \end{figure}
+        \vfill
+
+        \Large{ \division\vfill \textbf{\carrera}\vfill \textbf{\materia}\par\vspace{3pt} \seccion\ - \clave\ - \nrc\vfill }
+
+        {\LARGE{\textbf{\theTitle}}}
+        \vfill
+
+		\begin{figure}[h]
+			\centering
+			\begin{minipage}[t]{0.75\textwidth}
+				{\Large
+					\textbf{Profesor}: \profesor\nl
+					\textbf{Alumno}: \theAuthor\nl
+					\textbf{Código}: \theAuthorCode\nl
+					\textbf{Correo}: \theAuthorMail}
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+        \begin{tcolorbox}
+            [colback=red!5!white, colframe=red!75!black]
+            \centering
+            Este documento contiene información sensible.\\
+			No debería ser impreso o compartido con terceras entidades.
+        \end{tcolorbox}
+        \vfill
+        {\large \startDate}\par
+    \end{titlepage}
+
+    \restoregeometry % end changed margin
+
+    %% Indexes
+    \clearpage
+    \tableofcontents
+
+    \clearpage
+    %\listoffigures
+
+    \clearpage
+    %\listoftables
+
+    %\clearpage
+    \lstlistoflistings
+
+    %% Main Title
+    \clearpage
+    \vspace*{6pt}
+	\centerline{\textbf{\huge \theTitle}}
+    \vspace*{8pt}
+
+    %% Content
+
+	\section{Introducción}
+
+	En ensamblador, la mayoría de las instrucciones requieren operandos para ser
+	procesados. Una dirección de operando provee la ubicación, en dónde el dato
+	a ser procesado es almacenado.
+
+	Cuando una operación requiere dos operandos, por lo general el primero es el
+	destino, el cual contiene datos en un registro o en una dirección de
+	memoria; el segundo operando es la fuente. La fuente contiene ya sea el dato
+	a ser liberado (direccionamiento inmediato) o la dirección (en registro o
+	memoria) del dato.
+
+	Existen varios tipos de modos de direccionamiento, entre los más comunes se
+	encuentran:
+
+	\begin{itemize}
+		\item Direccionamiento de registro
+		\item Direccionamiento inmediato
+		\item Direccionamiento de memoria
+	\end{itemize}
+
+	\clearpage
+	\section{Implementación}
+
+	\lstinputlisting[
+		language=nasm,
+		style=nasm,
+		caption=Implementación de todos los modos de direccionamiento
+	]{./src/main.asm}
+
+	\clearpage
+	\section{Conclusión}
+
+	En conclusión, en ensamblador, es de vital importancia entender los modos de
+	direccionamiento, en especial, aquellos que son más comunes, tales como el
+	de registro, el inmediato y el de memoria, debido a que son necesarios para
+	trabajar con ensamblador, ya que practicamente son el núcleo del
+	ensamblador, debido a que nos permite acceder y operar los datos de
+	distintas formas para realizar distintas tareas.
+
+	%% References
+
+	\nocite{*} % to include uncited references of .bib file
+
+	\clearpage
+	\bibliographystyle{ieeetr}
+
+	% Generated from .bib file
+	\bibliography{ref}
+\end{document}
