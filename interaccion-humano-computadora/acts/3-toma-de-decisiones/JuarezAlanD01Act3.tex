@@ -1,0 +1,227 @@
+\input{config.tex}
+
+\begin{document}
+    \setstretch{1} % Interlineado
+
+    \begin{titlepage}
+        \newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+        \centering
+        %\vspace*{-2cm}
+        {\huge\textbf{\universidad}}\par
+        \vspace{0.6cm}
+        {\LARGE{\cede}}
+        \vfill
+
+        \begin{figure}[h]
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+            \end{minipage}
+        \end{figure}
+        \vfill
+
+        \Large{
+			\division\vfill
+			\textbf{\carrera}\vfill
+			\textbf{\materia}\par\vspace{3pt}
+			\seccion\ - \clave\ - \nrc\vfill
+		}
+
+        {\LARGE{\textbf{\theTitle}}}
+        \vfill
+
+		\begin{figure}[h]
+			\centering
+			\begin{minipage}[t]{0.75\textwidth}
+				{\Large
+					\textbf{Profesor}: \profesor\nl
+					\textbf{Alumno}: \theAuthor\nl
+					\textbf{Código}: \theAuthorCode\nl
+					\textbf{Correo}: \theAuthorMail }
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+        \begin{tcolorbox}
+            [colback=red!5!white, colframe=red!75!black]
+            \centering
+            Este documento contiene información sensible.\\
+			No debería ser impreso o compartido con terceras entidades.
+        \end{tcolorbox}
+        \vfill
+        {\large \startDate}\par
+    \end{titlepage}
+
+    \restoregeometry % end changed margin
+
+    %% Indexes
+    \clearpage
+    \tableofcontents
+
+    \clearpage
+    \listoffigures
+
+    \clearpage
+    %\listoftables
+
+    %\clearpage
+    %\lstlistoflistings
+
+    %% Main Title
+    \clearpage
+    \vspace*{6pt}
+	\centerline{\textbf{\huge \theTitle}}
+    \vspace*{8pt}
+
+    %% Content
+
+	\section{Análisis de Sesgos Cognitivos en Interfaces UX}
+
+	En el diseño de interfaces de usuario (UX), los sesgos cognitivos afectan la
+	toma de decisiones de los usuarios. A continuación, se describen tres sesgos
+	cognitivos comunes y cómo influyen en las interacciones con interfaces
+	digitales:
+
+	\subsection{Sesgo de Anclaje}
+
+	El \textbf{sesgo de anclaje} se refiere a la tendencia a depender en gran
+	medida de la primera información que se recibe (el ``ancla'') al tomar
+	decisiones. En interfaces UX, la primera impresión de un precio o
+	característica puede influir en cómo los usuarios perciben el valor o la
+	relevancia de un producto o servicio.
+
+	\begin{itemize}
+		\item \textbf{Ejemplo}: En una tienda en línea, si un producto muestra un
+			precio original alto junto a un precio rebajado, los usuarios pueden percibir
+			que el descuento es significativo, incluso si no lo es.
+	\end{itemize}
+
+	\subsection{Sesgo de Confirmación}
+
+	El \textbf{sesgo de confirmación} ocurre cuando los usuarios buscan,
+	interpretan y recuerdan información que confirme sus creencias previas, ignorando
+	datos que podrían contradecirlas. En el contexto UX, esto puede reforzarse cuando
+	las plataformas recomiendan contenido basado en interacciones anteriores del usuario.
+
+	\begin{itemize}
+		\item \textbf{Ejemplo}: En una plataforma de streaming, las recomendaciones
+			personalizadas tienden a reforzar los gustos y preferencias previas, limitando
+			la exploración de nuevos géneros.
+	\end{itemize}
+
+	\subsection{Efecto de Recencia}
+
+	El \textbf{efecto de recencia} describe la tendencia de las personas a
+	recordar mejor la información que se presenta al final de una serie de
+	elementos. En UX, las últimas opciones o productos mostrados pueden tener un
+	mayor impacto en la decisión del usuario.
+
+	\begin{itemize}
+		\item \textbf{Ejemplo}: En una lista de productos en una tienda en línea,
+			los productos más recientes o visibles al final de la página pueden
+			influir más en la decisión de compra del usuario.
+	\end{itemize}
+
+	\section{Análisis de un Caso de Estudio: Amazon}
+
+	Amazon es una de las plataformas de comercio electrónico más populares del mundo.
+	Utiliza diversas técnicas de UX que influyen en la toma de decisiones de los
+	usuarios, y en este análisis exploraremos cómo los sesgos cognitivos (anclaje,
+	confirmación y recencia) afectan la experiencia de compra.
+
+	\subsection{Sesgo de Anclaje en Amazon}
+
+	Amazon utiliza precios ``rebajados'' en gran parte de sus productos, mostrando
+	el precio original tachado junto al precio con descuento. Esta estrategia de anclaje
+	hace que los usuarios perciban que están obteniendo una oferta especial, aun
+	cuando el descuento no sea significativo. El primer precio que ven (el
+	original) funciona como ``ancla'' para su percepción del valor del producto.
+
+	\subsection{Sesgo de Confirmación en Amazon}
+
+	Las recomendaciones de productos en Amazon están personalizadas en función de
+	compras anteriores o productos vistos. Esto refuerza las creencias previas del
+	usuario sobre sus preferencias, lo que puede limitar la exposición a nuevas
+	categorías de productos o marcas.
+
+	\subsection{Efecto de Recencia en Amazon}
+
+	En las páginas de resultados de búsqueda o en la lista de productos recomendados,
+	los productos más visibles al final de la página tienden a influir más en las
+	decisiones de compra, especialmente si se destacan como ``Más vendidos'' o ``Populares''.
+	El efecto de recencia aumenta la probabilidad de que los usuarios elijan estos
+	productos.
+
+	\section{Propuesta de Mejoras}
+
+	\subsection{Área 1: Presentación de Precios (Sesgo de Anclaje)}
+
+	\begin{itemize}
+		\item \textbf{Problema identificado}: Amazon presenta el precio original de un
+			producto como ancla, lo que afecta la percepción del usuario sobre la ``oferta''
+			que está recibiendo.
+
+		\item \textbf{Propuesta de mejora}: Se puede ofrecer una comparativa de precios
+			con competidores o mostrar más detalles sobre la fluctuación de precios en
+			el tiempo, para que el usuario no se quede anclado solo en el descuento, sino
+			que tenga una visión más completa del valor del producto.
+	\end{itemize}
+
+	\subsection{Área 2: Recomendaciones Personalizadas (Sesgo de Confirmación)}
+
+	\begin{itemize}
+		\item \textbf{Problema identificado}: Las recomendaciones basadas en compras
+			anteriores refuerzan el sesgo de confirmación, limitando la exploración de
+			nuevas opciones.
+
+		\item \textbf{Propuesta de mejora}: Incluir una sección de ``Descubre algo nuevo''
+			o ``Sorpresas'', donde se ofrezcan productos de categorías que el usuario
+			no ha explorado previamente. Esto incentivaría una mayor variedad de interacciones
+			y reduciría el impacto del sesgo de confirmación.
+	\end{itemize}
+
+	\subsection{Área 3: Listado de Productos (Efecto de Recencia)}
+
+	\begin{itemize}
+		\item \textbf{Problema identificado}: Los productos al final de una lista de
+			búsqueda o recomendaciones tienden a ser más influyentes debido al efecto de
+			recencia.
+
+		\item \textbf{Propuesta de mejora}: Implementar un diseño de ``scroll continuo''
+			que no siga un orden lineal, o alternar el orden de los productos cada vez
+			que el usuario recargue la página, para evitar que siempre los últimos elementos
+			sean los más influyentes.
+	\end{itemize}
+
+
+	\section{Prototipo de la Solución}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\newAmazonSection}
+		\caption{Sección de compras para descubrir nuevos productos para eliminar el \textbf{sesgo de confirmación}}
+	\end{figure}
+
+	\section{Conclusión}
+
+	Los sesgos cognitivos, como el sesgo de anclaje, el sesgo de confirmación y el
+	efecto de recencia, tienen un impacto significativo en cómo los usuarios interactúan
+	con las interfaces de usuario. Al entender y mitigar estos sesgos, se puede mejorar
+	la experiencia del usuario y ofrecer una interacción más justa y equilibrada.
+
+	%% References
+
+	\nocite{*} % to include uncited references of .bib file
+
+	\clearpage
+	\bibliographystyle{ieeetr}
+
+	% Generated from .bib file
+	\bibliography{ref}
+
+\end{document}
