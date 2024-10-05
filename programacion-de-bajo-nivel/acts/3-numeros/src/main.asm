@@ -2,10 +2,10 @@
 SYS_EXIT   equ 1
 SYS_READ   equ 3
 SYS_WRITE  equ 4
-STDIN      equ 0
-STDOUT     equ 1
+STDIN	  equ 0
+STDOUT	 equ 1
 
-NUM_DIGITS equ 3
+NUM_DIGITS equ 4
 NUM_CHARS  equ NUM_DIGITS + 1
 
 ; Variables inicializadas
@@ -28,7 +28,7 @@ section .bss
 	num_2 RESB 1
 
 	res_str RESB NUM_DIGITS
-	res RESB NUM_DIGITS
+	res RESB 1
 
 section .text
 	global _start
@@ -45,9 +45,7 @@ _start:
 	CALL scanf
 
 	; Conversión de num_1_str a valor
-	PUSH DWORD num_1_str
-	PUSH DWORD num_1
-	CALL ascii_to_num
+	CALL ascii_to_num_1
 
 	; Impresión de msg_2
 	PUSH DWORD msg_2
@@ -60,9 +58,7 @@ _start:
 	CALL scanf
 
 	; Conversión de num_2_str a valor
-	PUSH DWORD num_2_str
-	PUSH DWORD num_2
-	CALL ascii_to_num
+	CALL ascii_to_num_2
 
 	; Suma: num_1_str + num_2
 	PUSH DWORD [num_1]
@@ -78,7 +74,7 @@ _start:
 	CALL num_to_ascii
 
 	; Impresión de resultado
-	PUSH DWORD res
+	PUSH DWORD res_str
 	PUSH DWORD NUM_DIGITS
 	CALL printf
 
@@ -117,61 +113,81 @@ scanf:
 	POP ebp
 	RET
 
-ascii_to_num:
-	PUSH ebp
-	MOV ebp, esp
-
-	MOV edi, NUM_DIGITS - 1
-
-	unidades_1:
-		MOV al, [ebp + 12 + edi]
+ascii_to_num_1:
+	centenas_1:
+		MOV al, [num_1_str]
 		SUB al, '0'
+
+		MOV cl, 100
+		MUL cl
 		ADD bl, al
 
 	decenas_1:
-		DEC edi
-		MOV al, [ebp + 12 + edi]
-		SUB eax, '0'
+		MOV al, [num_1_str + 1]
+		SUB al, '0'
 
-		MOV ecx, 10
-		MUL ecx
+		MOV cl, 10
+		MUL cl
 		ADD bl, al
 
-	centenas_1:
-		DEC edi
-		MOV al, [ebp + 12 + edi]
-		SUB eax, '0'
-
-		MOV ecx, 100
-		MUL ecx
+	unidades_1:
+		MOV al, [num_1_str + 2]
+		SUB al, '0'
 		ADD bl, al
 
-	MOV [ebp + 8], bl
+	MOV [num_1], bl
 
-	POP ebp
+	RET
+
+ascii_to_num_2:
+	centenas_2:
+		MOV al, [num_2_str]
+		SUB al, '0'
+
+		MOV cl, 100
+		MUL cl
+		ADD bl, al
+
+	decenas_2:
+		MOV al, [num_2_str + 1]
+		SUB al, '0'
+
+		MOV cl, 10
+		MUL cl
+		ADD bl, al
+
+	unidades_2:
+		MOV al, [num_2_str + 2]
+		SUB al, '0'
+		ADD bl, al
+
+	MOV [num_2], bl
+
 	RET
 
 num_to_ascii:
-	MOV eax, [res_str]
+	MOV eax, [res]
 
-	centenas_2:
+	MOV BYTE [res_str], '0'
+
+	centenas_3:
 		MOV ebx, 100
 		MOV edx, 0
 		DIV ebx
 		ADD eax, '0'
-		MOV [res], eax
+		MOV [res_str + 1], eax
 
-	decenas_2:
+	decenas_3:
 		MOV eax, edx
 		MOV ebx, 10
 		MOV edx, 0
 		DIV ebx
 		ADD eax, '0'
-		MOV [res + 1], eax
+		MOV [res_str + 2], eax
 
-	unidades_2:
+	unidades_3:
 		ADD edx, '0'
-		MOV [res + 2], edx
+		MOV [res_str + 3], edx
 
 	RET
 
@@ -179,11 +195,11 @@ sum:
 	PUSH ebp
 	MOV ebp, esp
 
-	MOV eax, [ebp + 12]
-	MOV ebx, [ebp + 8]
+	MOV al, [ebp + 12]
+	MOV bl, [ebp + 8]
 
-	ADD ebx, eax
-	MOV [res_str], ebx
+	ADD bl, al
+	MOV [res], bl
 
 	POP ebp
 	RET
