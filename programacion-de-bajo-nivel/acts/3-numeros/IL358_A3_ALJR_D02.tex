@@ -1,0 +1,106 @@
+\input{config.tex}
+
+\begin{document}
+    \setstretch{1} % Interlineado
+
+    \begin{titlepage}
+        \newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+        \centering
+        %\vspace*{-2cm}
+        {\huge\textbf{\universidad}}\par
+        \vspace{0.6cm}
+        {\LARGE{\cede}}
+        \vfill
+
+        \begin{figure}[h]
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+            \end{minipage}
+        \end{figure}
+        \vfill
+
+        \Large{ \division\vfill \textbf{\carrera}\vfill \textbf{\materia}\par\vspace{3pt} \seccion\ - \clave\ - \nrc\vfill }
+
+        {\LARGE{\textbf{\theTitle}}}
+        \vfill
+
+		\begin{figure}[h]
+			\centering
+			\begin{minipage}[t]{0.75\textwidth}
+				{\Large
+					\textbf{Profesor}: \profesor\nl
+					\textbf{Alumno}: \theAuthor\nl
+					\textbf{Código}: \theAuthorCode\nl
+					\textbf{Correo}: \theAuthorMail}
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+        \begin{tcolorbox}
+            [colback=red!5!white, colframe=red!75!black]
+            \centering
+            Este documento contiene información sensible.\\
+			No debería ser impreso o compartido con terceras entidades.
+        \end{tcolorbox}
+        \vfill
+        {\large \startDate}\par
+    \end{titlepage}
+
+    \restoregeometry % end changed margin
+
+    %% Indexes
+    \clearpage
+    \tableofcontents
+
+    \clearpage
+    \listoffigures
+
+    %\clearpage
+    %\listoftables
+
+    \clearpage
+    \lstlistoflistings
+
+    %% Main Title
+    \clearpage
+    \vspace*{6pt}
+	\centerline{\textbf{\huge \theTitle}}
+    \vspace*{8pt}
+
+    %% Content
+
+	\section{Introducción}
+
+	La manipulación de números dentro de ensamblador es de suma importancia debido a que es uno de las bases fundamentales que practicamente cualquier programa necesita. Si bien es sencillo aplicar operaciones aritméticas, el hecho de representarlas al usuario tiene su complejidad a bajo nivel, debido a que es necesario la conversión de valores a ASCII y viceversa.
+
+
+	\clearpage
+	\section{Implementación}
+
+	\subsection{Código}
+
+	\lstinputlisting[
+		language=nasm,
+		style=nasm,
+		caption={Entrada, salida y suma de números}
+	]{./src/main.asm}
+
+	\subsection{Ejecución del Programa}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics{\exeA}
+		\caption{Suma de dos números}
+	\end{figure}
+
+	\clearpage
+	\section{Conclusión}
+
+	Para finalizar, me es importante mencionar que si bien esta actividad parece ser un tanto sencilla, la realidad es que el hecho de trabajar en bajo nivel es lo que lo convierte en laborioso. Cuestiones como conversion de valor a ASCII, almacenamiento de múltiples dígitos, entre otras, fueron un desafío que sin duda me ayudó a comprender muchas cosas, especialmente la manipulación e interpretación de datos númericos a través de texto.
+\end{document}
