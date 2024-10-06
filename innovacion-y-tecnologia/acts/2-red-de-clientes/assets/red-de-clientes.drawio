@@ -1,0 +1,230 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="0a9q-yjIV03iAaiNmT1R">
+    <mxGraphModel dx="1529" dy="846" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;spacingLeft=0;spacingBottom=0;spacing=6;" parent="1" source="vY6jSC_u-DZnhAze2lpc-1" target="vY6jSC_u-DZnhAze2lpc-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;spacingLeft=0;spacingBottom=0;spacing=6;" parent="1" source="vY6jSC_u-DZnhAze2lpc-1" target="vY6jSC_u-DZnhAze2lpc-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;spacingLeft=0;spacingBottom=0;spacing=6;" parent="1" source="vY6jSC_u-DZnhAze2lpc-1" target="vY6jSC_u-DZnhAze2lpc-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;spacingLeft=0;spacingBottom=0;spacing=6;" parent="1" source="vY6jSC_u-DZnhAze2lpc-1" target="vY6jSC_u-DZnhAze2lpc-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;spacingLeft=0;spacingBottom=0;spacing=6;" parent="1" source="vY6jSC_u-DZnhAze2lpc-1" target="vY6jSC_u-DZnhAze2lpc-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-1" value="&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Comportamiento y Estrategias de la Red de Clientes de la Empresa Agiotech&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;spacingLeft=0;spacingBottom=0;spacing=6;" parent="1" vertex="1">
+          <mxGeometry x="259" y="10" width="333" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;spacingLeft=0;spacingBottom=0;spacing=6;" parent="1" source="vY6jSC_u-DZnhAze2lpc-2" target="vY6jSC_u-DZnhAze2lpc-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-2" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;Acceso&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=12;spacingLeft=0;spacingBottom=0;spacing=6;align=center;" parent="1" vertex="1">
+          <mxGeometry x="40" y="100" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;spacing=6;" parent="1" source="vY6jSC_u-DZnhAze2lpc-4" target="vY6jSC_u-DZnhAze2lpc-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-4" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;Compromiso&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=12;spacingLeft=0;spacingBottom=0;spacing=6;align=center;" parent="1" vertex="1">
+          <mxGeometry x="209" y="100" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;spacing=6;" parent="1" source="vY6jSC_u-DZnhAze2lpc-5" target="vY6jSC_u-DZnhAze2lpc-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="vY6jSC_u-DZnhAze2lpc-5" target="vY6jSC_u-DZnhAze2lpc-51" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="115" />
+              <mxPoint x="340" y="575" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-5" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;Personalización&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=12;spacingLeft=0;spacingBottom=0;spacing=6;align=center;" parent="1" vertex="1">
+          <mxGeometry x="375" y="100" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;spacing=6;" parent="1" source="vY6jSC_u-DZnhAze2lpc-6" target="vY6jSC_u-DZnhAze2lpc-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="vY6jSC_u-DZnhAze2lpc-6" target="vY6jSC_u-DZnhAze2lpc-54" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="115" />
+              <mxPoint x="510" y="575" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-6" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;Conexión&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=12;spacingLeft=0;spacingBottom=0;spacing=6;align=center;" parent="1" vertex="1">
+          <mxGeometry x="541" y="100" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;spacing=6;" parent="1" source="vY6jSC_u-DZnhAze2lpc-7" target="vY6jSC_u-DZnhAze2lpc-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="vY6jSC_u-DZnhAze2lpc-7" target="vY6jSC_u-DZnhAze2lpc-55" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="115" />
+              <mxPoint x="680" y="575" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-7" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;Colaboración&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=12;spacingLeft=0;spacingBottom=0;spacing=6;align=center;" parent="1" vertex="1">
+          <mxGeometry x="710" y="100" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;spacingLeft=0;spacingBottom=0;spacing=6;" parent="1" source="vY6jSC_u-DZnhAze2lpc-8" target="vY6jSC_u-DZnhAze2lpc-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="vY6jSC_u-DZnhAze2lpc-2" target="vY6jSC_u-DZnhAze2lpc-45" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="10" y="115" />
+              <mxPoint x="10" y="575" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-8" value="&lt;b&gt;Comportamiento&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=11;spacingLeft=0;spacingBottom=0;spacing=6;align=center;" parent="1" vertex="1">
+          <mxGeometry x="40" y="150" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-15" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot; class=&quot;first-paragraph&quot;&gt;&lt;b&gt;Comunicación Directa&lt;/b&gt;: Los clientes tienen acceso a los servicios de la empresa a través de comunicación directa tal como mensajes de texto y llamadas con los encargados de venta.&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=5;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="30" y="200" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;spacingLeft=0;spacingBottom=0;spacing=6;" parent="1" source="vY6jSC_u-DZnhAze2lpc-21" target="vY6jSC_u-DZnhAze2lpc-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="vY6jSC_u-DZnhAze2lpc-4" target="vY6jSC_u-DZnhAze2lpc-48" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="115" />
+              <mxPoint x="180" y="575" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-21" value="&lt;b&gt;Comportamiento&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=11;spacingLeft=0;spacingBottom=0;spacing=6;align=center;" parent="1" vertex="1">
+          <mxGeometry x="209" y="150" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;spacing=6;verticalAlign=middle;" parent="1" source="vY6jSC_u-DZnhAze2lpc-22" target="vY6jSC_u-DZnhAze2lpc-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-22" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot; class=&quot;first-paragraph&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Implementación de Estándares&lt;/b&gt;: Agiotech actualmente cuenta con distintas certificaciones ISO las cuales garantizan que sus servicios y procesos cumplen con los estándares de calidad de ISO.&lt;/font&gt;&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=0;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="199" y="200" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-25" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot;&gt;&lt;b style=&quot;&quot;&gt;Documentación de Procesos&lt;/b&gt;: Agiotech se asegura de documentar todo el proceso del equipo, pasos como el recibo, la inspección, la reparación, la entrega del equipos, entre otross, entre otros.&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=5;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="199" y="370" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;spacingLeft=0;spacingBottom=0;spacing=6;" parent="1" source="vY6jSC_u-DZnhAze2lpc-28" target="vY6jSC_u-DZnhAze2lpc-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-28" value="&lt;b&gt;Comportamiento&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=11;spacingLeft=0;spacingBottom=0;spacing=6;align=center;" parent="1" vertex="1">
+          <mxGeometry x="375" y="150" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-29" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot; class=&quot;first-paragraph&quot;&gt;&lt;b&gt;Comunicación Directa&lt;/b&gt;: Agiotech opta por tener una comunicación directa con el cliente, garantizando una atención personalizado al cliente.&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=0;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="364.5" y="200" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;spacingLeft=0;spacingBottom=0;spacing=6;" parent="1" source="vY6jSC_u-DZnhAze2lpc-31" target="vY6jSC_u-DZnhAze2lpc-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-31" value="&lt;b&gt;Comportamiento&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=11;spacingLeft=0;spacingBottom=0;spacing=6;align=center;" parent="1" vertex="1">
+          <mxGeometry x="541" y="150" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-32" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot; class=&quot;first-paragraph&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Desafortunadamente, Agiotech actualmente no cuenta con ningun tipo de conexión que el cual permita a los clientes compartir sus experiencias, ideas y opiniones.&lt;/font&gt;&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=0;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="531" y="200" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;spacingLeft=0;spacingBottom=0;spacing=6;" parent="1" source="vY6jSC_u-DZnhAze2lpc-34" target="vY6jSC_u-DZnhAze2lpc-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-34" value="&lt;b&gt;Comportamiento&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=11;spacingLeft=0;spacingBottom=0;spacing=6;align=center;" parent="1" vertex="1">
+          <mxGeometry x="710" y="150" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;spacing=6;verticalAlign=middle;" parent="1" source="vY6jSC_u-DZnhAze2lpc-35" target="vY6jSC_u-DZnhAze2lpc-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-35" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot; class=&quot;first-paragraph&quot;&gt;&lt;b&gt;Mayoristas&lt;/b&gt;: Agiotech actualmente cuenta con mayoristas, tales como las empresas de Samsung, Elektra y Telcel. Colaboran de tal manera que estas empresas les otorgan equipos para su respectiva reparación&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=0;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="700" y="200" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-39" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot;&gt;&lt;b&gt;Provedor&lt;/b&gt;: Agiotech cuenta con Samsung como principal proveedor de piezas de reparación de dispositivos Samsung, garantizando que las piezas son 100% originales.&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=0;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="700" y="370" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="vY6jSC_u-DZnhAze2lpc-45" target="vY6jSC_u-DZnhAze2lpc-58" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-45" value="&lt;b&gt;Estrategias&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=11;spacingLeft=0;spacingBottom=0;spacing=6;align=center;" parent="1" vertex="1">
+          <mxGeometry x="40" y="560" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="vY6jSC_u-DZnhAze2lpc-48" target="vY6jSC_u-DZnhAze2lpc-64" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-48" value="&lt;b&gt;Estrategias&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=11;spacingLeft=0;spacingBottom=0;spacing=6;align=center;" parent="1" vertex="1">
+          <mxGeometry x="209" y="560" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="vY6jSC_u-DZnhAze2lpc-51" target="vY6jSC_u-DZnhAze2lpc-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-51" value="&lt;b&gt;Estrategias&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=11;spacingLeft=0;spacingBottom=0;spacing=6;align=center;" parent="1" vertex="1">
+          <mxGeometry x="374.5" y="560" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="vY6jSC_u-DZnhAze2lpc-54" target="vY6jSC_u-DZnhAze2lpc-73" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-54" value="&lt;b&gt;Estrategias&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=11;spacingLeft=0;spacingBottom=0;spacing=6;align=center;" parent="1" vertex="1">
+          <mxGeometry x="541" y="560" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="vY6jSC_u-DZnhAze2lpc-55" target="vY6jSC_u-DZnhAze2lpc-76" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-55" value="&lt;b&gt;Estrategias&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fontSize=11;spacingLeft=0;spacingBottom=0;spacing=6;align=center;" parent="1" vertex="1">
+          <mxGeometry x="710" y="560" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="vY6jSC_u-DZnhAze2lpc-58" target="vY6jSC_u-DZnhAze2lpc-60" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-58" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot; class=&quot;first-paragraph&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Plataformas Web y Móvil&lt;/b&gt;: El desarrollo de estas plataformas ayudarían a tener un mayor alcance a clientes, de tal manera que los clientes puedan tener una mayor información acerca de los servicios de reparación y, adicionalmente, un sistema más controlado con el que puedan solicitar los servicios.&lt;/font&gt;&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=5;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="30" y="610" width="120" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-60" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot; class=&quot;first-paragraph&quot;&gt;&lt;b&gt;Cedes&lt;/b&gt;: El desarrollo de nuevas cedes hace que el servicio sea más accesible por más usuarios, de tal manera que los usuarios les es más sencillo ir a visitar alguna de las cedes.&lt;br&gt;&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=5;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="30" y="880" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="vY6jSC_u-DZnhAze2lpc-64" target="vY6jSC_u-DZnhAze2lpc-65" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-64" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot; class=&quot;first-paragraph&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Retroalimentación de Usuario&lt;/b&gt;: La implementación de un usuario para que pueda dar retroalimentación acerca del servicio otorgado garantiza una mayor confiabilidad hacia los demás usuarios.&lt;/font&gt;&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=5;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="199" y="610" width="120" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-65" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Videoblog a través de redes sociales&lt;/b&gt;: Un videoblog en el que uno o varios técnicos muestren en vivo las reparaciones de los equipos no solo ayuda a que el usuario observe el proceso y tenga referencias, sino también le garantiza una mayor confiabilidad y transparencia respecto a la empresa.&lt;/font&gt;&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=5;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="199" y="800" width="120" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="vY6jSC_u-DZnhAze2lpc-67" target="vY6jSC_u-DZnhAze2lpc-68" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-67" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot; class=&quot;first-paragraph&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Servicio Personalizado&lt;/b&gt;: La notificación del usuario acerca del proceso de reparación, ya sea por mensajes, notificaciones o cualquier otro medio, brinda al usuario una atención más amigable y personalizada, manteniendo al usuario informado en todo momento.&lt;/font&gt;&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=5;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="365" y="610" width="120" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-68" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Servicio Personalizado&lt;/b&gt;: El ofrecer un accesorio gratuito (incluído con el servicio) a selección del usuario (e.g.&amp;nbsp;funda, mica) no solo ofrece un servicio más personalizado, sino también ofrece una mejor atención al cliente.&lt;/font&gt;&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=5;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="364.5" y="860" width="120" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="vY6jSC_u-DZnhAze2lpc-73" target="vY6jSC_u-DZnhAze2lpc-74" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-73" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot; class=&quot;first-paragraph&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Foro&lt;/b&gt;: La implementación de un foro en las &lt;i style=&quot;&quot;&gt;plataformas web y movil&lt;/i&gt; ayuda a que los clientes puedan comunicarse entre sí, tanto para hablar de su experiencia con el servicio, resolver dudas y dar información extra&lt;/font&gt;&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=5;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="531" y="610" width="120" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-74" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Redes Sociales&lt;/b&gt;: El uso de redes sociales de la empresa es de suma importancia porque, además de crear una marca personal como empresa, ayuda a crear una comunidad propia en la que los clientes pueden compartir experiencias, ideas y demás.&lt;/font&gt;&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=5;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="531" y="820" width="120" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="vY6jSC_u-DZnhAze2lpc-76" target="vY6jSC_u-DZnhAze2lpc-77" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-76" value="&lt;p class=&quot;first-paragraph&quot;&gt;&lt;b&gt;Sección de Sugerencias&lt;/b&gt;: Un sección de sugerencias (pública&lt;br&gt;o privada) da la posibilidad de que el cilente pueda colaborar de tal&lt;br&gt;manera que puede dar ideas para mejorar el servicio y la experiencia&lt;br&gt;del usuario.&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=5;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="700" y="610" width="120" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="vY6jSC_u-DZnhAze2lpc-77" value="&lt;p style=&quot;margin-top: 0.13in; margin-bottom: 0.13in; direction: ltr; background: transparent;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Asociasiones con negocios&lt;/b&gt;: La posibilidad de que negocios más pequeños puedan asociarse ya sea como cliente mayorista, pasado de clientes (e.g.&amp;nbsp;que la empresa ofrece reparaciones de computadoras) o de alguna manera, ayuda a crecer y expandir la empresa, no solo reduciendo la competitividad sino incrementando la colaboración.&lt;/font&gt;&lt;/p&gt;" style="html=1;fontSize=11;rounded=1;whiteSpace=wrap;spacingLeft=0;spacingRight=5;spacingBottom=0;spacing=6;align=left;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="700" y="820" width="120" height="270" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
