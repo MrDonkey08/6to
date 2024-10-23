@@ -1,0 +1,104 @@
+\input{config.tex}
+
+\begin{document}
+    \setstretch{1} % Interlineado
+
+    \begin{titlepage}
+        \newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+        \centering
+        %\vspace*{-2cm}
+        {\huge\textbf{\universidad}}\par
+        \vspace{0.6cm}
+        {\LARGE{\cede}}
+        \vfill
+
+        \begin{figure}[h]
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+            \end{minipage}
+        \end{figure}
+        \vfill
+
+        \Large{ \division\vfill \textbf{\carrera}\vfill \textbf{\materia}\par\vspace{3pt} \seccion\ - \clave\ - \nrc\vfill }
+
+        {\LARGE{\textbf{\theTitle}}}
+        \vfill
+
+		\begin{figure}[h]
+			\centering
+			\begin{minipage}[t]{0.61\textwidth}
+				{\Large
+					\textbf{Profesor}: \profesor\nl
+					\textbf{Alumno}: \theAuthor\nl
+					\textbf{Código}: \theAuthorCode\nl
+					\textbf{Correo}: \theAuthorMail}
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+        \begin{tcolorbox}
+            [colback=red!5!white, colframe=red!75!black]
+            \centering
+			Este documento ha sido elaborado con fines estudiantiles.\\
+			La información presentada puede contener errores.
+        \end{tcolorbox}
+        \vfill
+        {\large \startDate}\par
+    \end{titlepage}
+
+    \restoregeometry % end changed margin
+
+    %% Indexes
+    \clearpage
+    \tableofcontents
+
+    \clearpage
+    \listoffigures
+
+    %\clearpage
+    %\listoftables
+
+    \clearpage
+    \lstlistoflistings
+
+    %% Main Title
+    \clearpage
+    \vspace*{6pt}
+	\centerline{\textbf{\huge \theTitle}}
+    \vspace*{8pt}
+
+    %% Content
+	\section{Introducción}
+
+	La impresión de píxeles es un tema de vital importancia para desarrolladores que trabajan con gráficos a bajo nivel, es fundamental para entender cómo funciona la impresión de píxeles a bajo nivel y, de esta manera, saber cómo desarrollar e implementar algoritmos que manejen gráficos de una manera más eficiente.
+
+	\clearpage
+	\section{Implementación}
+
+	\lstinputlisting[
+		language=nasm,
+		style=nasm,
+		caption={Impresión de una función senoidal a través de píxeles},
+		label={lst:senoidal}
+	]{./src/main.asm}
+
+	\clearpage
+	\section{Ejecución del Programa}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics{\figA}
+		\caption{Impresión de una función senoidal a través de píxeles}
+	\end{figure}
+
+	\clearpage
+	\section{Conclusión}
+
+	En conclusión, esta actividad fue interesante debido a que aprendí a implementar la impresión de píxeles al recorre una lista, en la que el eje $x$ se recorria un píxel hacia la derecha y el eje $y$ se recorria un elemento hacia la derecha. Lo que me sorprendió es qué tan sencillo puede ser imprimir gráficas tal como una senoidal.
+\end{document}
