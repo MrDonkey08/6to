@@ -1,0 +1,132 @@
+\input{config.tex}
+
+\begin{document}
+    \setstretch{1} % Interlineado
+
+    \begin{titlepage}
+        \newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+        \centering
+        %\vspace*{-2cm}
+        {\huge\textbf{\universidad}}\par
+        \vspace{0.6cm}
+        {\LARGE{\cede}}
+        \vfill
+
+        \begin{figure}[h]
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+            \end{minipage}
+        \end{figure}
+        \vfill
+
+        \Large{ \division\vfill \textbf{\carrera}\vfill \textbf{\materia}\par\vspace{3pt} \seccion\ - \clave\ - \nrc\vfill }
+
+        {\LARGE{\textbf{\theTitle}}}
+        \vfill
+
+		\begin{figure}[h]
+			\centering
+			\begin{minipage}[t]{0.61\textwidth}
+				{\Large
+					\textbf{Profesor}: \profesor\nl
+					\textbf{Alumno}: \theAuthor\nl
+					\textbf{Código}: \theAuthorCode\nl
+					\textbf{Correo}: \theAuthorMail}
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+        \begin{tcolorbox}
+            [colback=red!5!white, colframe=red!75!black]
+            \centering
+			Este documento ha sido elaborado con fines estudiantiles.\\
+			La información presentada puede contener errores.
+        \end{tcolorbox}
+        \vfill
+        {\large \startDate}\par
+    \end{titlepage}
+
+    \restoregeometry % end changed margin
+
+    %% Indexes
+    \clearpage
+    \tableofcontents
+
+    \clearpage
+    \listoffigures
+
+    %\clearpage
+    %\listoftables
+
+    \clearpage
+    \lstlistoflistings
+
+    %% Main Title
+    \clearpage
+    \vspace*{6pt}
+	\centerline{\textbf{\huge \theTitle}}
+    \vspace*{8pt}
+
+    %% Content
+	\section{Introducción}
+
+	La manipulación de directorios en ensamblador es una práctica fundamental ya que practicamente todos los archivos se organizan en estos. La manipulación
+	correcta de directorios y archivos te permite tener control acerca del cómo la información es
+	almacenada, recuperada y manipulada. A continuación veremos un código con algunas de las operaciones que se pueden efectuar en archivos y directorios.
+
+	\clearpage
+	\section{Implementación}
+
+	\subsection{Códigos}
+
+	\lstinputlisting[
+		language=nasm,
+		style=nasm,
+		caption={Manipulación de Directorios: Crea un directorio, añade un archivo en él y se le guarda la fecha actual del sistema},
+		label={lst:directorios}
+	]{./src/main.asm}
+
+	\lstinputlisting[
+		language=python,
+		caption={Conversión de \texttt{timestap} a la fecha y hora actual del sistema},
+		label={lst:fecha}
+	]{./src/date.py}
+
+	\clearpage
+	\subsection{Ejecución del Programa}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figA}
+		\caption{Ejecución del Programa: Muestreo de la ruta actual al entrar y salir de la carpeta creada}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figB}
+		\caption{Valor almacenado en la variable \texttt{timestap}}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figC}
+		\caption{Impresión de la ``fecha actual del sistema'' (\texttt{timestap}) almacenada en el archivo creado}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figD}
+		\caption{Valor obtenido al implementar el código \ref{lst:fecha}, valor que debería ser almacenado en el archivo txt}
+	\end{figure}
+
+	\clearpage
+	\section{Conclusión}
+
+	Para finalizar, cabe destacar que el código \ref{lst:directorios} cuenta con un pequeño error, en vez de guardar la fecha actual guarda el la cantidad de segundos ocurridos a partir del 01 de enero de 1970, almacenada en \texttt{timestap} y obtenida de la llamada a la función \texttt{sys\_time} (13). Desafortunadamenete me fue imposible convertir correctamente este valor. Es importante mencionar que el código \ref{lst:directorios} es lenguaje ensamblador NASM x86 (linux), por lo cual, no esxite ninguna llamada al sistema que te otorgue la fecha actual, tal como lo hace el lenguaje ensamblador MSDOS, utilizado en EMU8086.
+\end{document}
