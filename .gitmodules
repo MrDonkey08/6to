@@ -1,0 +1,3 @@
+[submodule "Link-Project"]
+	path = ingenieria-de-software/proyecto
+	url = git@github.com:MrDonkey08/Link-Project.git
