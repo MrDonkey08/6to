@@ -17,10 +17,3 @@ semi = false
 singleQuote = false
 #singleLineLinkTags = false
 trailingComma = "es5"
-
-[[overrides]]
-files = "*.md"
-
-[overrides.options]
-printWidth = 80
-tabWidth = 2
