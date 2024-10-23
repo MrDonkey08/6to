@@ -1,0 +1,174 @@
+\input{config.tex}
+
+\begin{document}
+	\setstretch{1} % Interlineado
+
+	\begin{titlepage}
+		\newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+		\centering
+		%\vspace*{-2cm}
+		{\huge\textbf{\universidad}}\par
+		\vspace{0.6cm}
+		{\LARGE{\cede}}
+		\vfill
+
+		\begin{figure}[h]
+			\begin{minipage}[t]{0.45\textwidth}
+				\centering
+				\includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{0.45\textwidth}
+				\centering
+				\includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+		\Large{
+			\division\vfill
+			\textbf{\carrera}\vfill
+			\textbf{\materia}\par\vspace{3pt}
+			\seccion\ - \clave\ - \nrc\vfill
+		}
+
+		{\LARGE{\textbf{\theTitle}}}
+		\vfill
+
+		\begin{figure}[h]
+			\centering
+			\begin{minipage}[t]{0.75\textwidth}
+				{\Large
+					\textbf{Profesor}: \profesor\nl
+					\textbf{Alumno}: \theAuthor\nl
+					\textbf{Código}: \theAuthorCode\nl
+					\textbf{Correo}: \theAuthorMail }
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+		\begin{tcolorbox}
+			[colback=red!5!white, colframe=red!75!black]
+			\centering
+			Este documento contiene información sensible.\\
+			No debería ser impreso o compartido con terceras entidades.
+		\end{tcolorbox}
+		\vfill
+		{\large \startDate}\par
+	\end{titlepage}
+
+	\restoregeometry % end changed margin
+
+	%% Indexes
+	\clearpage
+	\tableofcontents
+
+	\clearpage
+	\listoffigures
+
+	%\clearpage
+	%\listoftables
+
+	%\clearpage
+	%\lstlistoflistings
+
+	%% Main Title
+	\clearpage
+	\vspace*{6pt}
+	\begin{center}
+		{\textbf{\huge \theTitle}}
+	\end{center}
+	\vspace*{8pt}
+
+	%% Content
+
+	\section{Ley de Jakob}
+
+	La \textbf{Ley de Jakob} es una heurística de diseño de interfaces de usuario
+	propuesta por Jakob Nielsen, un experto en usabilidad y diseño web. Esta ley
+	afirma que:
+
+	\textbf{``Los usuarios pasan la mayor parte de su tiempo en otros sitios, por lo
+	tanto, prefieren que tu sitio web funcione de la misma manera que aquellos que
+	ya conocen.''}
+
+	En otras palabras, las personas tienden a esperar que las nuevas interfaces con
+	las que interactúan se comporten de manera similar a las que ya han utilizado anteriormente.
+
+	Esto significa que, en lugar de intentar ser innovador o completamente único en
+	el diseño de una interfaz de usuario, es recomendable seguir ciertos patrones
+	y convenciones ya establecidos que los usuarios reconocen fácilmente.
+
+	\subsection{Aplicación en el Diseño de Interfaces de Usuario}
+
+	\begin{itemize}
+		\item \textbf{Facilidad de uso}: Si una interfaz sigue convenciones de diseño
+			que los usuarios ya han experimentado, se reduce la curva de aprendizaje y
+			la interacción con el sistema es más intuitiva.
+
+		\item \textbf{Familiaridad}: Los usuarios se sienten más cómodos y seguros cuando
+			los elementos interactivos y flujos de navegación son consistentes con otros
+			sitios o aplicaciones que usan regularmente.
+
+		\item \textbf{Mejora la eficiencia}: Al no tener que aprender nuevas formas de
+			interactuar con la interfaz, los usuarios pueden lograr sus objetivos más
+			rápidamente.
+	\end{itemize}
+
+	\clearpage
+	\section{Análisis de Sitio Web Existente}
+
+	\subsection{Khan Academy}
+
+	\textbf{\href{https://es.khanacademy.org/profile/me/courses}{Khan Academy}} es una plataforma de educación gratuita de primer nivel (en línea) para maestros, estudiantes y padres de familia (para que apoyen al aprendizaje de su hijo(a)).
+
+	\textit{Khan Academy} actualmente cuenta con una gran diversidad de cursos. Se encuentran cursos de temas tales como Matemáticas, Economía y Finanzas, Computación, Ciencia, entre otros. Cabe mencionar que existen cursos para cualquier nivel de educación, desde educación primaria hasta universitaria.
+
+	\subsection{Análisis de Página Principal de Khan Academy}
+
+	La página principal de \textit{Khan Academy} sigue muchas convenciones de diseño web ampliamente utilizadas en sitios educativos y de servicios en línea. Cuenta con elementos como:
+
+	\begin{enumerate}
+		\item \textbf{Sección de Explorar}: Esta sección es muy común entre las distinstas plataformas de cursos. Se encuentran cada una las categorías (áreas de aprendizaje) con sus respectivos cursos. Lo cuál permite al usuario conocer y encontrar cualquier curso de la plaforma de una manera muy intuitiva y práctica.
+
+		\item \textbf{Botones de acción}: Botones tales como ``Inciar Sesión'' y ``Registrarse'' se encuentran colocados en la parte superior derecha, lugar bastante común entre los diferentes sitios web que cuentan con un sistema de cuentas de usuario. Adicionalmente, estos cuentan con colores contrastantes, los cuales los hacen aún más llamativos y fácil de encontrar.
+
+		\item \textbf{Sección de Ayuda}: En la parte inferior de la página se encuentra un pie de página en el cual se encuentra una sección de ayuda, muy útil para resolver dudas acerca del sitio web y muy común entre los diversos sitios web
+	\end{enumerate}
+
+
+	\clearpage
+	\section{Diseño de Prototipo de Interfaz}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\prototipo}
+		\caption{Prototipo de interfaz de usuario de plataforma de cursos}
+		\label{fig:prototipo}
+	\end{figure}
+
+	En la fígura \ref{fig:prototipo} se muestra un prototipo de interfaz de usuario que cuenta con:
+
+	\begin{enumerate}
+		\item \textbf{Sección de Cursos}: Esta sección es muy común entre las distinstas plataformas de cursos. Se encuentran cada una las categorías (áreas de aprendizaje) con sus respectivos cursos. Lo cuál permite al usuario conocer y encontrar cualquier curso de la plaforma de una manera muy intuitiva y práctica.
+
+		\item \textbf{Botones de acción}: Botones tales como ``Inciar Sesión'' y ``Suscríbite'' se encuentran colocados en la parte superior derecha y la parte central, respectivamente, lugares bastante comunes entre los diferentes sitios web que cuentan con un sistema de cuentas de usuario. Adicionalmente, estos cuentan con colores contrastantes, los cuales los hacen aún más llamativos y fácil de encontrar.
+
+		\item \textbf{Sección de Ayuda}: En la parte superior derecha se encuentra un botón de FAQS, botón muy útil para acceder a las preguntas que con más frecuencia se hacen. Esta sección es de mucha ayuda, ya que es muy útil para resolver dudas acerca del sitio web y muy común entre los diversos sitios web.
+	\end{enumerate}
+
+	\subsection{Pruebas de Prototipo}
+
+	Las 3 personas que probaron el prototipo les fue muy fácil e intuitivo, ya que es consistente con el diseño de otras plataformas de cursos. Acciones como iniciar sesión, Registrarse y buscar ayuda les pareció muy sencillo, ya que los elementos se encuentran en lugares muy comúnes y llamativos, es decir, fáciles de encontrar.
+
+	%% References
+
+	\nocite{*} % to include uncited references of .bib file
+
+	\clearpage
+	\bibliographystyle{ieeetr}
+
+	% Generated from .bib file
+	\bibliography{ref}
+
+\end{document}
