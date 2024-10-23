@@ -1,0 +1,147 @@
+\input{config.tex}
+
+\begin{document}
+    \setstretch{1} % Interlineado
+
+    \begin{titlepage}
+        \newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+        \centering
+        %\vspace*{-2cm}
+        {\huge\textbf{\universidad}}\par
+        \vspace{0.6cm}
+        {\LARGE{\cede}}
+        \vfill
+
+        \begin{figure}[h]
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+            \end{minipage}
+        \end{figure}
+        \vfill
+
+        \Large{ \division\vfill \textbf{\carrera}\vfill \textbf{\materia}\par\vspace{3pt} \seccion\ - \clave\ - \nrc\vfill }
+
+        {\LARGE{\textbf{\theTitle}}}
+        \vfill
+
+		\begin{figure}[h]
+			\centering
+			\begin{minipage}[t]{0.61\textwidth}
+				{\Large
+					\textbf{Profesor}: \profesor\nl
+					\textbf{Alumno}: \theAuthor\nl
+					\textbf{Código}: \theAuthorCode\nl
+					\textbf{Correo}: \theAuthorMail}
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+        \begin{tcolorbox}
+            [colback=red!5!white, colframe=red!75!black]
+            \centering
+			Este documento ha sido elaborado con fines estudiantiles.\\
+			La información presentada puede contener errores.
+        \end{tcolorbox}
+        \vfill
+        {\large \startDate}\par
+    \end{titlepage}
+
+    \restoregeometry % end changed margin
+
+    %% Indexes
+    \clearpage
+    \tableofcontents
+
+    \clearpage
+    \listoffigures
+
+    %\clearpage
+    %\listoftables
+
+    \clearpage
+    \lstlistoflistings
+
+    %% Main Title
+    \clearpage
+    \vspace*{6pt}
+	\centerline{\textbf{\huge \theTitle}}
+    \vspace*{8pt}
+
+    %% Content
+	\section{Introducción}
+
+	La manipulación de archivos en ensamblador es una práctica fundamental, especialmente
+	en ambientes como linux, en donde todo se maneja a través de archivos. La manipulación
+	correcta de archivos te permite tener control acerca del cómo la información es
+	almacenada, recuperada y manipulada. A continuación veremos un código con las fundamentales
+	para la manipulación de archivos.
+
+	\clearpage
+	\section{Implementación}
+
+	\subsection{Código}
+
+	\lstinputlisting[
+		language=nasm,
+		style=nasm,
+		caption={Manipulación de archivos},
+	label={lst:archivos} ]{./src/main.asm}
+
+	\subsection{Ejecución del Programa}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figA}
+		\caption{Inicialización del programa}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figB}
+		\caption{Creación y apertura del archivo}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figC}
+		\caption{Escritura del archivo}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figD}
+		\caption{Muestreo de propiedades del archivo}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figE}
+		\caption{Cerrado del archivo}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figF}
+		\caption{Eliminación del archivo}
+	\end{figure}
+
+	\clearpage
+	\section{Conclusión}
+
+	En retrospectiva, es importante recalcar que la manipulación de archivos, es
+	de vital importancia para un desarrollador cualquier desarrollador, especialmente
+	de ensamblador, debido a que todos los programas requieren la manipulación de
+	datos a través de archivos, para gestionar la información de los mismos programas,
+	usuarios, sistemas y demás.
+
+	Para finalizar, el entender cada una de las operaciones mostradas en el codigo
+	\ref{lst:archivos} son esenciales enderlas, especialmente para aquellos desarrolladores
+	que necesitan optimizar el rendimiento, manejar los recursos eficientemente o
+	desarrollar programas que interactúan cercamente al hardware.
+\end{document}
