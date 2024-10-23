@@ -1,0 +1,245 @@
+\input{config.tex}
+
+\begin{document}
+	\setstretch{1} % Interlineado
+
+	\begin{titlepage}
+		\newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+		\centering
+		%\vspace*{-2cm}
+		{\huge\textbf{\universidad}}\par
+		\vspace{0.6cm}
+		{\LARGE{\cede}}
+		\vfill
+
+		\begin{figure}[h]
+			\begin{minipage}[t]{0.45\textwidth}
+				\centering
+				\includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{0.45\textwidth}
+				\centering
+				\includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+		\Large{
+			\division\vfill
+			\textbf{\carrera}\vfill
+			\textbf{\materia}\par\vspace{3pt}
+			\seccion\ - \clave\ - \nrc\ - \generation \vfill
+		}
+
+		{\LARGE{\textbf{\theTitle}}}
+		\vfill
+
+		\begin{figure}[h]
+			\centering
+			\begin{minipage}[t]{0.60\textwidth}
+				{\Large
+					\textbf{Profesor}: \profesor\nl
+					\textbf{Alumno}: \theAuthor\nl
+					\textbf{Código}: \theAuthorCode\nl
+					\textbf{Correo}: \theAuthorMail
+				}
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+		\begin{tcolorbox}
+			[colback=red!5!white, colframe=red!75!black]
+			\centering
+			Este documento contiene información sensible.\\
+			No debería ser impreso o compartido con terceras entidades.
+		\end{tcolorbox}
+		\vfill
+		{\large \startDate}\par
+	\end{titlepage}
+
+	\restoregeometry % end changed margin
+
+	%% Indexes
+	\clearpage
+	\tableofcontents
+
+	%\clearpage
+	%\listoffigures
+
+	%\clearpage
+	%\listoftables
+
+	%\clearpage
+	%\lstlistoflistings
+
+	%% Main Title
+	\clearpage
+	\vspace*{6pt}
+	\centerline{\textbf{\huge \theTitle}}
+	\vspace*{8pt}
+
+	%% Content
+	\section{Establecer Objetivos}
+
+	\subsection{Objetivos Específicos}
+
+	Desarrollo de plataformas digitales (e.g. sitios web) que permitan:
+
+	\begin{itemize}
+		\item Crear una comunidad, recibir retroalimentación de los
+			clientes, ofrecer y publicitar nuestros servicios, y dar a
+			conocer a la empresa.
+
+		\item Incorparar clientes minoristas al modelo de negocio y,
+			además, publicitar e informar a los distintos clientes sobre los
+			diferentes servicios con los que cuenta la empresa.
+	\end{itemize}
+
+	\subsection{Objetivos de Orden Superior}
+
+	\begin{itemize}
+		\item Implementar nuevos modelos de servicios para los distintos tipos
+			de clientes y atención personalizada.
+
+		\item Actualizar los procesos existentes e implementar nuevos procesos
+			que permitan llevar a cabo cada uno de los servicios que se plantea
+			que provea la empresa a cada uno de los diferentes clientes (i.e.
+			minoristas, mayoristas y socios).
+	\end{itemize}
+
+	\section{Selección y Enfoque del Cliente}
+
+	La obtención de cada uno de los objetivos planteados en la sección
+	anterior implica:
+
+	\begin{itemize}
+		\item Desarrollar un nuevo sistema de atención para los clientes minoristas
+			y, además establecimiento de los diferentes servicios, procesos
+			y respectivos costos que se llevarán a cabo.
+
+		\item Desarrollar un sistema de feedback, para que cada uno de
+			los diferentes clientes pueda calificarnos, dar su opinión y darnos
+			recomendaciones de cómo mejorar nuestros servicios.
+
+		\item Implementación de nuevas metodologías de trabajo con el fin
+			de mejorar los procesos que permiten llevar a cabo cada uno de los
+			servicios que se proveen actualmente a los socios y mayoristas.
+	\end{itemize}
+
+	Nuestra empresa busca garantizar servicios de reparación y mantenmiento
+	de equipos móviles y sus respectivos accesorios, especialmente a
+	equipos de la marca Samsung, asegurándole a nuestros clientes de llevar
+	a cabo estándares de calidad de servicio y de cumplir con las fechas
+	de entrega establecidas.
+
+	El cumplimiento de cada uno de estos objetivos implica un gran desafío
+	para nuestra empresa debido a que desafortunadamente no se cuenta con
+	personal lo suficientemente capacitado para mudar nuestros procesos
+	a nuevos sistemas y a plataformas digitales.
+
+	Asímismo, la implementación de nuevos procesos, adquisición de nuevos
+	clientes, entre otras metas, significa un gran reto para nuestra empresa
+	debido a que practicamente se estaría redefiniendo cada uno de los aspectos
+	de la empresa, con el fin de mejorar y garantizar nuestros
+	servicios y expandir y mejorar nuestra empresa.
+
+	\section{Selección de Estrategia}
+
+	\subsection{Acceso}
+
+	\begin{itemize}
+		\item \textbf{Plataformas Web y Móvil}: El desarrollo de estas plataformas
+			ayudarían a tener un mayor alcance a clientes, de tal manera
+			que los clientes puedan tener una mayor información acerca de
+			los servicios de reparación y, adicionalmente, un sistema más
+			controlado con el que puedan solicitar los servicios.
+
+		\item \textbf{Cedes}: El desarrollo de nuevas cedes hace que el servicio
+			sea más accesible por más usuarios, de tal manera que los
+			usuarios les es más sencillo ir a visitar alguna de las cedes.
+	\end{itemize}
+
+	\subsection{Compromiso}
+
+	\begin{itemize}
+		\item \textbf{Retroalimentación de Usuario}: La implementación de
+			un usuario para que pueda dar retroalimentación acerca del servicio
+			otorgado garantiza una mayor confiabilidad hacia los demás usuarios.
+
+		\item \textbf{Videoblog a través de redes sociales}: Un videoblog
+			en el que uno o varios técnicos muestren en vivo las reparaciones
+			de los equipos no solo ayuda a que el usuario observe el proceso
+			y tenga referencias, sino también le garantiza una mayor
+			confiabilidad y transparencia respecto a la empresa.
+	\end{itemize}
+
+	\subsection{Personalización}
+
+	\begin{itemize}
+		\item \textbf{Servicio Personalizado}: La notificación del usuario
+			acerca del proceso de reparación, ya sea por mensajes, notificaciones
+			o cualquier otro medio, brinda al usuario una atención más
+			amigable y personalizada, manteniendo al usuario informado en todo
+			momento.
+
+		\item \textbf{Servicio Personalizado}: El ofrecer un accesorio gratuito
+			(incluído con el servicio) a selección del usuario (e.g.~funda,
+			mica) no solo ofrece un servicio más personalizado, sino
+			también ofrece una mejor atención al cliente.
+	\end{itemize}
+
+	\subsection{Conexión}
+
+	\begin{itemize}
+		\item \textbf{Foro}: La implementación de un foro en las \emph{plataformas
+			web y movil} ayuda a que los clientes puedan comunicarse entre
+			sí, tanto para hablar de su experiencia con el servicio,
+			resolver dudas y dar información extra
+
+		\item \textbf{Redes Sociales}: El uso de redes sociales de la empresa
+			es de suma importancia porque, además de crear una marca
+			personal como empresa, ayuda a crear una comunidad propia en la
+			que los clientes pueden compartir experiencias, ideas y demás.
+	\end{itemize}
+
+	\subsection{Colaboración}
+
+	\begin{itemize}
+		\item \textbf{Sección de Sugerencias}: Un sección de sugerencias (pública
+			o privada) da la posibilidad de que el cilente pueda colaborar de
+			tal manera que puede dar ideas para mejorar el servicio y la experiencia
+			del usuario.
+
+		\item \textbf{Asociasiones con negocios}: La posibilidad de que negocios
+			más pequeños puedan asociarse ya sea como cliente mayorista,
+			pasado de clientes (e.g.~que la empresa ofrece reparaciones de
+			computadoras) o de alguna manera, ayuda a crecer y expandir la
+			empresa, no solo reduciendo la competitividad sino incrementando
+			la colaboración.
+	\end{itemize}
+
+	\section{Generador de Conceptos}
+
+	Para el desarrollo de la plataforma para ofrecer el servicio a los
+	clientes minoristas es necesario definir una serie de
+	requerimientos:
+
+	\begin{itemize}
+		\item El sistema permitirá a los usuarios registrarse e iniciar sesión
+			mediante formularios.
+
+		\item El usuario, en primera instancia, se le ofrecerá un diagnóstico
+			(sin costos de envío) para determinar el problema y el estado del
+			equipo
+
+		\item El sistema les presentará a los usuarios los posibles presupuestos
+			para cada una de las distintas reparaciones.
+
+		\item El usuario recibirá mensajes o notificaciones para informarle
+			acerca del estado del diagnóstico o reparación.
+
+		\item En caso de haber diagnosticado un equipo, el usuario podrá
+			optar por continuar o rechazar la reparación.
+	\end{itemize}
+\end{document}
