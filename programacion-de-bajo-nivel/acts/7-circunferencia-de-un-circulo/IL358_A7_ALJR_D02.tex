@@ -1,0 +1,135 @@
+\input{config.tex}
+
+\begin{document}
+    \setstretch{1} % Interlineado
+
+    \begin{titlepage}
+        \newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+        \centering
+        %\vspace*{-2cm}
+        {\huge\textbf{\universidad}}\par
+        \vspace{0.6cm}
+        {\LARGE{\cede}}
+        \vfill
+
+        \begin{figure}[h]
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.45\textwidth}
+                \centering
+                \includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+            \end{minipage}
+        \end{figure}
+        \vfill
+
+        \Large{ \division\vfill \textbf{\carrera}\vfill \textbf{\materia}\par\vspace{3pt} \seccion\ - \clave\ - \nrc\vfill }
+
+        {\LARGE{\textbf{\theTitle}}}
+        \vfill
+
+		\begin{figure}[h]
+			\centering
+			\begin{minipage}[t]{0.61\textwidth}
+				{\Large
+					\textbf{Profesor}: \profesor\nl
+					\textbf{Alumno}: \theAuthor\nl
+					\textbf{Código}: \theAuthorCode\nl
+					\textbf{Correo}: \theAuthorMail}
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+        \begin{tcolorbox}
+            [colback=red!5!white, colframe=red!75!black]
+            \centering
+			Este documento ha sido elaborado con fines estudiantiles.\\
+			La información presentada puede contener errores.
+        \end{tcolorbox}
+        \vfill
+        {\large \startDate}\par
+    \end{titlepage}
+
+    \restoregeometry % end changed margin
+
+    %% Indexes
+    \clearpage
+    \tableofcontents
+
+    \clearpage
+    \listoffigures
+
+    %\clearpage
+    %\listoftables
+
+    \clearpage
+    \lstlistoflistings
+
+    %% Main Title
+    \clearpage
+    \vspace*{6pt}
+	\centerline{\textbf{\huge \theTitle}}
+    \vspace*{8pt}
+
+    %% Content
+	\section{Introducción}
+
+	Para dibujar un círculo a través de la manipulación de píxeles, existen dos
+	algoritmos muy conocidos el \textbf{algoritmo de punto medio para
+	circunferencias} y el \textbf{algoritmo de Bresenham}, implementado en el
+	código \ref{lst:circulo}.
+
+	El \textbf{algoritmo de Bresenham} es un algoritmo eficiente y ampliamente
+	utilizado en gráficos por computadora para dibujar círculos utilizando
+	únicamente operaciones de suma, resta y desplazamientos. Este algoritmo se basa
+	en la simetría del círculo, lo que permite reducir significativamente la
+	cantidad de cálculos necesarios al trazar puntos en las diferentes octantes del
+	círculo.
+
+	\clearpage
+	\section{Implementación}
+
+	\lstinputlisting[
+		language=nasm,
+		style=nasm,
+		caption={Impresión de la círcunferencia de un círculo a través de píxeles},
+		label={lst:circulo}
+	]{./src/main.asm}
+
+	\clearpage
+	\section{Ejecución del Programa}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figA}
+		\caption{Impresión de la círcunferencia de un círculo a través de píxeles}
+	\end{figure}
+
+	\clearpage
+	\section{Conclusión}
+
+	En retrospectiva, este código demuestra cómo implementar el \textbf{algoritmo
+	de Bresenham} en ensamblador para el trazado de la circunferencia de un
+	círculo mediante el uso de gráficos básico en DOS. Este algoritmo es muestra
+	una solución eficiente y óptima para equipos de escasos recursos.
+
+	Para finalizar, es de vital importancia mencionar que para el código
+	\ref{lst:circulo} fue implementado el uso de macros. Estas fueron de vital
+	importancia debido a que ayudaron a hacer el código más modular, legible y
+	menos repetitivo, aprovechando las ventajas que estas ofrecen. Cabe mencionar
+	que estas son muy similares a las funciones, solo que las macros son más
+	eficientes en términos de eficiencia computacional, mientras que las
+	funciones son más eficientes en términos de memoria.
+
+	%% References
+
+	\nocite{*} % to include uncited references of .bib file
+
+	\clearpage
+	\bibliographystyle{ieeetr}
+
+	% Generated from .bib file
+	\bibliography{ref}
+\end{document}
