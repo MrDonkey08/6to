@@ -1,0 +1,266 @@
+\input{config.tex}
+
+\begin{document}
+	\setstretch{1} % Interlineado
+
+	\begin{titlepage}
+		\newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+		\centering
+		%\vspace*{-2cm}
+		{\LARGE \textbf{\universidad}}\par
+		\vspace{0.6cm}
+		{\Large{\cede}}
+		\vfill
+
+		\begin{figure}[ht]
+			\begin{minipage}[t]{0.45\textwidth}
+				\centering
+				\includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{0.45\textwidth}
+				\centering
+				\includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+		\large{
+			\division\vfill
+			\textbf{\carrera}\vfill
+			\textbf{\materia}\par\vspace{3pt}
+			\seccion\ - \clave\ - \nrc\ - \generation \vfill
+		}
+
+		{\Large{\textbf{\theTitle}}}
+		\vfill
+
+		\begin{figure}[ht]
+			\centering
+			\begin{minipage}[t]{0.6\textwidth}
+				{\large
+					\textbf{Profesor}: \profesor\nl
+					\textbf{Alumno}: \theAuthor\nl
+					\textbf{Código}: \theAuthorCode\nl
+					\textbf{Correo}: \theAuthorMail
+				}
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+		\begin{tcolorbox}
+			[colback=red!5!white, colframe=red!75!black]
+			\centering
+			\large{
+				Este documento contiene información sensible.\\
+				No debería ser impreso o compartido con terceras entidades.
+			}
+		\end{tcolorbox}
+		\vfill
+		{\large \startDate}\par
+	\end{titlepage}
+
+	\restoregeometry % end changed margin
+
+	%% Indexes
+	%\clearpage
+	%\tableofcontents
+
+	%\clearpage
+	%\listoffigures
+
+	%\clearpage
+	%\listoftables
+
+	%\clearpage
+	%\lstlistoflistings
+
+	%% Main Title
+	\clearpage
+	\vspace*{-16pt}
+	\begin{center}
+		{\textbf{\huge \theTitle}}
+	\end{center}
+	\vspace*{8pt}
+
+	%% Content
+	\subsection*{Indicaciones}
+
+	De la página 160 en delante se pueden leer más a detalle cada uno de los
+	puntos que tienen que desarrollar para el generador de valor de datos, recuerden
+	que, en conjunto (los 5 puntos) deben desarrollar mínimo dos hojas de
+	información, ya sea de preguntas (que aparezcan en el libro) o en forma de resumen
+	con letra arial 12. Iterlineado maximo (doble).
+
+	\clearpage
+	\section{El Generador de Valor de Datos: Una Herramienta Estratégica para la Transformación
+	Digital}
+	En la era de la transformación digital, las organizaciones enfrentan el
+	desafío de convertir los datos en un recurso estratégico que impulse el
+	crecimiento, la eficiencia y la innovación. Este enfoque se estructura en
+	cinco pasos fundamentales: \textbf{definición del área de impacto y los KPIs},
+	\textbf{selección de la plantilla de valor}, \textbf{generación del concepto},
+	\textbf{auditoría de datos} y \textbf{plan de ejecución}. A continuación, exploramos
+	cómo cada paso contribuye al desarrollo de una estrategia de datos exitosa.
+
+	\subsection{Definición del Área de Impacto e Indicadores Clave de Rendimiento
+	(KPIs)}
+
+	El primer paso en el Generador de Valor de Datos es identificar las áreas del
+	negocio donde el uso de datos puede tener mayor impacto. Es aquí donde se definen
+	las prioridades estratégicas, ya sea optimizar la eficiencia operativa, mejorar
+	la experiencia del cliente o aumentar los ingresos. Este análisis permite
+	establecer \textbf{indicadores clave de rendimiento (KPIs)} específicos y medibles
+	que alineen los esfuerzos de datos con los objetivos organizacionales. Por
+	ejemplo, un KPI podría ser reducir los tiempos de entrega en un 20\% o
+	aumentar la tasa de conversión de clientes en un 15\%. La claridad en este
+	paso inicial asegura que todo el proyecto de datos se enfoque en resultados
+	tangibles y relevantes.
+
+	\subsection{Selección de la Plantilla de Valor}
+
+	Una vez definida el área de impacto, el siguiente paso es elegir una plantilla
+	de valor adecuada. Rogers presenta cinco modelos principales para crear valor con
+	datos: \textbf{agilización de procesos}, \textbf{mejora de la experiencia del
+	cliente}, \textbf{innovación en productos o servicios}, \textbf{optimización
+	de decisiones} y \textbf{monetización de datos}. Cada plantilla ofrece un enfoque
+	distinto, desde aumentar la eficiencia interna hasta generar nuevas fuentes de
+	ingresos. La elección correcta depende de las prioridades y el modelo de negocio
+	de la organización. Este marco proporciona claridad y dirección, asegurando que
+	la estrategia de datos esté alineada con las metas corporativas.
+
+	\subsection{Generación del Concepto}
+
+	Con la plantilla de valor seleccionada, el siguiente paso es traducirla en un concepto
+	claro y práctico. Aquí se combinan los objetivos estratégicos con la plantilla
+	de valor para desarrollar una idea inicial de cómo los datos se utilizarán en
+	la práctica. Por ejemplo, si se seleccionó la optimización de decisiones como
+	plantilla de valor, el concepto podría ser la implementación de un sistema de analítica
+	predictiva para gestionar inventarios en tiempo real. Este paso conecta la
+	estrategia con la operación, permitiendo que la visión general se traduzca en una
+	iniciativa concreta y realizable.
+
+	\subsection{Auditoría de Datos}
+
+	Ningún proyecto de datos puede avanzar sin una evaluación rigurosa de la
+	calidad y disponibilidad de los datos existentes. La auditoría de datos es un paso
+	crítico para identificar fuentes de datos internas y externas, evaluar su
+	relevancia, precisión y accesibilidad, y detectar posibles brechas. Este análisis
+	proporciona un diagnóstico de la infraestructura de datos de la organización y
+	señala las áreas que requieren mejora. Por ejemplo, una auditoría podría revelar
+	que los datos del cliente están desactualizados o que existen limitaciones en la
+	integración de sistemas. Este paso asegura que los datos sean fiables y útiles
+	para apoyar el concepto generado.
+
+	\subsection{Plan de Ejecución}
+
+	Finalmente, el Generador de Valor de Datos culmina en la creación de un plan
+	de ejecución detallado. Este plan incluye un roadmap con prioridades, roles
+	definidos, plazos específicos y recursos asignados. También considera aspectos
+	como la gestión del cambio organizacional y el diseño de un ciclo iterativo
+	para implementar, evaluar y ajustar la solución. Un ejemplo de un plan de
+	ejecución eficaz podría ser lanzar un proyecto piloto en una unidad de negocio
+	antes de escalarlo a toda la organización. Este enfoque estructurado garantiza
+	que la estrategia no se quede en una idea abstracta, sino que se convierta en
+	acciones concretas y medibles.
+
+	\clearpage
+	\section{Aplicación del Generador de Valor de Datos}
+
+	En el competitivo mundo de la tecnología, las empresas deben adaptarse
+	constantemente para mantenerse relevantes. En este contexto, una empresa
+	dedicada a la reparación de celulares Samsung, que actualmente trabaja con grandes
+	clientes como Samsung, Elektra y Telcel, busca innovar ofreciendo servicios también
+	a clientes minoristas. Para lograrlo, se propone desarrollar una plataforma digital
+	(web y móvil) que permita a estos consumidores acceder fácilmente a reparaciones
+	y accesorios. Este ensayo explora cómo el \textbf{Generador de Valor de Datos},
+	propuesto por David L. Rogers, puede guiar este proceso de innovación mediante
+	cinco pasos estratégicos: definir áreas de impacto y KPIs, seleccionar la
+	plantilla de valor, generar un concepto, realizar una auditoría de datos y
+	ejecutar un plan.
+
+	\subsection{Área de Impacto e Indicadores Clave de Rendimiento (KPIs)}
+
+	La primera etapa consiste en identificar el impacto que se busca lograr con esta
+	transformación. En este caso, la prioridad es expandir el mercado hacia los clientes
+	minoristas y mejorar su experiencia. Mientras que la empresa ya domina el
+	segmento B2B, la incursión en el mercado B2C requiere un enfoque centrado en el
+	cliente. Para medir el éxito de esta iniciativa, se establecen indicadores clave
+	de rendimiento (KPIs) específicos, como aumentar en un 30\% los ingresos anuales
+	provenientes de clientes minoristas, registrar 5,000 nuevos usuarios en la
+	plataforma durante los primeros seis meses, y reducir en un 20\% el tiempo
+	promedio de gestión de reparaciones mediante la automatización. Estas metas proporcionan
+	un marco claro para medir el impacto de la innovación.
+
+	\subsection{Selección de la Plantilla de Valor}
+
+	El siguiente paso es elegir la plantilla de valor que mejor se alinee con los
+	objetivos de la empresa. Dada la naturaleza del proyecto, se seleccionan dos
+	enfoques: \textbf{mejorar la experiencia del cliente} y \textbf{agilizar los
+	procesos operativos}. Por un lado, la creación de una plataforma que permita a
+	los clientes registrar solicitudes, realizar pagos y seguir el progreso de sus
+	reparaciones en tiempo real promete una experiencia fluida y confiable. Por otro
+	lado, la automatización de procesos internos, como la asignación de técnicos y
+	la actualización de inventarios, permitirá a la empresa manejar mayores
+	volúmenes de solicitudes de manera eficiente. Esta combinación asegura que tanto
+	los clientes como la operación interna se beneficien de la transformación.
+
+	\subsection{Generación del Concepto}
+
+	El concepto que surge de esta estrategia es una **plataforma digital integral
+	que sirva como punto de contacto para los clientes minoristas. En ella, los
+	usuarios podrán crear cuentas personalizadas, gestionar sus solicitudes de reparación,
+	realizar pagos en línea y recibir actualizaciones en tiempo real sobre el
+	estado de sus equipos. Además, incluirá un foro para resolver preguntas
+	frecuentes y obtener soporte directo. Este concepto no solo facilita el acceso
+	a los servicios, sino que también posiciona a la empresa como una opción
+	moderna y confiable en el sector de reparaciones tecnológicas. La plataforma será
+	accesible tanto desde dispositivos móviles como desde navegadores web,
+	garantizando una experiencia inclusiva y adaptable.
+
+	\subsection{Auditoría de Datos}
+
+	Para implementar este concepto, es esencial evaluar la calidad y
+	disponibilidad de los datos existentes. Una auditoría de datos permitirá analizar
+	fuentes internas, como el historial de reparaciones, los tiempos promedio de servicio
+	y la disponibilidad de piezas proporcionadas por Samsung. También será
+	necesario explorar fuentes externas, como tendencias de mercado y opiniones de
+	clientes potenciales. Sin embargo, es probable que la empresa identifique brechas
+	significativas en su conocimiento sobre las necesidades y expectativas del cliente
+	minorista, ya que este segmento no ha sido atendido previamente. La recopilación
+	de estos datos, a través de encuestas o proyectos piloto, será crucial para personalizar
+	la plataforma y optimizar su funcionalidad.
+
+	\subsection{Plan de Ejecución}
+
+	El desarrollo de la plataforma se llevará a cabo en fases escalonadas. Durante
+	los primeros seis meses, se enfocará en la creación de un prototipo funcional,
+	con características básicas como la gestión de cuentas, la solicitud de
+	servicios y la integración de pagos en línea. Una vez desarrollado, se lanzará
+	un programa piloto en una región limitada para recopilar feedback de los
+	usuarios y ajustar la plataforma según sus necesidades. En una etapa posterior,
+	la empresa escalará la solución a nivel nacional, incorporando mejoras como programas
+	de fidelidad y promociones exclusivas para clientes recurrentes. Este plan de
+	ejecución está diseñado para garantizar una transición fluida y sostenible
+	hacia el nuevo modelo de negocio, al tiempo que minimiza riesgos.
+
+	\clearpage
+	\subsection*{Conclusión}
+
+	El Generador de Valor de Datos de David L. Rogers es una herramienta poderosa
+	para cualquier organización que busque maximizar el impacto de sus datos. A través
+	de sus cinco pasos, permite a las empresas conectar la estrategia con la
+	ejecución, enfocándose en resultados tangibles y alineados con los objetivos corporativos.
+	En un mundo impulsado por datos, este enfoque no solo es esencial, sino
+	también una ventaja competitiva indispensable para la transformación digital.
+
+	%% References
+
+	\nocite{*} % to include uncited references of .bib file
+
+	\clearpage
+	\bibliographystyle{apalike}
+
+	% Generated from .bib file
+	\bibliography{ref}
+\end{document}
