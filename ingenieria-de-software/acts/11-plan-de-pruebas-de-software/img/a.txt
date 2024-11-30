@@ -1,0 +1,21 @@
+Número de Télefono
+
+(\d{2}([\- ]?\d{4}){2}|(\d{3}[\- ]){2}\d{4})
+
+Código de Estudiante
+
+\d{9}
+
+Código de Asesor
+
+\d{5,9}
+
+Correo Institucional
+
+\w[\w\.]{0,30}@(alumnos|academicos)\.udg\.mx
+
+Contraseña
+
+(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,40}
+
+

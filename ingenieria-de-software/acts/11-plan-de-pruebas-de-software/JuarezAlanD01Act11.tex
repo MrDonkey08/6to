@@ -1,0 +1,380 @@
+\input{config.tex}
+
+\begin{document}
+\setstretch{1} % Interlineado
+
+\begin{titlepage}
+	\newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+	\centering
+	%\vspace*{-2cm}
+	{\huge\textbf{\universidad}}\par
+	\vspace{0.6cm}
+	{\LARGE{\cede}}
+	\vfill
+
+	\begin{figure}[h]
+		\begin{minipage}[t]{0.45\textwidth}
+			\centering
+			\includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.45\textwidth}
+			\centering
+			\includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+		\end{minipage}
+	\end{figure}
+	\vfill
+
+	\Large{
+		\division\vfill
+		\textbf{\carrera}\vfill
+		\textbf{\materia}
+		\par\vspace{3pt}
+		\seccion\ - \clave\ - \nrc\vfill
+	}
+
+	{\LARGE{\textbf{\theTitle}}}
+	\vfill
+
+	\begin{figure}[h]
+		\centering
+		\begin{minipage}[t]{0.75\textwidth}
+			{\Large
+				\textbf{Integrantes:}\par\vspace{8pt}
+				\begin{itemize}
+					\item \bAuthor\ - \bAuthorCode
+					\item \cAuthor\ - \cAuthorCode
+					\item \dAuthor\ - \dAuthorCode
+					\item \eAuthor\ - \eAuthorCode
+					\item \theAuthor\ - \theAuthorCode
+				\end{itemize}
+			}
+		\end{minipage}
+	\end{figure}\vfill
+
+	\begin{tcolorbox}
+		[colback=red!5!white, colframe=red!75!black]
+		\centering
+		Este documento ha sido elaborado con fines estudiantiles.\\
+		La información presentada puede contener errores.
+	\end{tcolorbox}
+	\vfill
+	{\large \startDate}\par
+\end{titlepage}
+
+\restoregeometry % end changed margin
+
+%% Indexes
+%\clearpage
+%\tableofcontents
+
+\clearpage
+\listoffigures
+
+%\clearpage
+%\listoftables
+
+%\clearpage
+%\lstlistoflistings
+
+%% Main Title
+\clearpage
+\vspace*{-16pt}
+\begin{center}
+	{\textbf{\huge \theTitle}}
+\end{center}
+\vspace*{8pt}
+
+%% Content
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|p{10cm}|}
+		\hline
+		\textbf{Técnica} & \textbf{Particiones de equivalencia}                                                                                                                  \\
+		\hline
+		Proceso          & Formato de correo electrónico                                                                                                                         \\
+		\hline
+		Variable         & correo                                                                                                                                                \\
+		\hline
+		Descripción      & Debe existir un @ entre un prefijo y sufijo; el sufijo debe ser perteneciente a un correo institucional (e.g. @alumnos.udg.mx, @academicos.udg.mx)    \\
+		\hline
+		Caso válido      & \texttt{(\textbackslash d\{2\}([\textbackslash - ]?\textbackslash d\{4\})\{2\}|(\textbackslash d\{3\}[\textbackslash - ])\{2\}\textbackslash d\{4\})} \\
+		\hline
+		Caso no válido   &                                                                                                                                                       \\
+		\hline
+	\end{tabular}
+	\caption{Formato de correo electrónico}
+\end{table}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|p{10cm}|}
+		\hline
+		\textbf{Técnica} & \textbf{Particiones de equivalencia}   \\
+		\hline
+		Proceso          & Formato de número de teléfono          \\
+		\hline
+		Variable         & contacto                               \\
+		\hline
+		Descripción      & Número de 10 dígitos con o sin formato \\
+		\hline
+		Caso válido      & \texttt{\textbackslash d\{9\}}         \\
+		\hline
+		Caso no válido   & -                                      \\
+		\hline
+	\end{tabular}
+	\caption{Formato de número de teléfono}
+\end{table}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|p{10cm}|}
+		\hline
+		\textbf{Técnica} & \textbf{Particiones de equivalencia}                                                                                    \\
+		\hline
+		Proceso          & Formato de contraseña                                                                                                   \\
+		\hline
+		Variable         & clave                                                                                                                   \\
+		\hline
+		Descripción      & Debe contener de 8-40 caracteres, de los cuales al menos un dígito, una mayúscula, una minúscula y un carácter especial \\
+		\hline
+		Caso válido      & \texttt{\textbackslash d\{5,9\}}                                                                                        \\
+		\hline
+		Caso no válido   & -                                                                                                                       \\
+		\hline
+	\end{tabular}
+	\caption{Formato de contraseña}
+\end{table}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|p{10cm}|}
+		\hline
+		\textbf{Técnica} & \textbf{Particiones de equivalencia}                                                                                            \\
+		\hline
+		Proceso          & Formato de código de autenticación y recuperación de contraseña                                                                 \\
+		\hline
+		Variable         & token                                                                                                                           \\
+		\hline
+		Descripción      & Conjunto de 6 caracteres alfanuméricos                                                                                          \\
+		\hline
+		Caso válido      & \texttt{\textbackslash w[\textbackslash w\textbackslash .]\{0,30\}@\(alumnos|academicos\)\textbackslash .udg\textbackslash .mx} \\
+		\hline
+		Caso no válido   & -                                                                                                                               \\
+		\hline
+	\end{tabular}
+	\caption{Formato de código de autenticación y recuperación de contraseña}
+\end{table}
+
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|p{10cm}|}
+		\hline
+		\textbf{Técnica} & \textbf{Particiones de equivalencia}                                                     \\
+		\hline
+		Proceso          & Formato de código de carrera                                                             \\
+		\hline
+		Variable         & carrera                                                                                  \\
+		\hline
+		Descripción      & Carrera perteneciente a CUCEI, UDG                                                       \\
+		\hline
+		Caso válido      & \texttt{(?=.*\textbackslash d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\textbackslash W\_]).\{8,40\}} \\
+		\hline
+		Caso no válido   & -                                                                                        \\
+		\hline
+	\end{tabular}
+	\caption{Formato de código de carrera}
+\end{table}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|p{10cm}|}
+		\hline
+		\textbf{Técnica} & \textbf{Particiones de equivalencia} \\
+		\hline
+		Proceso          & Formato de código de estudiante      \\
+		\hline
+		Variable         & código-estudiante                    \\
+		\hline
+		Descripción      & Número de 9 dígitos                  \\
+		\hline
+		Caso válido      &                                      \\
+		\hline
+		Caso no válido   & -                                    \\
+		\hline
+	\end{tabular}
+	\caption{Formato de código de estudiante}
+\end{table}
+
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|p{10cm}|}
+		\hline
+		\textbf{Técnica} & \textbf{Particiones de equivalencia}      \\
+		\hline
+		Proceso          & Formato de departamento                   \\
+		\hline
+		Variable         & departamento                              \\
+		\hline
+		Descripción      & Departamentos pertenecientes a CUCEI, UDG \\
+		\hline
+		Caso válido      &                                           \\
+		\hline
+		Caso no válido   & -                                         \\
+		\hline
+	\end{tabular}
+	\caption{Formato de departamento}
+\end{table}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|p{10cm}|}
+		\hline
+		\textbf{Técnica} & \textbf{Particiones de equivalencia} \\
+		\hline
+		Proceso          & Formato de número de                 \\
+		\hline
+		Variable         & código-asesor                        \\
+		\hline
+		Descripción      & Número de 5 a 9 dígitos              \\
+		\hline
+		Caso válido      &                                      \\
+		\hline
+		Caso no válido   & -                                    \\
+		\hline
+	\end{tabular}
+	\caption{Formato de código asesor}
+\end{table}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|p{10cm}|}
+		\hline
+		\textbf{Técnica} & \textbf{Particiones de equivalencia} \\
+		\hline
+		Proceso          & Formato de cupos disponibles         \\
+		\hline
+		Variable         & cupos                                \\
+		\hline
+		Descripción      & Cantidad máxima de cupos (2)         \\
+		\hline
+		Caso válido      & \texttt{[012]}                       \\
+		\hline
+		Caso no válido   & -                                    \\
+		\hline
+	\end{tabular}
+	\caption{Formato de cupos disponibles}
+\end{table}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|p{10cm}|}
+		\hline
+		\textbf{Técnica} & \textbf{Particiones de equivalencia} \\
+		\hline
+		Proceso          & Nivel de Innovación                  \\
+		\hline
+		Variable         & nivel-de-innovacion                  \\
+		\hline
+		Descripción      &                                      \\
+		\hline
+		Caso válido      & bajo, medio o alto                   \\
+		\hline
+		Caso no válido   & -                                    \\
+		\hline
+	\end{tabular}
+	\caption{Nivel de Innovación}
+\end{table}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth, height=500px, keepaspectratio]{\figA}
+	\caption{Número de Télefono}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{\figB}
+	\caption{Creación de Proyecto}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{\figC}
+	\caption{Recuperación de Contraseña}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{\figD}
+	\caption{Creación de Proyecto}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{\figE}
+	\caption{Cupos Disponibles}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{\figF}
+	\caption{Selección de Innovación}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth, height=620px, keepaspectratio]{\figG}
+	\caption{Correo: Formato Inválido}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{\figH}
+	\caption{Contraseña: Formato Inválido}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{\figI}
+	\caption{Contraseña}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{\figJ}
+	\caption{Código de Estudiante}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{\figK}
+	\caption{Elección de Carrera}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{\figL}
+	\caption{Recuperación de Contraseña}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{\figM}
+	\caption{Correo Electrónico}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{\figN}
+	\caption{Registro de Usuario}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{\figO}
+	\caption{Selección de Departamento}
+\end{figure}
+\end{document}
