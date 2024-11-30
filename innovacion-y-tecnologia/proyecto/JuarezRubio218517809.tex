@@ -1,0 +1,1116 @@
+\input{config.tex}
+
+\begin{document}
+\setstretch{1.5} % Interlineado
+
+\begin{titlepage}
+	\newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+	\centering
+	%\vspace*{-2cm}
+	{\LARGE \textbf{\universidad}}\par
+	\vspace{0.6cm}
+	{\Large{\cede}}
+	\vfill
+
+	\begin{figure}[ht]
+		\begin{minipage}[t]{0.45\textwidth}
+			\centering
+			\includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.45\textwidth}
+			\centering
+			\includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+		\end{minipage}
+	\end{figure}
+	\vfill
+
+	\large{
+		\division\vfill
+		\textbf{\carrera}\vfill
+		\textbf{\materia}\par\vspace{3pt}
+		\seccion\ - \clave\ - \nrc\ - \generation \vfill
+	}
+
+	{\Large{\textbf{\theTitle}}}
+	\vfill
+
+	\begin{figure}[ht]
+		\centering
+		\begin{minipage}[t]{0.6\textwidth}
+			{\large
+				\textbf{Profesor}: \profesor\nl
+				\textbf{Alumno}: \theAuthor\nl
+				\textbf{Código}: \theAuthorCode\nl
+				\textbf{Correo}: \theAuthorMail
+			}
+		\end{minipage}
+	\end{figure}
+	\vfill
+
+	\begin{tcolorbox}
+		[colback=red!5!white, colframe=red!75!black]
+		\centering
+		\large{
+			Este documento contiene información sensible.\\
+			No debería ser impreso o compartido con terceras entidades.
+		}
+	\end{tcolorbox}
+	\vfill
+	{\large \startDate}\par
+\end{titlepage}
+
+\restoregeometry % end changed margin
+
+%% Indexes
+\clearpage
+\tableofcontents
+
+\clearpage
+\listoffigures
+
+%\clearpage
+%\listoftables
+
+%\clearpage
+%\lstlistoflistings
+
+%% Main Title
+\clearpage
+\vspace*{-16pt}
+\begin{center}
+	{\textbf{\huge \theTitle}}
+\end{center}
+\vspace*{8pt}
+
+%% Content
+
+\section*{Indicaciones}
+
+Para proyecto final se debe entregar un documento en el que se recopilen
+todas las actividades vistas durante el semestre en orden cronológico, a parte
+de las actividades el documento debe tener un texto de conexión entre cada
+actividad, es decir, no contara sino solo se ponen las actividades, se debe de
+poner un texto que interconecte a cada una de ellas, de tal forma en que se
+pueda leer un texto corrido y se entienda que se está viendo en cada mapa o
+figura que se muestre. Se pueden incluir descripciones de figuras y mapas.
+
+Debe incluir:
+
+\begin{itemize}
+	\item Índice.
+	\item Arial 12.
+	\item Interlineado 1.5 líneas.
+	\item Margen Superior, inferior y derecho de 2.5 cm.
+	\item Margen izquierdo 3 cm.
+	\item Texto justificado.
+	\item Extensión mínima 17 paginas.
+	\item Lineamientos de tareas.
+\end{itemize}
+
+% 1st task
+
+\clearpage
+\section{Antecedentes}
+
+\subsection{Qué es Agiotech}
+
+\textbf{Agiotech} es una empresa creada en Enero de 2012, por un grupo de
+profesionales expertos en modelos eficientes de servicio ``Post-Venta''
+orientado al mercado de electrónicos de consumo en la región de Latinoamérica, contando
+con más de 15 años de experiencia en el soporte a compañías consideradas dentro de
+las Top 25 OEM's en la Industria Electrónica.
+
+Agiotech es una empresa dedicada principalmente a la reparación de dispositivos y
+accesorios móviles. Manejan reparaciones de dispositivos de diversas marcas, tales
+como Huawei, Motorola y su principal fuerte, Samsung. Las reparaciones provenien
+de garantías de empresas como Elektra, Telcel y el mismo Samsung.
+
+Actualmente plantea ser el principal fuente de reparaciones de la empresa de Samsung
+en México, ofreciendo la mayor cantidad de reparaciones, en el menor tiempo cumpliendo
+los estándares de calidad.
+
+Si bien, hoy en día son una de las principales fuentes de reparación de Samsung,
+considero que hay mucho trabajo por delante y muchos puntos de mejora para poder
+cumplir con las expectativas de Samsung.
+
+\subsection{Áreas de Agiotech}
+
+La empresa de Agiotech se divide en varias áreas o departamentos de trabajo:
+
+\begin{itemize}
+	\item \textbf{Ingreso}: Área en donde los capturistas ingresan la información de
+	      los dispositivos entrantes en los sistemas, asegurándose que haya
+	      concordancia con la información respecto a los dispositivos
+
+	\item \textbf{Sistemas}: Área enfocada en el desarrollo y mantenimiento del sistema
+	      principal de la empresa. Este sistema es el encargado de llevar el registro
+	      de cada una de las operaciones dentro de la empresa, tales como la llegada de
+	      dispositivos, piezas, inventariado, uso, estatus, registro de procedimiento,
+	      embarcamiento, etc. Adicionalmente, esta área se encarga de resolver
+	      cualquier problema que se llegase a presentar dentro del sistema.
+
+	\item \textbf{Recursos Humanos}: Recursos Humanos es el departamento encargado
+	      de conseguir personal nuevo y llevar a cabo el proceso de la entrevista.
+	      Adicionalmente manejan el control administrativo sobre los empleados.
+
+	\item \textbf{Reparaciones}: Esta área se del diagnóstico de los dispositivos de
+	      reparación, determinación de si un dispositivo entra en garantía, si es reparable
+	      o no. Si el dispositivo entra en garantía o reparación pagada, este es reparado
+	      cumpliendo con cada uno de los requisitos y acuerdos con el cliente o empresa.
+
+	\item \textbf{Administración}: Este departamento a grandes ragos se encarga del
+	      manejo de recursos de la empresa, tanto de la salida como la entrada de
+	      dinero, es decir, el cómo se manejan las finanzas.
+
+	\item \textbf{Almacen}: Área encagada de la recepción y entrega de paquetes,
+	      paquetes que contienen tanto dispositivos como piezas. En general, tienen la
+	      tarea principal del movimiento del inventario, registrando y entregando las piezas
+	      solicitadas a los técnicos correspondientes.
+\end{itemize}
+
+Si bien existen diversas áreas y departamentos y tienen un sistema muy completo para
+llevar a cabo garantías y reparaciones, cosidero que esta empresa tiene muchos
+aspectos que mejorar, aspectos como la búsqueda de personal calificado, mejores
+capacitaciones, uso de tecnologías más avanzada, entre otras cosas.
+
+Por otra parte, considero que esta empresa tiene muchísimas oportunidades de crecimiento
+y expansión. La creación de nuevas cedes, el manejo de más marcas, la reparación
+y venta de otros dispositivos, tales como dispositivos de cómputo, entre otros
+muchos aspectos.
+
+% 2nd task
+
+\clearpage
+
+\section{Red de Clientes}
+
+Como se mencionó anteriormente, actualmente \textit{Agiotech} es una empresa la cual
+su red de clientes está compuesta por empresas tales como Elektra y Telcel y la misma
+marca Samsung, ofreciéndoles los diferentes servicios de reparación para los
+equipos de sus clientes. No obstante es importante modelar \textit{comportamiento
+	de la red de clientes} y generar diferentes estrategias para expandir la red de
+clientes, tal como se muestra en la fígura ~\ref{fig:Red de Clientes}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{\figA}
+	\caption{Mapa Conceputal del Comportamiento y Estrategias de la Red de
+		Clientes de la Empresa de Agiotech}
+	\label{fig:Red de Clientes}
+\end{figure}
+
+% 3th task
+
+\clearpage
+\section{Generador de Estrategías de Red de Clientes}
+
+Una vez modelado la red de clientes de la empresa, es importante generar diferentes
+estrategías para ampliar la red de clientes, estrategías que permitan una mayor
+interacción y conectividad entre cada uno de los clientes y estrategías que
+permitan obtener diferentes tipos de clientes. A continuación se muestra el \textit{generador
+	de estrategias de red de clientes} para la empresa de \textit{agiotech}.
+
+\subsection{Establecer Objetivos}
+
+\subsubsection{Objetivos Específicos}
+
+Desarrollo de plataformas digitales (e.g. sitios web) que permitan:
+
+\begin{itemize}
+	\item Crear una comunidad, recibir retroalimentación de los clientes, ofrecer y
+	      publicitar nuestros servicios, y dar a conocer a la empresa.
+
+	\item Incorparar clientes minoristas al modelo de negocio y, además, publicitar
+	      e informar a los distintos clientes sobre los diferentes servicios con los que
+	      cuenta la empresa.
+\end{itemize}
+
+\subsubsection{Objetivos de Orden Superior}
+
+\begin{itemize}
+	\item Implementar nuevos modelos de servicios para los distintos tipos de clientes
+	      y atención personalizada.
+
+	\item Actualizar los procesos existentes e implementar nuevos procesos que permitan
+	      llevar a cabo cada uno de los servicios que se plantea que provea la empresa
+	      a cada uno de los diferentes clientes (i.e. minoristas, mayoristas y socios).
+\end{itemize}
+
+\subsection{Selección y Enfoque del Cliente}
+
+La obtención de cada uno de los objetivos planteados en la sección anterior
+implica:
+
+\begin{itemize}
+	\item Desarrollar un nuevo sistema de atención para los clientes minoristas y,
+	      además establecimiento de los diferentes servicios, procesos y respectivos costos
+	      que se llevarán a cabo.
+
+	\item Desarrollar un sistema de feedback, para que cada uno de los diferentes
+	      clientes pueda calificarnos, dar su opinión y darnos recomendaciones de cómo
+	      mejorar nuestros servicios.
+
+	\item Implementación de nuevas metodologías de trabajo con el fin de mejorar los
+	      procesos que permiten llevar a cabo cada uno de los servicios que se proveen
+	      actualmente a los socios y mayoristas.
+\end{itemize}
+
+Nuestra empresa busca garantizar servicios de reparación y mantenmiento de equipos
+móviles y sus respectivos accesorios, especialmente a equipos de la marca
+Samsung, asegurándole a nuestros clientes de llevar a cabo estándares de calidad
+de servicio y de cumplir con las fechas de entrega establecidas.
+
+El cumplimiento de cada uno de estos objetivos implica un gran desafío para nuestra
+empresa debido a que desafortunadamente no se cuenta con personal lo suficientemente
+capacitado para mudar nuestros procesos a nuevos sistemas y a plataformas digitales.
+
+Asímismo, la implementación de nuevos procesos, adquisición de nuevos clientes,
+entre otras metas, significa un gran reto para nuestra empresa debido a que practicamente
+se estaría redefiniendo cada uno de los aspectos de la empresa, con el fin de
+mejorar y garantizar nuestros servicios y expandir y mejorar nuestra empresa.
+
+\subsection{Selección de Estrategia}
+
+\subsubsection{Acceso}
+
+\begin{itemize}
+	\item \textbf{Plataformas Web y Móvil}: El desarrollo de estas plataformas ayudarían
+	      a tener un mayor alcance a clientes, de tal manera que los clientes puedan
+	      tener una mayor información acerca de los servicios de reparación y, adicionalmente,
+	      un sistema más controlado con el que puedan solicitar los servicios.
+
+	\item \textbf{Cedes}: El desarrollo de nuevas cedes hace que el servicio sea más
+	      accesible por más usuarios, de tal manera que los usuarios les es más
+	      sencillo ir a visitar alguna de las cedes.
+\end{itemize}
+
+\subsubsection{Compromiso}
+
+\begin{itemize}
+	\item \textbf{Retroalimentación de Usuario}: La implementación de un usuario para
+	      que pueda dar retroalimentación acerca del servicio otorgado garantiza una mayor
+	      confiabilidad hacia los demás usuarios.
+
+	\item \textbf{Videoblog a través de redes sociales}: Un videoblog en el que uno
+	      o varios técnicos muestren en vivo las reparaciones de los equipos no solo ayuda
+	      a que el usuario observe el proceso y tenga referencias, sino también le
+	      garantiza una mayor confiabilidad y transparencia respecto a la empresa.
+\end{itemize}
+
+\subsubsection{Personalización}
+
+\begin{itemize}
+	\item \textbf{Servicio Personalizado}: La notificación del usuario acerca del proceso
+	      de reparación, ya sea por mensajes, notificaciones o cualquier otro medio,
+	      brinda al usuario una atención más amigable y personalizada, manteniendo al usuario
+	      informado en todo momento.
+
+	\item \textbf{Servicio Personalizado}: El ofrecer un accesorio gratuito (incluído
+	      con el servicio) a selección del usuario (e.g.~funda, mica) no solo ofrece un
+	      servicio más personalizado, sino también ofrece una mejor atención al
+	      cliente.
+\end{itemize}
+
+\subsubsection{Conexión}
+
+\begin{itemize}
+	\item \textbf{Foro}: La implementación de un foro en las \emph{plataformas web
+		      y movil} ayuda a que los clientes puedan comunicarse entre sí, tanto para hablar
+	      de su experiencia con el servicio, resolver dudas y dar información extra
+
+	\item \textbf{Redes Sociales}: El uso de redes sociales de la empresa es de suma
+	      importancia porque, además de crear una marca personal como empresa, ayuda a
+	      crear una comunidad propia en la que los clientes pueden compartir experiencias,
+	      ideas y demás.
+\end{itemize}
+
+\subsubsection{Colaboración}
+
+\begin{itemize}
+	\item \textbf{Sección de Sugerencias}: Un sección de sugerencias (pública o
+	      privada) da la posibilidad de que el cilente pueda colaborar de tal manera que
+	      puede dar ideas para mejorar el servicio y la experiencia del usuario.
+
+	\item \textbf{Asociasiones con negocios}: La posibilidad de que negocios más pequeños
+	      puedan asociarse ya sea como cliente mayorista, pasado de clientes (e.g.~que
+	      la empresa ofrece reparaciones de computadoras) o de alguna manera, ayuda a
+	      crecer y expandir la empresa, no solo reduciendo la competitividad sino incrementando
+	      la colaboración.
+\end{itemize}
+
+\subsection{Generador de Conceptos}
+
+Para el desarrollo de la plataforma para ofrecer el servicio a los clientes
+minoristas es necesario definir una serie de requerimientos:
+
+\begin{itemize}
+	\item El sistema permitirá a los usuarios registrarse e iniciar sesión mediante
+	      formularios.
+
+	\item El usuario, en primera instancia, se le ofrecerá un diagnóstico (sin
+	      costos de envío) para determinar el problema y el estado del equipo
+
+	\item El sistema les presentará a los usuarios los posibles presupuestos para cada
+	      una de las distintas reparaciones.
+
+	\item El usuario recibirá mensajes o notificaciones para informarle acerca del
+	      estado del diagnóstico o reparación.
+
+	\item En caso de haber diagnosticado un equipo, el usuario podrá optar por
+	      continuar o rechazar la reparación.
+\end{itemize}
+
+% 4th task
+
+\clearpage
+\section{Mapa del Modelo de Negocio de Plataforma}
+
+Si bien, el \textbf{generador de estrategías de red de clientes} es una herramienta
+muy útil para expandir nuestra red de clientes, también es de vital importancia
+elaborar un \textbf{mapa del modelo de negocio de la plataforma} debido a que nos
+permite definir cada una de las interacciones que se encuentran en nuestro modelo
+de negocio con cada uno de los diferentes clientes. En la fígura
+\ref{fig: modelo de negocio} se muestra el mapa de negocio de Agiotech.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{\figB}
+	\caption{Mapa del modelo de negocio de Agiotech}
+	\label{fig: modelo de negocio}
+\end{figure}
+
+% 5th task
+
+
+\clearpage
+\section{Tren de Valor Competitivo}
+
+Si bien el \textbf{mapa de modelo de negocio} nos permite tener una mejor noción
+de la interacciones que existen dentro de nuestra de red de clientes y la relación
+que cada tipo de cliente tiene con nuestra empresa y cada uno de nuestros negocios,
+es importante desarrollar el \textbf{tren de valor competitivo}.
+
+Uno de los puntos más importantes del \textbf{tren de valor competitivo} es que nos permite
+ver en qué posición de la cadena nos encontramos en el flujo de producción y entrega final del producto o servicio proporcionado al cliente objetivo y con ello, en un futuro, generar propuestas de valor para evitar la desintermediación (en caso de estar en un punto medio).
+
+A cotinuación se encuentra el tren de valor de Agiotech que muestra la cadena que
+existe entre cada uno de los servicios que proporciona repecto a cada uno de sus
+clientes y socios.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{\figC}
+	\caption{Tren de valor competitivo de Agiotech de servicios de garantía, diagnóstico
+		y reparación de télefonos Samsung}
+\end{figure}
+
+% 6th task
+
+\clearpage
+\section{El Generador de Valor de Datos: Una Herramienta Estratégica para la Transformación
+  Digital}
+
+Una vez realizado el \textbf{tren de valor competitivo} y cada uno de los puntos
+mencionados en cada una de las secciones anteriores podemos proseguir con el generador
+de valor de datos, el cual nos ayuda a generar nuevas opciones estratégicas para
+las iniciativas de datos para la empresa de Agiotech
+
+\subsection{Marco Teoríco}
+
+En la era de la transformación digital, las organizaciones enfrentan el desafío de
+convertir los datos en un recurso estratégico que impulse el crecimiento, la
+eficiencia y la innovación. Este enfoque se estructura en cinco pasos fundamentales:
+\textbf{definición del área de impacto y los KPIs}, \textbf{selección de la
+	plantilla de valor}, \textbf{generación del concepto}, \textbf{auditoría de
+	datos} y \textbf{plan de ejecución}. A continuación, exploramos cómo cada paso
+contribuye al desarrollo de una estrategia de datos exitosa.
+
+\subsubsection{Definición del Área de Impacto e Indicadores Clave de Rendimiento
+	(KPIs)}
+
+El primer paso en el Generador de Valor de Datos es identificar las áreas del negocio
+donde el uso de datos puede tener mayor impacto. Es aquí donde se definen las
+prioridades estratégicas, ya sea optimizar la eficiencia operativa, mejorar la
+experiencia del cliente o aumentar los ingresos. Este análisis permite establecer
+\textbf{indicadores clave de rendimiento (KPIs)} específicos y medibles que
+alineen los esfuerzos de datos con los objetivos organizacionales. Por ejemplo,
+un KPI podría ser reducir los tiempos de entrega en un 20\% o aumentar la tasa de
+conversión de clientes en un 15\%. La claridad en este paso inicial asegura que todo
+el proyecto de datos se enfoque en resultados tangibles y relevantes.
+
+\subsubsection{Selección de la Plantilla de Valor}
+
+Una vez definida el área de impacto, el siguiente paso es elegir una plantilla de
+valor adecuada. Rogers presenta cinco modelos principales para crear valor con
+datos: \textbf{agilización de procesos}, \textbf{mejora de la experiencia del
+	cliente}, \textbf{innovación en productos o servicios}, \textbf{optimización de
+	decisiones} y \textbf{monetización de datos}. Cada plantilla ofrece un enfoque
+distinto, desde aumentar la eficiencia interna hasta generar nuevas fuentes de ingresos.
+La elección correcta depende de las prioridades y el modelo de negocio de la
+organización. Este marco proporciona claridad y dirección, asegurando que la
+estrategia de datos esté alineada con las metas corporativas.
+
+\subsubsection{Generación del Concepto}
+
+Con la plantilla de valor seleccionada, el siguiente paso es traducirla en un
+concepto claro y práctico. Aquí se combinan los objetivos estratégicos con la plantilla
+de valor para desarrollar una idea inicial de cómo los datos se utilizarán en la
+práctica. Por ejemplo, si se seleccionó la optimización de decisiones como plantilla
+de valor, el concepto podría ser la implementación de un sistema de analítica
+predictiva para gestionar inventarios en tiempo real. Este paso conecta la estrategia
+con la operación, permitiendo que la visión general se traduzca en una
+iniciativa concreta y realizable.
+
+\subsubsection{Auditoría de Datos}
+
+Ningún proyecto de datos puede avanzar sin una evaluación rigurosa de la calidad
+y disponibilidad de los datos existentes. La auditoría de datos es un paso
+crítico para identificar fuentes de datos internas y externas, evaluar su relevancia,
+precisión y accesibilidad, y detectar posibles brechas. Este análisis
+proporciona un diagnóstico de la infraestructura de datos de la organización y
+señala las áreas que requieren mejora. Por ejemplo, una auditoría podría revelar
+que los datos del cliente están desactualizados o que existen limitaciones en la
+integración de sistemas. Este paso asegura que los datos sean fiables y útiles para
+apoyar el concepto generado.
+
+\subsubsection{Plan de Ejecución}
+
+Finalmente, el Generador de Valor de Datos culmina en la creación de un plan de ejecución
+detallado. Este plan incluye un roadmap con prioridades, roles definidos, plazos
+específicos y recursos asignados. También considera aspectos como la gestión del
+cambio organizacional y el diseño de un ciclo iterativo para implementar,
+evaluar y ajustar la solución. Un ejemplo de un plan de ejecución eficaz podría ser
+lanzar un proyecto piloto en una unidad de negocio antes de escalarlo a toda la organización.
+Este enfoque estructurado garantiza que la estrategia no se quede en una idea
+abstracta, sino que se convierta en acciones concretas y medibles.
+
+\clearpage
+\subsection{Aplicación del Generador de Valor de Datos}
+
+En el competitivo mundo de la tecnología, las empresas deben adaptarse constantemente
+para mantenerse relevantes. En este contexto, una empresa dedicada a la reparación
+de celulares Samsung, que actualmente trabaja con grandes clientes como Samsung,
+Elektra y Telcel, busca innovar ofreciendo servicios también a clientes
+minoristas. Para lograrlo, se propone desarrollar una plataforma digital (web y móvil)
+que permita a estos consumidores acceder fácilmente a reparaciones y accesorios.
+Este ensayo explora cómo el \textbf{Generador de Valor de Datos}, propuesto por David
+L. Rogers, puede guiar este proceso de innovación mediante cinco pasos estratégicos:
+definir áreas de impacto y KPIs, seleccionar la plantilla de valor, generar un
+concepto, realizar una auditoría de datos y ejecutar un plan.
+
+\subsubsection{Área de Impacto e Indicadores Clave de Rendimiento (KPIs)}
+
+La primera etapa consiste en identificar el impacto que se busca lograr con esta
+transformación. En este caso, la prioridad es expandir el mercado hacia los
+clientes minoristas y mejorar su experiencia. Mientras que la empresa ya domina el
+segmento B2B, la incursión en el mercado B2C requiere un enfoque centrado en el
+cliente. Para medir el éxito de esta iniciativa, se establecen indicadores clave
+de rendimiento (KPIs) específicos, como aumentar en un 30\% los ingresos anuales
+provenientes de clientes minoristas, registrar 5,000 nuevos usuarios en la plataforma
+durante los primeros seis meses, y reducir en un 20\% el tiempo promedio de gestión
+de reparaciones mediante la automatización. Estas metas proporcionan un marco
+claro para medir el impacto de la innovación.
+
+\subsubsection{Selección de la Plantilla de Valor}
+
+El siguiente paso es elegir la plantilla de valor que mejor se alinee con los objetivos
+de la empresa. Dada la naturaleza del proyecto, se seleccionan dos enfoques:
+\textbf{mejorar la experiencia del cliente} y \textbf{agilizar los procesos
+	operativos}. Por un lado, la creación de una plataforma que permita a los
+clientes registrar solicitudes, realizar pagos y seguir el progreso de sus reparaciones
+en tiempo real promete una experiencia fluida y confiable. Por otro lado, la automatización
+de procesos internos, como la asignación de técnicos y la actualización de
+inventarios, permitirá a la empresa manejar mayores volúmenes de solicitudes de manera
+eficiente. Esta combinación asegura que tanto los clientes como la operación
+interna se beneficien de la transformación.
+
+\subsubsection{Generación del Concepto}
+
+El concepto que surge de esta estrategia es una **plataforma digital integral que
+sirva como punto de contacto para los clientes minoristas. En ella, los usuarios
+podrán crear cuentas personalizadas, gestionar sus solicitudes de reparación, realizar
+pagos en línea y recibir actualizaciones en tiempo real sobre el estado de sus equipos.
+Además, incluirá un foro para resolver preguntas frecuentes y obtener soporte directo.
+Este concepto no solo facilita el acceso a los servicios, sino que también posiciona
+a la empresa como una opción moderna y confiable en el sector de reparaciones tecnológicas.
+La plataforma será accesible tanto desde dispositivos móviles como desde
+navegadores web, garantizando una experiencia inclusiva y adaptable.
+
+\subsubsection{Auditoría de Datos}
+
+Para implementar este concepto, es esencial evaluar la calidad y disponibilidad de
+los datos existentes. Una auditoría de datos permitirá analizar fuentes internas,
+como el historial de reparaciones, los tiempos promedio de servicio y la
+disponibilidad de piezas proporcionadas por Samsung. También será necesario explorar
+fuentes externas, como tendencias de mercado y opiniones de clientes potenciales.
+Sin embargo, es probable que la empresa identifique brechas significativas en su
+conocimiento sobre las necesidades y expectativas del cliente minorista, ya que este
+segmento no ha sido atendido previamente. La recopilación de estos datos, a través
+de encuestas o proyectos piloto, será crucial para personalizar la plataforma y
+optimizar su funcionalidad.
+
+\subsubsection{Plan de Ejecución}
+
+El desarrollo de la plataforma se llevará a cabo en fases escalonadas. Durante
+los primeros seis meses, se enfocará en la creación de un prototipo funcional,
+con características básicas como la gestión de cuentas, la solicitud de servicios
+y la integración de pagos en línea. Una vez desarrollado, se lanzará un programa
+piloto en una región limitada para recopilar feedback de los usuarios y ajustar la
+plataforma según sus necesidades. En una etapa posterior, la empresa escalará la
+solución a nivel nacional, incorporando mejoras como programas de fidelidad y
+promociones exclusivas para clientes recurrentes. Este plan de ejecución está diseñado
+para garantizar una transición fluida y sostenible hacia el nuevo modelo de negocio,
+al tiempo que minimiza riesgos.
+
+\clearpage
+
+% 7th task
+
+\clearpage
+\section{Innovación Mediante la Experimentación Rápida}
+
+Una vez aplicado los puntos de previas secciones, ya tenemos bastante
+entendimiento acerca de la empresa, de su funcionamiento, de su red de clientes,
+cómo mejorarlo y todo lo que conlleva que ya estamos listos para innovar.
+
+Antes de continuar a desarrollar cada uno de los tipos de innovación mediante la
+experimentación rápida, primeramente veremos en grandes rasgos en qué consiste.
+
+La \textbf{innovación} no es más que el proceso que conlleva la realización o actualización
+de productos y servicios, los cuales deben resultar en impactos positivos.
+
+El \textit{proceso de innovación} consiste principalmente en transformar ideas creativas
+en resultados que mejoren la eficiencia o eficacia o responda a necesidades insatisfechas.
+
+En la actualidad, la forma más práctica de innovar es mediante la \textbf{ experimentación
+	rápida}, debido a que permite desarrollar o actualizar productos y servicios y
+determinar los resultados de una manera rápida y barata. Esta se divide en dos tipos:
+
+\begin{itemize}
+	\item Experimentación convergente o experimentación formal
+
+	\item Experimentación divergente o experimentación informal
+\end{itemize}
+
+\clearpage
+\section{Método Experimental Convergente}
+
+Como vimos en la sección previa, la experimentación rápida es un modelo que nos
+permite experimentar en plazos cortos de tiempo y sin inversiones grandes y
+arriesgadas, permitiéndolos probar cada una de nuestras ideas y, de esta manera,
+averiguar si dicha innovación es viable y no y cómo ir llevándola a cabo.
+
+A continuación, veremos en qué consite el método experimental convergente y cómo
+ha sido aplicado a nuestra empresa Agiotech.
+
+\subsection{Marco Teórico}
+
+El \textbf{método experimental convergente} es útil para innovar productos, servicios
+y procesos existentes, para optimizarlos y mejorarlos constantemente. Este método
+se destaca debido a que pueden ser realizados rápidamente, en cuestión de horas
+y minutos.
+
+El \emph{método experimental convergente} se divide en siete pasos:
+
+\begin{enumerate}
+	\item Definir la pregunta y sus variables
+
+	\item Elegir los probadores (\emph{testers})
+
+	\item Aleatorizar la prueba y el control
+
+	\item Validar la muestra
+
+	\item Probar y analizar
+
+	\item Decidir
+
+	\item Compartir el aprendizaje
+\end{enumerate}
+
+\subsubsection{Definir la Pregunta y Sus Variables}
+
+Para iniciar un \emph{experimento convergente} es necesario definir la pregunta
+que se busca responder. Esta pregunta debe ser tan específica como sea posible.
+
+Una vez planteada la pregunta, se tiene que traducir en dos tipos de variables
+
+\begin{itemize}
+	\item \textbf{Variable independiente (causa)}: Factor que se probará en el experimento.
+	      El objetivo de este experimento es entender el efecto de la introducción de
+	      esta innovación.
+
+	\item \textbf{Variable dependiente (efecto)}: Factor en el que se espera que la
+	      innovación pueda influir. Es una medida del impacto de lo que se está
+	      cambiando.
+\end{itemize}
+
+\subsubsection{\texorpdfstring{Elegir los Probadores (\emph{Testers})}{Elegir
+		los Probadores (Testers)}}
+
+Este paso consiste en seleccionar los sujetos de prueba del experimento. Es
+importante, pero no estrictamente necesario tener dos tipos de probadores:
+
+\begin{itemize}
+	\item \textbf{Probadores de caja blanca}: Personas que son parte del desarrollo
+	      del experimento y, por ende, tienen conocimiento acerca del funcionamiento interno
+	      del experimento.
+
+	\item \textbf{Probadores de caja negra}: Personas que no son parte del desarrollo
+	      del experimento y, por ende, no tienen conocimiento acerca del funcionamiento
+	      interno del experimento.
+\end{itemize}
+
+El objetivo de las pruebas es recabar la suficiente información acerca del
+experimento para su posterior análisis y toma de decisiones.
+
+\subsubsection{Aleatorizar la Prueba y el Control}
+
+Antes de llevar a cabo un experimento convergente, es importante identificar una
+población cuyas repuestas deseas probar. Seguidamente asignas al azar miembros de
+esa población a uno de estos dos grupos:
+
+\begin{itemize}
+	\item El grupo de prueba (o grupo de tratamiento), que realiza la experiencia
+	      o recibe la oferta que estás probando.
+
+	\item El grupo de control, al que no se aplica el factor testeado.
+\end{itemize}
+
+\subsubsection{Validar la Muestra}
+
+Este paso consisten en asegurarse que se cuenta con un tamaño de muestra válido.
+Para ello, primeramente es necesario identificar la unidad de análisis (i.e. producto,
+servicio o proceso).
+
+Seguidamente, se establece el tamaño de la muestra (i.e, número de unidades que
+se coloca a cada uno de los grupos de prueba), la regla típica es $n = 100$, como
+mínimo, en cada grupo que se compara.
+
+\subsubsection{Probar y Analizar}
+
+En este punto uno ya se encuentra listo para realizar la prueba. El equipo que
+lleve a cabo tu experimento recogerá datos durante un período predeterminado. Luego
+tendrá que analizar los datos para ver si hay diferencias en las variables dependientes
+que se están midiendo y, si las hay, comprobar si esas diferencias son estadísticamente
+significativas.
+
+\subsubsection{Decidir}
+
+Luego de haber analizado los resultados del experimento, es importante tomar una
+decisión basada en las conclusiones:
+
+\begin{itemize}
+	\item \textbf{Abandonar el experimento}: Existen ocasiones en donde la mejor alternativa
+	      es abandonar debido a que es inviable seguir llevándolo a cabo (i.e.~por tiempo,
+	      costos u otros factores).
+
+	\item \textbf{Mejorar el experimento}: Iterar el experimento y realizar pruebas
+	      para analizar si hay mejoras respecto a previas iteraciones.
+
+	\item \textbf{Finalizar el experimento}: Se finaliza el experimento una vez que
+	      haya sido recabada la información suficiente para determinar la respuesta a la
+	      pregunta planteada desde un inicio.
+\end{itemize}
+
+\subsubsection{Compartir el Aprendizaje}
+
+Una vez finalizado el proyecto, es fundamental documentar lo que se haya
+aprendido, esto con el objetivo de comunicar los resultados para que otras personas
+de la misma organización que podían beneficiarse.
+
+\subsection{Aplicación del Método Experimental Divergente}
+
+La búsqueda de soluciones innovadoras para enfrentar desafíos empresariales es
+una constante en el camino hacia la transformación digital. En este contexto,
+Agiotech, una empresa especializada en la reparación de celulares y accesorios Samsung,
+busca ampliar su base de clientes mediante estrategias disruptivas. Para lograrlo,
+se implementará el método experimental divergente, descrito en \emph{Guía
+	Estratégica Para la Transformación Digital} de David L. Rogers. Este método
+permite explorar múltiples enfoques para resolver un problema, identificar la solución
+más efectiva y escalarla para maximizar su impacto.
+
+\subsubsection{Definir el Problema}
+
+El principal desafío de Agiotech es \textbf{ampliar su red de clientes, específicamente
+	en el segmento de minoristas}, quienes representan un mercado potencialmente
+lucrativo. Sin embargo, este objetivo requiere superar barreras como la falta de
+visibilidad de la marca y una oferta limitada de servicios personalizados que
+atraigan a estos clientes.
+
+\subsubsection{Establecer Límites}
+
+Para garantizar un enfoque eficiente, se establecieron los siguientes límites:
+
+\begin{itemize}
+	\item \textbf{Tiempo:} El proyecto tendrá una duración máxima de 3 meses, desde
+	      la ideación hasta la evaluación de resultados.
+
+	\item \textbf{Presupuesto:} Los recursos asignados no superarán el 10\% de los
+	      ingresos mensuales actuales de Agiotech.
+
+	\item \textbf{Alcance:} Se priorizarán minoristas ubicados en un radio de 50
+	      km de las oficinas de Agiotech.
+\end{itemize}
+
+\subsubsection{Escoger a la Gente}
+
+Se seleccionó un equipo multidisciplinario compuesto por:
+
+\begin{itemize}
+	\item \textbf{Técnicos:} Para diseñar y evaluar las soluciones tecnológicas.
+
+	\item \textbf{Personal de ventas:} Para aportar conocimiento sobre las
+	      necesidades de los minoristas.
+
+	\item \textbf{Clientes potenciales:} Representantes de pequeños negocios que
+	      aportarán información clave sobre sus expectativas y preferencias.
+\end{itemize}
+
+Este enfoque garantiza una perspectiva integral durante todo el proceso.
+
+\subsubsection{Observar}
+
+Se realizaron observaciones directas y entrevistas con minoristas locales para
+entender sus problemas y expectativas. Los hallazgos clave incluyeron:
+
+\begin{itemize}
+	\item La necesidad de un acceso más rápido y fácil a servicios de reparación.
+
+	\item Interés en descuentos y paquetes personalizados.
+
+	\item Falta de confianza en los servicios de reparación disponibles en la región.
+\end{itemize}
+
+\subsubsection{Generar Más de Una Solución}
+
+Con base en las observaciones, se plantearon las siguientes soluciones:
+
+\begin{enumerate}
+	\item \textbf{Sitio web personalizado:} Similar al mencionado en el método
+	      convergente, pero optimizado para incluir paquetes específicos para minoristas.
+
+	\item \textbf{Plataforma móvil de reparaciones a domicilio:} Un servicio que
+	      permite a los minoristas solicitar reparaciones sin necesidad de desplazarse.
+
+	\item \textbf{Programa de lealtad:} Ofrecer incentivos como descuentos
+	      acumulables o servicios gratuitos después de un número determinado de
+	      órdenes.
+\end{enumerate}
+
+\subsubsection{Construir un MVP (Prototipo Mínimo Viable)}
+
+Se desarrollaron prototipos básicos para cada solución:
+
+\begin{enumerate}
+	\item Una versión preliminar del sitio web, centrada en mostrar paquetes
+	      minoristas.
+
+	\item Una aplicación móvil funcional para programar visitas de reparación a domicilio.
+
+	\item Un sistema simple de registro manual para probar el programa de lealtad.
+\end{enumerate}
+
+\subsubsection{Prueba de Campo}
+
+Los MVP se probaron con un grupo de minoristas seleccionados:
+
+\begin{itemize}
+	\item \textbf{Sitio web:} Evaluado por su facilidad de uso y claridad en la
+	      oferta de paquetes.
+
+	\item \textbf{Plataforma móvil:} Implementada en una zona piloto para medir la
+	      aceptación y efectividad del servicio a domicilio.
+
+	\item \textbf{Programa de lealtad:} Ofrecido a los minoristas actuales para
+	      medir el impacto en la frecuencia de sus órdenes.
+\end{itemize}
+
+\subsubsection{Decidir}
+
+Tras analizar los resultados, se identificó que la solución más prometedora fue la
+\textbf{plataforma móvil de reparaciones a domicilio}. Esta opción obtuvo las mejores
+calificaciones en términos de satisfacción del cliente y aumento en el número de
+órdenes. Sin embargo, el sitio web también mostró potencial como una herramienta
+complementaria para captar nuevos clientes.
+
+\subsubsection{Escalar}
+
+Con base en los resultados, se decidió escalar la plataforma móvil a toda el área
+de operación de Agiotech. Además, se integrará el sitio web como un canal adicional
+para programar reparaciones y ofrecer promociones.
+
+\subsubsection{Compartir}
+
+Se documentaron los resultados y aprendizajes para compartirlos con todo el
+equipo de Agiotech, destacando:
+
+\begin{itemize}
+	\item La importancia de ofrecer soluciones que prioricen la comodidad del cliente.
+
+	\item El valor de combinar herramientas digitales (plataforma móvil y sitio
+	      web) con incentivos como el programa de lealtad.
+
+	\item Recomendaciones para mejorar la logística y garantizar tiempos de respuesta
+	      más rápidos.e podrían beneficiarse.
+\end{itemize}
+
+% 8th task
+
+\clearpage
+\section{Método Experimental Divergente}
+
+El método experimental divergente, a diferencia del método experimental convergente
+es muy útil para aquellas innovaciones en donde se busca crear un producto o servicio
+nuevo.
+
+A continuación veremos más a fondo en qué consiste este método y en qué se diferencia
+respecto al método experimental convergente y cómo ha sido desarrollado para la empresa
+de Agiotech.
+
+\subsection{Marco Teórico}
+
+El \textbf{método experimental divergente}, es útil para las innovaciones menos
+definidas desde el principio (e.g.~productos, servicios y procesos comerciales nuevos
+de una organización).
+
+Es relevante mencionar que los proyectos de innovación que utilizan esta
+metodología tienden a ser altamente iterativos y pueden durar semanas o meses.
+
+El \emph{método experimental divergente} se divide en diez pasos:
+
+\begin{enumerate}
+	\item Definir el problema
+
+	\item Establecer límites
+
+	\item Escoger a la gente
+
+	\item Observar
+
+	\item Generar más de una solución
+
+	\item Construir un MVP (Prototipo Mínimo Viable)
+
+	\item Prueba de campo
+
+	\item Decidir
+
+	\item Escalar
+
+	\item Compartir
+\end{enumerate}
+
+\subsubsection{Definir el Problema}
+
+Para comenzar un \emph{experimento divergente} primeramente es necesario definir
+el problema que se desea resolver. El problema debe estar basado en una necesidad
+observada del cliente o en una oportunidad de mercado y debe ser un desafío que la
+organización esté particularmente capacitada para resolver.
+
+La definición del problema puede incluir un objetivo cuantificado, pero ese
+objetivo debe ser a la vez desafiante y amplio.
+
+\subsubsection{Establecer Límites}
+
+Aquí se determinan los parámetros que enmarcarán la experimentación. Esto
+incluye establecer restricciones como el tiempo, los recursos disponibles y los criterios
+de éxito. Los límites ayudan a mantener el enfoque en las soluciones más
+prácticas y realistas, evitando que los experimentos se extiendan indefinidamente
+o se vuelvan inmanejables.
+
+\subsubsection{Escoger a la Gente}
+
+El último paso de la fase de preparación es elegir qué personas trabajarán en tu
+experimento de innovación. Este equipo debe estar compuesto por individuos con habilidades
+diversas y perspectivas complementarias. La diversidad del equipo fomenta la
+generación de ideas innovadoras y asegura que las soluciones propuestas
+consideren múltiples puntos de vista.
+
+\subsubsection{Observar}
+
+En este paso, se recopila información detallada sobre el problema y su contexto.
+Esto puede implicar observar directamente el comportamiento de los usuarios,
+analizar datos o investigar tendencias relevantes. La observación profunda permite
+descubrir necesidades ocultas, patrones clave y oportunidades de mejora que las
+soluciones deben abordar.
+
+\subsubsection{Generar Más de Una Solución}
+
+El método divergente enfatiza la importancia de no limitarse a una única solución
+desde el principio. En esta etapa, el equipo desarrolla múltiples ideas o enfoques
+para resolver el problema. La variedad de opciones amplía las posibilidades de
+encontrar una solución efectiva y fomenta la creatividad en el proceso.
+
+\subsubsection{Construir un MVP (Prototipo Mínimo Viable)}
+
+Cada solución propuesta se convierte en un prototipo básico que puede ser probado
+rápidamente. Un MVP permite evaluar la viabilidad de una idea con una inversión
+mínima de tiempo y recursos. El enfoque está en crear algo funcional que capture
+la esencia de la solución sin desarrollarla completamente.
+
+\subsubsection{Prueba de Campo}
+
+Los MVP se someten a pruebas en condiciones reales o en entornos controlados que
+reflejen el uso previsto. Este paso implica recopilar datos y comentarios sobre cómo
+las soluciones funcionan en la práctica. La prueba de campo proporciona
+información valiosa sobre la eficacia de cada solución y cómo podría mejorarse.
+
+\subsubsection{Decidir}
+
+Con base en los resultados de las pruebas, se toma una decisión informada sobre
+cuál de las soluciones experimentadas tiene el mayor potencial. Este paso incluye
+analizar datos y retroalimentación para seleccionar la opción que mejor aborda el
+problema definido inicialmente.
+
+\subsubsection{Escalar}
+
+Una vez que se ha identificado una solución ganadora, el siguiente paso es ampliarla
+para su implementación en un contexto más amplio. Esto puede implicar optimizar
+el diseño, desarrollar funcionalidades adicionales o invertir en recursos para desplegarla
+a gran escala.
+
+\subsubsection{Compartir}
+
+Finalmente, el conocimiento y las lecciones aprendidas durante todo el proceso se
+documentan y comparten dentro de la organización. Este paso asegura que la
+experiencia acumulada a lo largo del método experimental divergente se convierta
+en una base para futuros proyectos, fomentando una cultura de aprendizaje continuo
+e innovación.
+
+\subsection{Aplicación Del Método Experimental Divergente}
+
+La transformación digital es un pilar fundamental para la competitividad de las
+empresas en el siglo XXI. En el caso de Agiotech, una empresa dedicada a la
+reparación de celulares y accesorios Samsung, se ha propuesto innovar mediante el
+desarrollo de un sitio web para captar clientes minoristas y ofrecer servicios personalizados.
+Para evaluar esta estrategia, se aplicará el método experimental convergente descrito
+por David L. Rogers en su obra \emph{Guía Estratégica Para la Transformación
+	Digital}. Este ensayo detalla el desarrollo de los siete pasos del método para
+validar la viabilidad de la propuesta.
+
+\subsubsection{Definir la Pregunta y Sus Variables}
+
+El experimento parte de la siguiente pregunta: \emph{¿El desarrollo de un sitio
+	web personalizado incrementará la cantidad de clientes minoristas y mejorará su
+	satisfacción con los servicios ofrecidos?} Para responderla, se definen las
+siguientes variables:
+
+\begin{itemize}
+	\item \textbf{Variable independiente}: La implementación del sitio web personalizado.
+
+	\item \textbf{Variables dependientes}:
+
+	      \begin{itemize}
+		      \item Incremento en el número de clientes minoristas registrados.
+
+		      \item Mejora en el nivel de satisfacción del cliente.
+	      \end{itemize}
+\end{itemize}
+
+Estas variables permitirán evaluar si la innovación tecnológica cumple con los objetivos
+estratégicos de Agiotech.
+
+\subsubsection{\texorpdfstring{Elegir los Probadores (\emph{Testers})}{Elegir
+		los Probadores (Testers)}}
+
+Para garantizar resultados relevantes, se seleccionaron dos grupos de probadores:
+
+\begin{enumerate}
+	\item \textbf{Clientes potenciales minoristas}: Incluyen pequeños negocios que
+	      podrían beneficiarse de los servicios de Agiotech, como tiendas de
+	      reparación y comercios independientes.
+
+	\item \textbf{Clientes actuales}: Quienes ya interactúan con Agiotech y sirven
+	      como referencia para medir mejoras en su experiencia.
+\end{enumerate}
+
+Estos grupos representan una muestra adecuada del mercado objetivo de Agiotech.
+
+\subsubsection{Aleatorizar la Prueba y el Control}
+
+Se dividió la muestra en dos grupos de manera aleatoria:
+
+\begin{itemize}
+	\item \textbf{Grupo de prueba}: Tendrán acceso al sitio web personalizado.
+
+	\item \textbf{Grupo de control}: Continuarán utilizando los métodos actuales de
+	      interacción con la empresa (llamadas telefónicas o visitas físicas).
+\end{itemize}
+
+La aleatorización asegura que los resultados del experimento no estén
+influenciados por factores externos o sesgos en la selección de los
+participantes.
+
+\subsubsection{Validar la Muestra}
+
+Para garantizar que los resultados sean significativos, se verificó que los
+grupos fueran representativos del mercado. Los criterios de inclusión incluyeron:
+
+\begin{itemize}
+	\item Ubicación geográfica (zonas donde opera Agiotech).
+
+	\item Tamaño del negocio (enfocándose en minoristas).
+
+	\item Frecuencia de uso de servicios de reparación.
+\end{itemize}
+
+Se definió un tamaño mínimo de 30 participantes por grupo, logrando así una muestra
+suficiente para obtener datos estadísticamente relevantes.
+
+\subsubsection{Probar y Analizar}
+
+La fase de prueba se llevó a cabo durante un período de cuatro semanas. En este tiempo,
+se recolectaron las siguientes métricas:
+
+\begin{itemize}
+	\item Número de nuevos clientes registrados en el sitio web.
+
+	\item Volumen de órdenes procesadas a través del sitio.
+
+	\item Resultados de encuestas de satisfacción, en las que se evaluaron
+	      factores como facilidad de uso del sitio y calidad del servicio.
+\end{itemize}
+
+Los datos recolectados se analizaron utilizando herramientas como Excel para obtener
+comparaciones entre el grupo de prueba y el de control.
+
+\subsubsection{Decidir}
+
+Con base en los datos obtenidos, se procedió a comparar los resultados de ambos grupos.
+Por ejemplo, si el grupo de prueba mostró un incremento del 30\% en nuevos
+clientes minoristas y un aumento en la satisfacción promedio de 3.5 a 4.5 puntos
+en una escala de 5, se concluyó que el sitio web personalizado fue efectivo.
+
+Esta decisión permitió justificar la escalabilidad de la estrategia, sugiriendo
+su implementación completa como parte de las operaciones de Agiotech.
+
+\subsubsection{Compartir el Aprendizaje}
+
+Finalmente, los resultados del experimento fueron documentados y compartidos con
+el equipo directivo de Agiotech. Entre los aprendizajes clave se destacaron:
+
+\begin{enumerate}
+	\item La importancia de optimizar ciertas funcionalidades del sitio web basadas
+	      en comentarios de los usuarios.
+
+	\item La efectividad de la personalización para atraer nuevos clientes.
+
+	\item Recomendaciones para integrar el sitio web con otras herramientas de gestión
+	      de clientes.
+\end{enumerate}
+
+Estos hallazgos sentaron las bases para futuras iniciativas de transformación
+digital en Agiotech.
+
+%% References
+
+\nocite{*} % to include uncited references of .bib file
+
+\clearpage
+\bibliographystyle{apalike}
+
+% Generated from .bib file
+\bibliography{ref}
+\end{document}
