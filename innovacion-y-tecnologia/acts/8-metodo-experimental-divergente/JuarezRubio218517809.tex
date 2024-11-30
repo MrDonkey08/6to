@@ -1,0 +1,227 @@
+\input{config.tex}
+
+\begin{document}
+	\setstretch{1} % Interlineado
+
+	\begin{titlepage}
+		\newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+		\centering
+		%\vspace*{-2cm}
+		{\LARGE \textbf{\universidad}}\par
+		\vspace{0.6cm}
+		{\Large{\cede}}
+		\vfill
+
+		\begin{figure}[ht]
+			\begin{minipage}[t]{0.45\textwidth}
+				\centering
+				\includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{0.45\textwidth}
+				\centering
+				\includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+		\large{
+			\division\vfill
+			\textbf{\carrera}\vfill
+			\textbf{\materia}\par\vspace{3pt}
+			\seccion\ - \clave\ - \nrc\ - \generation \vfill
+		}
+
+		{\Large{\textbf{\theTitle}}}
+		\vfill
+
+		\begin{figure}[ht]
+			\centering
+			\begin{minipage}[t]{0.65\textwidth}
+				{\large
+					\textbf{Profesor}: \profesor\nl
+					\textbf{Alumno}: \theAuthor\nl
+					\textbf{Código}: \theAuthorCode\nl
+					\textbf{Correo}: \theAuthorMail
+				}
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+		\begin{tcolorbox}
+			[colback=red!5!white, colframe=red!75!black]
+			\centering
+			\large{
+				Este documento contiene información sensible.\\
+				No debería ser impreso o compartido con terceras entidades.
+			}
+		\end{tcolorbox}
+		\vfill
+		{\large \startDate}\par
+	\end{titlepage}
+
+	\restoregeometry % end changed margin
+
+	%% Indexes
+	\clearpage
+	\tableofcontents
+
+	%\clearpage
+	%\listoffigures
+
+	%\clearpage
+	%\listoftables
+
+	%\clearpage
+	%\lstlistoflistings
+
+	%% Main Title
+	\clearpage
+	\vspace*{-16pt}
+	\begin{center}
+		{\textbf{\huge \theTitle}}
+	\end{center}
+	\vspace*{8pt}
+
+	%% Content
+
+	\section*{Indicaciones}
+
+	Elaborar hoja y media como extensión mínimo para el desarrollo de estos puntos
+	utilizar arial 12. pagina 203
+
+	\clearpage
+	\section{Innovación Mediante la Experimentación Rápida}
+
+	La \textbf{innovación} no es más que el proceso que conlleva la realización
+	o actualización de productos y servicios, los cuales deben resultar en impactos
+	positivos.
+
+	El \textit{proceso de innovación} consiste principalmente en transformar ideas
+	creativas en resultados que mejoren la eficiencia o eficacia o responda a
+	necesidades insatisfechas.
+
+	En la actualidad, la forma más práctica de innovar es mediante la \textbf{
+	experimentación rápida}, debido a que permite desarrollar o actualizar
+	productos y servicios y determinar los resultados de una manera rápida y
+	barata. Esta se divide en dos tipos:
+
+	\begin{itemize}
+		\item Experimentación convergente o experimentación formal
+		\item Experimentación divergente o experimentación informal
+	\end{itemize}
+
+	\clearpage
+	\section{Método Experimental Divergente}
+
+	El \textbf{método experimental divergente}, es útil para las innovaciones menos
+	definidas desde el principio (e.g. productos, servicios y procesos comerciales
+	nuevos de una organización).
+
+	Es relevante mencionar que los proyectos de innovación que utilizan esta
+	metodología tienden a ser altamente iterativos y pueden durar semanas o meses.
+
+	El \textit{método experimental divergente} se divide en diez pasos:
+
+	\begin{enumerate}
+		\item Definir el problema
+		\item Establecer límites
+		\item Escoger a la gente
+		\item Observar
+		\item Generar más de una solución
+		\item Construir un MVP (Prototipo Mínimo Viable)
+		\item Prueba de campo
+		\item Decidir
+		\item Escalar
+		\item Compartir
+	\end{enumerate}
+
+	\subsection{Definir el Problema}
+
+	Para comenzar un \textit{experimento divergente} primeramente es necesario
+	definir el problema que se desea resolver. El problema debe estar basado en una
+	necesidad observada del cliente o en una oportunidad de mercado y debe ser un
+	desafío que la organización esté particularmente capacitada para resolver.
+
+	La definición del problema puede incluir un objetivo cuantificado, pero ese
+	objetivo debe ser a la vez desafiante y amplio.
+
+	\subsection{Establecer Límites}
+
+	Aquí se determinan los parámetros que enmarcarán la experimentación. Esto
+	incluye establecer restricciones como el tiempo, los recursos disponibles y los
+	criterios de éxito. Los límites ayudan a mantener el enfoque en las soluciones
+	más prácticas y realistas, evitando que los experimentos se extiendan
+	indefinidamente o se vuelvan inmanejables.
+
+	\subsection{Escoger a la Gente}
+
+	El último paso de la fase de preparación es elegir qué personas trabajarán en
+	tu experimento de innovación. Este equipo debe estar compuesto por individuos
+	con habilidades diversas y perspectivas complementarias. La diversidad del
+	equipo fomenta la generación de ideas innovadoras y asegura que las soluciones
+	propuestas consideren múltiples puntos de vista.
+
+	\subsection{Observar}
+
+	En este paso, se recopila información detallada sobre el problema y su
+	contexto. Esto puede implicar observar directamente el comportamiento de los
+	usuarios, analizar datos o investigar tendencias relevantes. La observación
+	profunda permite descubrir necesidades ocultas, patrones clave y oportunidades
+	de mejora que las soluciones deben abordar.
+
+	\subsection{Generar Más de Una Solución}
+
+	El método divergente enfatiza la importancia de no limitarse a una única
+	solución desde el principio. En esta etapa, el equipo desarrolla múltiples
+	ideas o enfoques para resolver el problema. La variedad de opciones amplía las
+	posibilidades de encontrar una solución efectiva y fomenta la creatividad en el
+	proceso.
+
+	\subsection{Construir un MVP (Prototipo Mínimo Viable)}
+
+	Cada solución propuesta se convierte en un prototipo básico que puede ser
+	probado rápidamente. Un MVP permite evaluar la viabilidad de una idea con una
+	inversión mínima de tiempo y recursos. El enfoque está en crear algo funcional
+	que capture la esencia de la solución sin desarrollarla completamente.
+
+	\subsection{Prueba de Campo}
+
+	Los MVP se someten a pruebas en condiciones reales o en entornos controlados
+	que reflejen el uso previsto. Este paso implica recopilar datos y comentarios
+	sobre cómo las soluciones funcionan en la práctica. La prueba de campo
+	proporciona información valiosa sobre la eficacia de cada solución y cómo
+	podría mejorarse.
+
+	\subsection{Decidir}
+
+	Con base en los resultados de las pruebas, se toma una decisión informada sobre
+	cuál de las soluciones experimentadas tiene el mayor potencial. Este paso
+	incluye analizar datos y retroalimentación para seleccionar la opción que mejor
+	aborda el problema definido inicialmente.
+
+	\subsection{Escalar}
+
+	Una vez que se ha identificado una solución ganadora, el siguiente paso es
+	ampliarla para su implementación en un contexto más amplio. Esto puede implicar
+	optimizar el diseño, desarrollar funcionalidades adicionales o invertir en
+	recursos para desplegarla a gran escala.
+
+	\subsection{Compartir}
+
+	Finalmente, el conocimiento y las lecciones aprendidas durante todo el proceso
+	se documentan y comparten dentro de la organización. Este paso asegura que la
+	experiencia acumulada a lo largo del método experimental divergente se
+	convierta en una base para futuros proyectos, fomentando una cultura de
+	aprendizaje continuo e innovación.
+
+	%% References
+
+	\nocite{*} % to include uncited references of .bib file
+
+	\clearpage
+	\bibliographystyle{apalike}
+
+	% Generated from .bib file
+	\bibliography{ref}
+\end{document}
