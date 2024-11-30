@@ -1,0 +1,156 @@
+\input{config.tex}
+
+\begin{document}
+	\setstretch{1} % Interlineado
+
+	\begin{titlepage}
+		\newgeometry{margin=2.5cm, left=3cm, right=3cm} % change margin
+		\centering
+		%\vspace*{-2cm}
+		{\huge\textbf{\universidad}}\par
+		\vspace{0.6cm}
+		{\LARGE{\cede}}
+		\vfill
+
+		\begin{figure}[h]
+			\begin{minipage}[t]{0.45\textwidth}
+				\centering
+				\includegraphics[width=130px, height=160px, keepaspectratio]{\logoUdg}
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{0.45\textwidth}
+				\centering
+				\includegraphics[width=130px, height=160px, keepaspectratio]{\logoCucei}
+			\end{minipage}
+		\end{figure}
+		\vfill
+
+		\Large{
+			\division\vfill
+			\textbf{\carrera}\vfill
+			\textbf{\materia}
+			\par\vspace{3pt}
+			\seccion\ - \clave\ - \nrc\vfill
+		}
+
+		{\LARGE{\textbf{\theTitle}}}
+		\vfill
+
+		\begin{figure}[h]
+			\centering
+			\begin{minipage}[t]{0.75\textwidth}
+				{\Large
+					\textbf{Integrantes:}\par\vspace{8pt}
+					\begin{itemize}
+						\item \bAuthor\ - \bAuthorCode
+						\item \cAuthor\ - \cAuthorCode
+						\item \dAuthor\ - \dAuthorCode
+						\item \eAuthor\ - \eAuthorCode
+						\item \theAuthor\ - \theAuthorCode
+					\end{itemize}
+				}
+			\end{minipage}
+		\end{figure}\vfill
+
+		\begin{tcolorbox}
+			[colback=red!5!white, colframe=red!75!black]
+			\centering
+			Este documento ha sido elaborado con fines estudiantiles.\\
+			La información presentada puede contener errores.
+		\end{tcolorbox}
+		\vfill
+		{\large \startDate}\par
+	\end{titlepage}
+
+	\restoregeometry % end changed margin
+
+	%% Indexes
+	%\clearpage
+	%\tableofcontents
+
+	\clearpage
+	\listoffigures
+
+	%\clearpage
+	%\listoftables
+
+	%\clearpage
+	%\lstlistoflistings
+
+	%% Main Title
+	\clearpage
+	\vspace*{-16pt}
+	\begin{center}
+		{\textbf{\huge \theTitle}}
+	\end{center}
+	\vspace*{8pt}
+
+	%% Content
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth, height=500px, keepaspectratio]{\figA}
+		\caption{Diagrama caso de uso}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figB}
+		\caption{Diagrama de secuencia: Crear cuenta}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figC}
+		\caption{Diagrama de secuencia: Asesor}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figD}
+		\caption{Diagrama de secuencia: Creación y gestión de proyectos}
+	\end{figure}
+
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figE}
+		\caption{Diagrama de secuencia: Creación y gestión de tareas}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figF}
+		\caption{Diagrama de actividades: Crear cuenta}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth, height=620px, keepaspectratio]{\figG}
+		\caption{Diagrama de actividades: Asesor}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figH}
+		\caption{Diagrama de actividades: Creación y gestión de proyectos}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figI}
+		\caption{Diagrama de secuencia: Creación y gestión de tareas}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figJ}
+		\caption{Diagrama entidad-relación}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{\figK}
+		\caption{Diagrama de clases}
+	\end{figure}
+\end{document}
